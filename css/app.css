@@ -1,0 +1,153 @@
+/* Fundamental */
+html, body, h1, h2, h3, h4, h5, h6, p, aside, blockquote {
+    /* font-family: 'Seravek', serif; */
+}
+
+/* Basic */
+h1, .h1, h2, .h2 {
+    /* font-family: 'Zona pro'; */
+}
+a.btn:hover {
+    /* transform: scale(1.08); */
+}
+
+/* Utils */
+.hover-to-scale {
+    transition: all 200ms ease;
+}
+.hover-to-scale:hover {
+    transform: scale(1.08) !important;
+}
+
+/* Navbar */
+.navbar--optionsList {
+    height: 70px;
+}
+.navbar--option {
+    font-size: 16px;
+    float: right;
+    height: 70px;
+    /* padding: 15px 0 0; */
+    /* margin: 0 0 0 20px; */
+    margin: 0;
+}
+.navbar--option.for-btn {
+    padding: 15px 0 0 15px;
+}
+.navbar--option:not(.for-btn) {
+    padding: 0px 0 0;
+}
+.navbar--option:not(.for-btn) > a {
+    text-decoration: none;
+    line-height: 70px;
+    border-radius: 0.1px;
+    display: block;
+    height: 70px;
+    padding: 0 10px;
+}
+.navbar--option:not(.for-btn) > a:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+
+/* Cards */
+.mycard {
+    background: #FFFFFF;
+    box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 6px;
+    padding: 20px 15px;
+}
+.mycard > *:last-child {
+    margin: 0;
+}
+
+/* Sections */
+@media screen and (orientation: portrait) and (max-width: 760px) {
+    body[data-path="/"] #header {
+        min-height: 40vh;
+    }
+}
+@media screen and (min-width: 768px) {
+    #header .bg-white-circles {
+        background: url(../img/bg--soft-white-circles.svg) fixed no-repeat top right; background-size: 1200px 1200px;
+    }
+}
+#section-1 .notcard {
+    margin: 0 0 20px;
+}
+#section-2 h4 {
+    margin: 0 0 0px;
+}
+#section-2 .mycard {
+    padding: 0;
+    margin: 0 0 20px;
+}
+#section-2 .mycard a {
+    text-decoration: none;
+    display: block;
+    padding: 20px 15px 10px;
+}
+#section-2 .mycard p {
+    font-weight: 400;
+    height: 75px;
+    overflow: hidden;
+}
+#section-2 .mycard aside {
+    margin: 0 0 10px;
+}
+
+#section-3 .mycard {
+    padding: 40px 15px 50px;
+    margin: 0 0 20px;
+}
+#section-3 h4 {
+    margin-bottom: 20px;
+}
+#section-3 .socialIconsList > a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+#section-3 .socialIconsList > a > img {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+#section-804 .mycard {
+    padding: 30px 15px;
+    margin: 0 0 30px;
+}
+#section-804 .avatar {
+    border-radius: 500px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+}
+#section-804 .avatar > img {
+    width: 100%;
+    height: : 100%;
+}
+
+#section-805 p,
+footer p {
+    font-size: 14px !important;
+    line-height: 18px;
+}
+#section-805 p a,
+footer p a {
+    color: inherit;
+    text-decoration: underline;
+    /* word-break: break-word; */
+    display: inline;
+}
+
+
+/* Misc */
+.internal-scroll-anchor {
+    position: relative;
+    top: -70px;
+    left: 0;
+}

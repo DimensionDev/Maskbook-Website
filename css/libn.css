@@ -1,0 +1,101 @@
+/* Components */
+.btn {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFF;
+    text-align: center;
+    line-height: 50px;
+    background: #000;
+    background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 87%, rgba(0,0,0,0.01) 100%);
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+    padding: 0 20px;
+}
+
+/* Shadows */
+.ts--black-subtle { text-shadow: rgba(0, 0, 0, 0.03) 0 1px 3px; }
+.bs--black-subtle { box-shadow: rgba(0, 0, 0, 0.03) 0 1px 3px; }
+.ts--black-micro { text-shadow: rgba(0, 0, 0, 0.09) 0 1px 3px; }
+.bs--black-micro { box-shadow: rgba(0, 0, 0, 0.09) 0 1px 3px; }
+
+/* Backgrounds */
+.bg-mashiro { background: #FFF; }
+.bg-whiteM {
+    background: #FFF url(/img/bg--whiteM.png) bottom repeat-x scroll;
+    background-size: 100vw 510px;
+}
+.bg-grayM {
+    /* background: #222 linear-gradient(#262A35 0%, #1C222D 100%) scroll no-repeat; */
+    /* background: #222 linear-gradient(#072340 0%, #1C222D 100%) scroll no-repeat; */
+    background: #222 linear-gradient(#072340 0%, #10182F 100%) scroll no-repeat;
+    /* background: #072340; */
+}
+
+/* Colors */
+.color-inherit, .color-000:link, .color-000:hover, .color-000:visited, .color-000:active { color: inherit; }
+.color-000, .color-000:link, .color-000:hover, .color-000:visited, .color-000:active { color: #000; }
+.color-666, .color-666:link, .color-666:hover, .color-666:visited, .color-666:active { color: #666; }
+.color-999, .color-999:link, .color-999:hover, .color-999:visited, .color-999:active { color: #999; }
+.color-FFF, .color-FFF:link, .color-FFF:hover, .color-FFF:visited, .color-FFF:active { color: #FFF; }
+.color-blue, .color-blue:link, .color-blue:hover, .color-blue:visited, .color-blue:active { color: #1C68F3; } .color-hover-blue:hover, .color-hover-blue:active { color: #1C68F3 !important; }
+.color-blue-light, .color-blue-light:link, .color-blue-light:hover, .color-blue-light:visited, .color-blue-light:active { color: #3C95FF; } .color-hover-blue-light:hover, .color-hover-blue-light:active { color: #3C95FF !important; }
+.color-teal, .color-teal:link, .color-teal:hover, .color-teal:visited, .color-teal:active { color: #40AFFF; } .color-hover-teal:hover, .color-hover-teal:active { color: #40AFFF !important; }
+.color-red, .color-red:link, .color-red:hover, .color-red:visited, .color-red:active { color: #FF0000; } .color-hover-red:hover, .color-hover-red:active { color: #FF0000 !important; }
+
+/* Text utilities */
+.td-underline { text-decoration: underline; }
+.td-none, .td-none:hover, .td-none:active { text-decoration: none; }
+.fs-0 { font-size: 0px; }
+/* Styling */
+pre, code, .code {
+    font-family: 'Inconsolata', 'Monaco', 'Menlo', 'Ubuntu Mono', monosapce, sans-serif; font-weight: 400;
+}
+p code {
+    background: #F5F5F5;
+    border: 1px solid #EEE;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 0 3px;
+}
+
+/* Text Sizes */
+@media screen and (min-width: 768px) {
+    h1, .h1 { font-size: 40px; font-weight: 500; line-height: 50px; margin: 0 auto 20px; }
+    h2, .h2 { font-size: 30px; font-weight: 500; line-height: 40px; margin: 0 auto 20px; }
+    h3, .h3 { font-size: 24px; font-weight: 300; line-height: 30px; margin: 0 auto 20px; }
+    h3 > .h3 { margin: 0 auto 10px; }
+    h4, .h4 { font-size: 24px; font-weight: 600; line-height: 30px; margin: 0 auto 10px; }
+    h5, .h5 { font-size: 20px; font-weight: 600; line-height: 25px; margin: 0 auto 10px; }
+    p, .p { font-size: 20px; font-weight: 300; line-height: 25px; margin: 0 auto 10px; }
+    aside, .aside { font-size: 16px; font-weight: 300; line-height: 20px; margin: 0; }
+    .aside ~ .aside { margin: 5px 0 0; }
+}
+@media screen and (max-width: 767px) {
+    h1, .h1 { font-size: 35px; font-weight: 500; line-height: 40px; margin: 0 auto 20px; }
+    h2, .h2 { font-size: 24px; font-weight: 500; line-height: 30px; margin: 0 auto 20px; }
+    h3, .h3 { font-size: 20px; font-weight: 300; line-height: 25px; margin: 0 auto 20px; }
+    h3 > .h3 { margin: 0 auto 10px; }
+    h4, .h4 { font-size: 20px; font-weight: 600; line-height: 25px; margin: 0 auto 10px; }
+    h5, .h5 { font-size: 18px; font-weight: 600; line-height: 25px; margin: 0 auto 10px; }
+    p, .p { font-size: 18px; font-weight: 300; line-height: 25px; margin: 0 auto 10px; }
+    aside, .aside { font-size: 16px; font-weight: 300; line-height: 20px; margin: 0; }
+    .aside ~ .aside { margin: 10px 0 0; }
+}
+
+/* Sizes */
+.PV-80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.w-100p {
+    width: 100%;
+}
+
+/* Heading */
+h1, h2, h3, h4, h5, h6 {
+    /* white-space: pre; */
+}
+h1 > span, h2 > span, h3 > span, h4 > span, h5 > span, h6 > span {
+    display: block;
+}
