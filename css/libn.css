@@ -23,7 +23,7 @@
 .bg-mashiro { background: #FFF; }
 .bg-whiteM {
     background: #FFF url(/img/bg--whiteM.png) bottom repeat-x scroll;
-    background-size: 100vw 510px;
+    background-size: 100% 510px;
 }
 .bg-grayM {
     /* background: #222 linear-gradient(#262A35 0%, #1C222D 100%) scroll no-repeat; */
