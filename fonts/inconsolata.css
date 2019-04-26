@@ -2,13 +2,13 @@
   font-family: 'Inconsolata';
   font-style: normal;
   font-weight: 400;
-  src: local('Inconsolata'), url(/fonts/inconsolata/Inconsolata.woff) format('woff'), url(//maskbook.io/fonts/inconsolata/Inconsolata.woff) format('woff');
+  src: local('Inconsolata'), url(/fonts/inconsolata/Inconsolata.woff) format('woff'), url(//maskbook.com/fonts/inconsolata/Inconsolata.woff) format('woff');
 }
 @font-face {
   font-family: 'Inconsolata';
   font-style: normal;
   font-weight: 700;
-  src: local('Inconsolata-Bold'), url(/fonts/inconsolata/Inconsolata-Bold.woff) format('woff'), url(//maskbook.io/fonts/inconsolata/Inconsolata-Bold.woff) format('woff');
+  src: local('Inconsolata-Bold'), url(/fonts/inconsolata/Inconsolata-Bold.woff) format('woff'), url(//maskbook.com/fonts/inconsolata/Inconsolata-Bold.woff) format('woff');
 }
 
 /* @import url(/fonts/advanced.css); */
