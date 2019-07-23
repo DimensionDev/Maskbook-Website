@@ -61,24 +61,26 @@ p code {
 
 /* Text Sizes */
 @media screen and (min-width: 768px) {
-    h1, .h1 { font-size: 40px; font-weight: 500; line-height: 50px; margin: 0 auto 20px; }
-    h2, .h2 { font-size: 30px; font-weight: 500; line-height: 40px; margin: 0 auto 20px; }
-    h3, .h3 { font-size: 24px; font-weight: 300; line-height: 30px; margin: 0 auto 20px; }
+    h1, .h1 { font-size: 40px; font-weight: 500; line-height: 50px; margin: 20px auto 20px; }
+    h2, .h2 { font-size: 30px; font-weight: 500; line-height: 40px; margin: 20px auto 20px; }
+    h3, .h3 { font-size: 24px; font-weight: 300; line-height: 30px; margin: 20px auto 20px; }
     h3 > .h3 { margin: 0 auto 10px; }
     h4, .h4 { font-size: 24px; font-weight: 600; line-height: 30px; margin: 0 auto 10px; }
     h5, .h5 { font-size: 20px; font-weight: 600; line-height: 25px; margin: 0 auto 10px; }
     p, .p { font-size: 20px; font-weight: 300; line-height: 25px; margin: 0 auto 10px; }
+    li, .li { font-size: 20px; font-weight: 300; line-height: 25px; margin: 0 auto 10px; }
     aside, .aside { font-size: 16px; font-weight: 300; line-height: 20px; margin: 0; }
     .aside ~ .aside { margin: 5px 0 0; }
 }
 @media screen and (max-width: 767px) {
-    h1, .h1 { font-size: 35px; font-weight: 500; line-height: 40px; margin: 0 auto 20px; }
-    h2, .h2 { font-size: 24px; font-weight: 500; line-height: 30px; margin: 0 auto 20px; }
-    h3, .h3 { font-size: 20px; font-weight: 300; line-height: 25px; margin: 0 auto 20px; }
+    h1, .h1 { font-size: 35px; font-weight: 500; line-height: 40px; margin: 20px auto 20px; }
+    h2, .h2 { font-size: 24px; font-weight: 500; line-height: 30px; margin: 20px auto 20px; }
+    h3, .h3 { font-size: 20px; font-weight: 300; line-height: 25px; margin: 20px auto 20px; }
     h3 > .h3 { margin: 0 auto 10px; }
     h4, .h4 { font-size: 20px; font-weight: 600; line-height: 25px; margin: 0 auto 10px; }
     h5, .h5 { font-size: 18px; font-weight: 600; line-height: 25px; margin: 0 auto 10px; }
     p, .p { font-size: 18px; font-weight: 300; line-height: 25px; margin: 0 auto 10px; }
+    li, .li { font-size: 18px; font-weight: 300; line-height: 25px; margin: 0 auto 10px; }
     aside, .aside { font-size: 16px; font-weight: 300; line-height: 20px; margin: 0; }
     .aside ~ .aside { margin: 10px 0 0; }
 }
