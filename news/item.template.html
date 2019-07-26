@@ -3,7 +3,7 @@
     <!-- I thought what I’d do was, I’d pretend I was one of those deaf-mutes. -->
     <head>
         <meta charset="utf-8">
-        <title>Events — Maskbook</title>
+        <title>${ title } — News — Maskbook</title>
 
         <!-- For Google -->
         <meta name="description" content="Events — Maskbook" />
@@ -15,7 +15,7 @@
         <meta property="og:title" content="Events — Maskbook" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://maskbook.com/img/fb-share-banner.png" />
-        <meta property="og:url" content="https://maskbook.com/events/" />
+        <meta property="og:url" content="https://maskbook.com/news/" />
         <meta property="og:description" content="The Natural Law of Privacy, Now Being Enforced." />
         <meta property="fb:app_id" content="321539018508290" />
 
@@ -81,7 +81,7 @@
         }
         </style>
     </head>
-    <body data-path="/about/">
+    <body data-path="/news/a/${ index }">
         <div class="navbar-fixed bg-mashiro bs--black-micro" style="position: fixed; top: 0; left: 0; width: 100%; height: 70px; z-index: 9999; display: none;">
             <div class="container">
                 <div class="row">
@@ -119,13 +119,13 @@
                 </div>
             </div>
         </div>
-        <header class="section bg-colorful color-000" id="header" style="background: #FFF center fixed; position: relative;">
+        <header class="section bg-colorful color-000" id="header" style="position: relative;">
             <div class="navbar-static" style="position: absolute; top: 0px; width: 100%; z-index: 7000;">
                 <div class="container">
                     <div class="row">
                         <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
                             <div class="" style="height: 70px; padding: 0 0;">
-                                <a class="hover-to-scale td-none d-inline-block color-000" href="/">
+                                <a class="hover-to-scale td-none d-inline-block color-FFF" href="/">
                                     <img src="/img/maskbook--logotype-black.png" class="" alt="Dimension" style="height: 70px;">
                                 </a>
                             </div>
@@ -174,28 +174,34 @@
                         </div>
                     </div>
                     <div class="row">
+                        <div class="col-12 col-xs-12">
+                            <div class="">
+                                <!-- <img class="d-block" src="../cover/${ index }.jpg" alt="News Photo" style="width: 100%; border-radius: 4px;"> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
                         <!-- Title area -->
                         <div class="col-12">
-                            <h1 class="text-center ts--black-subtle">
-                                Our Events
-                            </h1>
                             <div class="d-none d-lg-block" style="height: 10px;">
                             </div>
                             <div class="d-block d-lg-none" style="height: 0px;">
                             </div>
-                            <h3 class="text-center color-000">
-                                <span class="h3">Find upcoming and past events.</span>
-                                <span class="h3">Add your own Maskbook themed event <a href="https://github.com/DimensionDev/Maskbook-Events/issues/new?assignees=neruthes&labels=&template=new-event-submission.md&title=Maskbook+User+Group+Meetup+%40+%5B...%5D">to this list</a>!</span>
+                            <h1 class="text-center">
+                                ${ title }
+                            </h1>
+                            <h3 class="text-center color">
+                                <span class="h3">${ date }</span>
                             </h3>
-                            <div class="d-none d-lg-block" style="height: 20px;">
+                            <div class="d-none d-lg-block" style="height: 0px;">
                             </div>
-                            <div class="d-block d-lg-none" style="height: 20px;">
+                            <div class="d-block d-lg-none" style="height: 0px;">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="" style="height: 40px;">
-                </div>
+                <!-- <div class="" style="height: 20px;">
+                </div> -->
             </div>
         </header>
         <div class="section bg-white" id="section-841" style="padding: 0px 0 50px;">
@@ -204,41 +210,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <div class="mycard entry entry-type-link hover-to-scale">
-    <div class="entry-inner">
-        <a class="d-block" href="https://maskbook.com/" target="_blank">
-            <div class="event-image" style="background: #F3F3F3 url(cover/1.jpg) scroll no-repeat center; background-size: cover; position: relative; min-height: 180px;">
-            </div>
-            <div class="">
-                <aside class="pre-title-note">
-                    <span class="event-type-tag" style="">Third-party event</span>
-                    <span class="date">1945-08-15 (Wed) 12:00 ~ 13:00 (UTC+9, Tokyo)</span>
-                </aside>
-                <div class="title">
-                    Maskbook User Group Meetup @ Seoul
-                </div>
-            </div>
-        </a>
-    </div>
-</div>
-<div class="mycard entry entry-type-host hover-to-scale">
-    <div class="entry-inner">
-        <a class="d-block" href="./e/0" target="_blank">
-            <div class="event-image" style="background: #F3F3F3 url(cover/0.jpg) scroll no-repeat center; background-size: cover; position: relative; min-height: 360px;">
-            </div>
-            <div class="">
-                <aside class="pre-title-note">
-                    <span class="event-type-tag" style="">Official event</span>
-                    <span class="date">2019-07-05 (Fri) 19:00 ~ 22:00 (UTC+8, Taipei)</span>
-                </aside>
-                <div class="title">
-                    Maskbook User Group Meetup @ Taipei
-                </div>
-            </div>
-        </a>
-    </div>
-</div>
-
+                        ${ content }
                     </div>
                 </div>
             </div>

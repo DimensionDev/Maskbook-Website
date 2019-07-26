@@ -7,6 +7,7 @@ var templates = {
     indexPage: fs.readFileSync('index.template.html').toString(),
     eventItem: fs.readFileSync('item.template.html').toString(),
     link: fs.readFileSync('templates/link.html').toString(),
+    news: fs.readFileSync('templates/news.html').toString(),
     host: fs.readFileSync('templates/host.html').toString(),
     guest: fs.readFileSync('templates/guest.html').toString()
 };
@@ -23,12 +24,11 @@ var entriesListHtml = entriesList.map(function (entryDataObj) {
 }).join('');
 
 var indexPage = renderHtmlWithArgv('indexPage', { entriesListHtml: entriesListHtml });
-
 fs.writeFileSync('index.html', indexPage);
 
 entriesList.map(function (entryDataObj) {
-    if (['host','guest'].indexOf(entryDataObj.type) >= 0) {
+    if (['host','guest','news'].indexOf(entryDataObj.type) >= 0) {
         entryDataObj.content = markdown.render(fs.readFileSync(`db/${entryDataObj.index}.md`).toString());
-        fs.writeFileSync(`e/${entryDataObj.index}.html`, renderHtmlWithArgv('eventItem', entryDataObj));
+        fs.writeFileSync(`a/${entryDataObj.index}.html`, renderHtmlWithArgv('eventItem', entryDataObj));
     };
 });
