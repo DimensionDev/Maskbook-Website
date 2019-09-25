@@ -2,10 +2,18 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="refresh" content="0;url=https://chrome.google.com/webstore/detail/maskbook/jkoeaghipilijlahjplgbfiocjhldnap">
-        <title></title>
+        <title>Redirecting...</title>
     </head>
     <body>
-        Not redirecting? <a href="https://chrome.google.com/webstore/detail/maskbook/jkoeaghipilijlahjplgbfiocjhldnap">Click here</a>.
+        Not redirecting? <a href="/install-dev/">Click here</a>.
+        <script type="text/javascript">
+        var downloadLink = ''
+        if (navigator.userAgent.indexOf('Chrome') !== -1) {
+            downloadLink = 'https://chrome.google.com/webstore/detail/maskbook/jkoeaghipilijlahjplgbfiocjhldnap';
+        } else {
+            downloadLink = '/download-latest/'
+        };
+        location.replace(downloadLink);
+        </script>
     </body>
 </html>
