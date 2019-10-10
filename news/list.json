@@ -1,5 +1,7 @@
 [
 	{"index": 0, "type": "host", "date":"2019-07-05 (Fri) 19:00 ~ 22:00 (UTC+8, Taipei)", "title": "Maskbook User Group Meetup @ Taipei"},
 	{"index": 1, "type": "host", "date":"2019-07-20 (Thu) 19:00 ~ 21:00 (UTC+8, Beijing)", "title": "Solid Beijing Private Meetup"},
-	{"index": 2, "type": "guest", "date":"2019-07-20 (Thu)  (UTC-8, Califonia)", "title": "DWeb Camp 2019"}
+	{"index": 2, "type": "guest", "date":"2019-07-20 (Thu)  (UTC-8, Califonia)", "title": "DWeb Camp 2019"},
+  {"index": 3, "type": "guest", "date":"2019-10-07 (Mon)  (UTC+9, Osaka)", "title": "Dimension in Osaka Ethereum Lightning Talks"},
+  {"index": 4, "type": "guest", "date":"2019-10-04 (Fri)  (UTC+1, Prague)", "title": "Dimension in 6th Annual Hackers Congress Paralelní Polis "}
 ]
