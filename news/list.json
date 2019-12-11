@@ -4,5 +4,8 @@
 	{"index": 2, "type": "guest", "date":"2019-07-20 (Thu)  (UTC-8, Califonia)", "title": "DWeb Camp 2019"},
 	{"index": 3, "type": "guest", "date":"2019-10-07 (Mon)  (UTC+9, Osaka)", "title": "Dimension in Osaka Ethereum Lightning Talks"},
 	{"index": 4, "type": "guest", "date":"2019-10-04 (Fri)  (UTC+1, Prague)", "title": "Dimension in 6th Annual Hackers Congress Paralelní Polis"},
-	{"index": 5, "type": "guest", "date":"2019-10-27 (Sun)  (UTC+8, Shanghai)", "title": "比特纪：空间链、公共性与技术批判主题沙龙"}
+	{"index": 5, "type": "guest", "date":"2019-10-27 (Sun)  (UTC+8, Shanghai)", "title": "比特纪：空间链、公共性与技术批判主题沙龙"},
+	{"index": 6, "type": "host", "date":"2019-10-24 (Thu)  (UTC+8, Shanghai)", "title": "DWeb Shanghai No.2 : Decentralization Why and How?"},
+	{"index": 7, "type": "guest", "date":"2019-11-17 (Sun)  (UTC+8, Shanghai)", "title": "Web全栈大会：Ehanced Privacy with Decentralized Identity"},
+	{"index": 8, "type": "guest", "date":"2019-11-27 (Wed)  (UTC+8, Taipei)", "title": "RadicalxChange Taipei《激进市场》新书分享会"}
 ]
