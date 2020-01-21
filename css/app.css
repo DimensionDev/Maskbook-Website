@@ -1,6 +1,7 @@
 /* Fundamental */
-html, body, h1, h2, h3, h4, h5, h6, p, aside, blockquote {
-    font-family: -apple-system, 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif, 'Noto Sans CJK SC', 'Hiragino Sans GB', 'Noto Sans CJK TC', 'Noto Sans CJK JP', 'Heiti SC';
+html, body, h1, h2, h3, h4, h5, h6, p, aside, blockquote, ul, ol, ul li, ol li {
+    font-family: -apple-system, 'SF Pro Text', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif, 'Noto Sans CJK SC', 'Hiragino Sans GB', 'Noto Sans CJK TC', 'Noto Sans CJK JP', 'Heiti SC';
+    line-height: 1.5em;
 }
 
 /* Basic */
