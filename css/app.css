@@ -21,6 +21,18 @@ a.btn:hover {
 }
 
 /* Navbar */
+@media screen and (max-width: 460px) {
+    .navbar-logo {
+        height: 20px;
+        margin: 25px 0 0;
+    }
+}
+@media screen and (min-width: 461px) {
+    .navbar-logo {
+        height: 26px;
+        margin: 22px 0 0;
+    }
+}
 .navbar--optionsList {
     height: 70px;
 }
