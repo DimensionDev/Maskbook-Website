@@ -75,7 +75,7 @@ a.btn:hover {
 }
 
 /* Sections */
-@media screen and (orientation: portrait) and (max-width: 760px) {
+@media screen and (orientation: portrait) and (max-width: 767px) {
     body[data-path="/"] #header {
         min-height: 40vh;
     }
