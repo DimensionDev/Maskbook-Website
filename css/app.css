@@ -1,3 +1,5 @@
+/* Stamp: 1 */
+
 /* Fundamental */
 html, body, h1, h2, h3, h4, h5, h6, p, aside, blockquote, ul, ol, ul li, ol li {
     font-family: -apple-system, 'SF Pro Text', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif, 'Noto Sans CJK SC', 'Hiragino Sans GB', 'Noto Sans CJK TC', 'Noto Sans CJK JP', 'Heiti SC';
@@ -21,6 +23,9 @@ a.btn:hover {
 }
 
 /* Navbar */
+.navbar-logo {
+    display: block;
+}
 @media screen and (max-width: 460px) {
     .navbar-logo {
         height: 20px;
