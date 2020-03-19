@@ -41,10 +41,7 @@ gulp.task(
             prefix: ".band-logo.",
             omitFields: ["width", "height"],
             naming(tile) {
-              const named = path.basename(
-                tile.fileName,
-                path.extname(tile.fileName)
-              );
+              const named = path.basename(tile.fileName, path.extname(tile.fileName));
               return named.replace(/ /g, "-").toLowerCase();
             }
           }
@@ -55,7 +52,7 @@ gulp.task(
         src: "./img/meme/*.jpg",
         renderer: {
           scale: {
-            maximum: 365 // 100% DPI
+            maximum: 365 * 2 // 200% DPI
           }
         },
         output: {
