@@ -915,7 +915,7 @@ section.subculture {
 section.faq {
   background: #f6f9ff;
 
-  $masker-width: 1.0625rem;
+  $masker-width: 1.125rem;
   $masker: $masker-width + 1rem;
 
   .content {
@@ -1000,7 +1000,6 @@ section.faq {
 
     &[open] > summary::before {
       background-image: url(./icons/details-open.svg);
-      background-size: 100% 100%;
     }
   }
 
