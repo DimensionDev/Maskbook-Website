@@ -6,7 +6,8 @@ $max-width: 1110px + (30px * 2);
 $tablet-width: 960px;
 $mobile-width: 580px;
 
-$specific-font: -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Segoe UI", Ubuntu, "Helvetica Neue", Arial, sans-serif;
+$specific-font: -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Segoe UI",
+  Ubuntu, "Helvetica Neue", Arial, sans-serif;
 
 body {
   font-family: $specific-font;
@@ -429,10 +430,16 @@ section.core-feature {
 
     width: 100%;
     height: 11.625rem + 1rem;
+    padding: 0;
+
+    @media (max-width: $max-width) {
+      overflow-x: scroll;
+    }
 
     @media (max-width: $mobile-width) {
       top: 22.25rem - $height-step-by-step/2;
     }
+
     > section {
       position: relative;
       left: 0;
@@ -451,7 +458,8 @@ section.core-feature {
 
       border-radius: 0.75rem;
       background: #fff;
-      box-shadow: 0 0.125rem 0.25rem rgba(96, 97, 112, 0.16), 0 0 0.0625rem rgba(40, 41, 61, 0.04);
+      box-shadow: 0 0.125rem 0.25rem rgba(96, 97, 112, 0.16),
+        0 0 0.0625rem rgba(40, 41, 61, 0.04);
       &::before {
         font-size: 3.75rem;
         font-weight: bold;
@@ -511,20 +519,14 @@ section.core-feature {
     article:first-child {
       background: #fff url(./icons/logo-half.svg) no-repeat center left;
     }
-
-    @media (max-width: $tablet-width) {
-      overflow-x: scroll;
-
-      padding: 0;
-      > section {
-        float: left;
-        flex-flow: row nowrap;
-      }
-      article {
-        margin-left: 2rem;
-        &:last-child {
-          margin-right: 2rem;
-        }
+    > section {
+      float: left;
+      flex-flow: row nowrap;
+    }
+    article {
+      margin-left: 2rem;
+      &:last-child {
+        margin-right: 2rem;
       }
     }
   }
@@ -643,7 +645,8 @@ section.feedback {
 
       border-radius: 0.75rem;
       background: #fff;
-      box-shadow: 0 0.125rem 0.25rem rgba(96, 97, 112, 0.16), 0 0 0.0625rem rgba(40, 41, 61, 0.04);
+      box-shadow: 0 0.125rem 0.25rem rgba(96, 97, 112, 0.16),
+        0 0 0.0625rem rgba(40, 41, 61, 0.04);
       &:first-child {
         margin-left: 0.1rem;
       }
@@ -912,6 +915,9 @@ section.subculture {
 section.faq {
   background: #f6f9ff;
 
+  $masker-width: 1.0625rem;
+  $masker: $masker-width + 1rem;
+
   .content {
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -940,9 +946,10 @@ section.faq {
   article {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 
     > section {
-      width: 50%;
+      width: 48%;
     }
   }
 
@@ -950,16 +957,23 @@ section.faq {
     font-size: 1rem;
     line-height: 1.75rem;
 
+    position: relative;
+
     margin-bottom: 2rem;
+    padding-left: $masker;
 
     color: #5d6f88;
+
     summary {
       font-size: 1.25rem;
       line-height: 1.875rem;
 
+      position: relative;
+
       margin-bottom: 1rem;
 
       cursor: pointer;
+      user-select: none;
 
       color: #3b3b3b;
       outline: none;
@@ -969,11 +983,13 @@ section.faq {
     }
 
     & > summary::before {
+      position: absolute;
+      left: -$masker;
+
       display: inline-block;
 
-      width: 1.0625rem;
-      height: 1rem;
-      margin-right: 0.5ex;
+      width: $masker-width;
+      height: 1.875rem;
 
       content: "";
       vertical-align: baseline;
@@ -993,6 +1009,7 @@ section.faq {
       width: auto;
     }
   }
+
   @media (max-width: $mobile-width) {
     .content {
       padding-top: 2.5rem;
