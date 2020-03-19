@@ -32,6 +32,7 @@ if (/^\/install/g.test(location.pathname)) {
       /^MASKBOOK/,
       "https://github.com/DimensionDev/Maskbook"
     );
+    document.links.namedItem("click").href = link;
     location.replace(link);
   } else {
     document.body.className = "link-not-found";
