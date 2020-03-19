@@ -1,0 +1,110 @@
+{
+  "Privacy Stealth": [
+    {
+      "title": "The New American",
+      "time": "Mar 14, 2019",
+      "href": "https://www.thenewamerican.com/tech/computers/item/31748",
+      "content": "-- Under Criminal Investigation; Allowed Big Tech Firms to [Steal] Users’ Data"
+    },
+    {
+      "title": "Klew TV",
+      "time": "Mar 12, 2019",
+      "href": "https://klewtv.com/news/nation-world/some-facebook-quizzes-were-designed-to-steal-your-data-lawsuit-says",
+      "content": "Some -- quizzes were designed to [steal] your data, lawsuit says"
+    },
+    {
+      "title": "TechCrunch",
+      "time": "Mar 4, 2019",
+      "href": "https://techcrunch.com/2019/03/03/facebook-phone-number-look-up/",
+      "content": "-- won’t let you opt out of its phone number ‘look up’ setting"
+    },
+    {
+      "title": "iMore",
+      "time": "Feb 25, 2019",
+      "href": "https://www.imore.com/these-apps-are-stealing-your-most-private-data-and-it-should-be-crime",
+      "content": "These apps are [stealing] your most private data and it should be a crime"
+    },
+    {
+      "title": "CBS News",
+      "time": "Dec 20, 2018",
+      "href": "https://www.cbsnews.com/news/facebook-messenger-cybersecurity-experts-warn-dont-send-sensitive-messages/",
+      "content": "Don’t send sensitive info on -- Messenger, cybersecurity experts warn"
+    },
+    {
+      "title": "Recode",
+      "time": "Sep 28, 2018",
+      "href": "https://www.recode.net/2018/9/28/17915864/facebook-data-breach-mark-zuckerberg-hack-personal-data",
+      "content": "Why should anybody trust -- with their personal data?"
+    }
+  ],
+  "Mass Surveillance": [
+    {
+      "time": "Mar 21, 2019",
+      "title": "The Irish Times",
+      "href": "https://www.irishtimes.com/business/technology/state-websites-are-aiding-a-disgraceful-silent-surveillance-1.3832911",
+      "content": "State websites are aiding a disgraceful silent [surveillance] through --"
+    },
+    {
+      "time": "Mar 11, 2019",
+      "title": "Forbes",
+      "href": "https://www.forbes.com/sites/kalevleetaru/2019/03/11/global-mass-surveillance-and-how-facebooks-private-army-is-militarizing-our-data/",
+      "content": "Global [Mass Surveillance] And How --’s Private Army Is Militarizing Our Data"
+    },
+    {
+      "time": "Mar 11, 2019",
+      "title": "HuffPost",
+      "href": "https://www.huffpost.com/entry/trump-facebook-twitter-spying-disability_n_5c85eff8e4b0d9361629893a",
+      "content": "Trump Administration Aims to Use -- to [Spy on People] Claiming Disability Benefits"
+    },
+    {
+      "time": "Mar 7, 2019",
+      "title": "Fortune",
+      "href": "http://fortune.com/2019/03/07/facebook-privacy-zuckerberg-whatsapp/",
+      "content": "Why --’s 'Privacy-Focused' Vision for -- Is Not Entirely Pro-Privacy"
+    },
+    {
+      "time": "Feb 24, 2019",
+      "title": "NY Magazine",
+      "href": "http://nymag.com/intelligencer/2019/02/shoshana-zuboff-q-and-a-the-age-of-surveillance-capital.html",
+      "content": "[Surveillance Capitalism]’s Threat to Democracy - Harvard Business School Professor Shoshana Zuboff discusses her new book"
+    },
+    {
+      "time": "Mar 6, 2019",
+      "title": "Boing Boing",
+      "href": "https://boingboing.net/2019/03/06/you-cannot-opt-out-of-facebook.html",
+      "content": "You cannot opt out of --’s [surveillance network]"
+    }
+  ],
+  "Public Opinion Manipulation": [
+    {
+      "time": "Mar 22, 2019",
+      "title": "Gizmodo",
+      "href": "https://gizmodo.com/facebook-cambridge-analytica-oh-you-mean-that-cambri-1833502332",
+      "content": "--: [Cambridge Analytica]? Oh, You Mean <em>That</em> [Cambridge Analytica]"
+    },
+    {
+      "time": "Mar 16, 2019",
+      "title": "Engadget",
+      "href": "https://www.engadget.com/2019/03/16/facebook-andreessen-met-cambridge-analytica-whistleblower-2016/",
+      "content": "-- board member may have met [Cambridge Analytica] whistleblower in 2016"
+    },
+    {
+      "time": "Jan 10, 2019",
+      "title": "Japan Times",
+      "href": "https://www.japantimes.co.jp/news/2019/01/10/business/trump-campaign-firm-cambridge-analytica-pleads-guilty-facebook-data-grab/",
+      "content": "Trump campaign firm [Cambridge Analytica] pleads guilty in -- data scandal"
+    },
+    {
+      "time": "Dec 19, 2018",
+      "title": "The Guardian",
+      "href": "https://www.theguardian.com/technology/2018/dec/19/facebook-cambridge-analytica-washington-dc-lawsuit-data",
+      "content": "Washington DC sues -- over [Cambridge Analytica] data scandal"
+    },
+    {
+      "time": "Nov 29, 2018",
+      "title": "Vox",
+      "href": "https://www.vox.com/the-goods/2018/11/29/18118330/cambridge-analytica-facebook-data-scandal-fashion",
+      "content": "[Cambridge Analytica] used fashion preferences to target people on --"
+    }
+  ]
+}

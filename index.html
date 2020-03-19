@@ -1,1074 +1,305 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <!-- I thought what I’d do was, I’d pretend I was one of those deaf-mutes. -->
-    <head>
-        <meta charset="utf-8">
-        <title>Maskbook — Make Privacy Protected Again</title>
-
-        <!-- For Google -->
-        <meta name="description" content="The Natural Law of Privacy, Now Being Enforced." />
-        <meta name="keywords" content="Privacy,Maskbook" />
-        <meta name="author" content="Project Maskbook" />
-        <meta name="application-name" content="Maskbook" />
-
-        <!-- For Facebook -->
-        <meta property="og:title" content="Maskbook — Make Privacy Protected Again" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://maskbook.com/img/fb-share-banner.png" />
-        <meta property="og:url" content="https://maskbook.com/" />
-        <meta property="og:description" content="The Natural Law of Privacy, Now Being Enforced." />
-        <meta property="fb:app_id" content="321539018508290" />
-
-        <!-- For Twitter -->
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Maskbook — Make Privacy Protected Again" />
-        <meta name="twitter:description" content="The Natural Law of Privacy, Now Being Enforced." />
-        <meta name="twitter:image" content="https://maskbook.com/apple-touch-icon.png" />
-
-        <link rel="shortcut icon" href="/favicon.ico">
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <script type="text/javascript" src="./js/jquery.js"></script>
-        <script type="text/javascript" src="./js/smoothscroll.js"></script>
-        <script type="text/javascript" src="./js/bootstrap/bootstrap.js"></script>
-        <link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
-        <link rel="stylesheet" href="./fonts/inconsolata.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <link rel="stylesheet" href="./css/libn.css">
-        <link rel="stylesheet" href="./css/app.css">
-        <meta name="referrer" content="never">
-        <meta name="referrer" content="no-referrer">
-        <script type="text/javascript">
-        if (location.search.match(/[?&]debug=yes/)) {
-            // alert('Debug mode: YES');
-            alert('Stamp: 1');
-        };
-        </script>
-    </head>
-    <body>
-        <div class="navbar-fixed bg-mashiro bs--black-micro" style="position: fixed; top: 0; left: 0; width: 100%; height: 70px; z-index: 9999; display: none;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-5 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                        <div class="" style="height: 70px; padding: 0 0;">
-                            <a class="navbar-logo-anchor hover-to-scale td-none d-inline-block" href="./" style="transform-origin: center;">
-                                <img class="navbar-logo" src="/img/maskbook--logotype-blue.png" alt="Maskbook">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-7 col-sm-6 col-md-8 col-lg-8 col-xl-8">
-                        <div class="">
-                            <div class="navbar--optionsList">
-                                <div class="navbar--option for-btn d-block">
-                                    <a class="color-blue btn hover-to-scale" href="/install/" style="
-                                        font-size: 16px;
-                                        font-weight: 400;
-                                        color: #FFF;
-                                        line-height: 40px;
-                                        background: #1C68F3;
-                                        box-shadow: rgba(0, 0, 0, 0.25) 0 2px 20px;
-                                        /* width: 160px; */
-                                        width: 120px;
-                                        height: 40px;
-                                    ">Install</a>
-                                </div>
-                                <div class="navbar--option d-none d-lg-block">
-                                    <a class="color-000 td-none" href="/about/">About Us</a>
-                                </div>
-                                <!-- <div class="navbar--option d-none d-lg-block">
-                                    <a class="color-000 td-none" href="./">Documentation</a>
-                                </div> -->
-                                <div class="navbar--option d-none d-lg-block">
-                                    <a class="color-000 td-none" href="javascript:void(scroll({top: document.querySelector('#section-805').offsetTop-70, left: 0, behavior: 'smooth'}))">Tech Specs</a>
-                                </div>
-                                <div class="navbar--option d-none d-lg-block">
-                                    <a class="color-000 td-none" href="javascript:void(scroll({top: document.querySelector('#section-3').offsetTop-70, left: 0, behavior: 'smooth'}))">Community</a>
-                                </div>
-                                <div class="navbar--option d-none d-lg-block">
-                                    <a class="color-000 td-none" href="/news/">News</a>
-                                </div>
-                                <div class="navbar--option d-none d-lg-block">
-                                    <a class="color-000 td-none" href="https://github.com/DimensionDev/Maskbook">Source Code</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="" style="background: #FFFFCC; display: none;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <div class="color-000" style="
-                            font-size: 14px;
-                            line-height: 20px;
-                            padding: 10px;
-                        ">
-                            Welcome to Maskbook! Early Access version is open for testing right now. Expect the formal release within September 2019!
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- <header class="section bg-colorful" id="header" style="background: #1C68F3 center fixed; background-image: linear-gradient(231deg, #1BAEF9 5%, #1C68F3 75%); position: relative;"> -->
-        <header class="section bg-colorful" id="header" style="background: #1C68F3 center fixed; background-image: linear-gradient(231deg, #1D8DF5 5%, #1C68F3 75%); position: relative;">
-            <div class="navbar-static bg-colorful" style="position: absolute; width: 100%; z-index: 7000;">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                            <div class="" style="height: 70px; padding: 0 0;">
-                                <a class="navbar-logo-anchor hover-to-scale td-none d-inline-block" href="./">
-                                    <img class="navbar-logo" src="/img/maskbook--logotype-white.png" alt="Maskbook">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-6 col-md-8 col-lg-8 col-xl-8">
-                            <div class="">
-                                <div class="navbar--optionsList">
-                                    <div class="navbar--option for-btn d-block">
-                                        <a class="color-blue btn hover-to-scale" href="/install/" style="
-                                            font-size: 16px;
-                                            font-weight: 500;
-                                            /* color: #0A88FA; */
-                                            color: #FFF;
-                                            line-height: 40px;
-                                            background: none;
-                                            /* box-shadow: rgba(0, 0, 0, 0.04) 0 2px 20px; */
-                                            border: 1px solid #FFF;
-                                            width: 120px;
-                                            height: 40px;
-                                        ">Install</a>
-                                    </div>
-                                    <div class="navbar--option d-none d-lg-block">
-                                        <a class="color-FFF ts--black-subtle" href="/about/">About Us</a>
-                                    </div>
-                                    <!-- <div class="navbar--option d-none d-lg-block">
-                                        <a class="color-FFF ts--black-subtle" href="./">Documentation</a>
-                                    </div> -->
-                                    <div class="navbar--option d-none d-lg-block">
-                                        <a class="color-FFF ts--black-subtle" href="javascript:void(scroll({top: document.querySelector('#section-805').offsetTop-70, left: 0, behavior: 'smooth'}))">Tech Specs</a>
-                                    </div>
-                                    <div class="navbar--option d-none d-lg-block">
-                                        <a class="color-FFF ts--black-subtle" href="javascript:void(scroll({top: document.querySelector('#section-3').offsetTop-70, left: 0, behavior: 'smooth'}))">Community</a>
-                                    </div>
-                                    <div class="navbar--option d-none d-lg-block">
-                                        <a class="color-FFF td-none" href="/news/">News</a>
-                                    </div>
-                                    <div class="navbar--option d-none d-lg-block">
-                                        <a class="color-FFF td-none" href="https://github.com/DimensionDev/Maskbook">Source Code</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div style="background: rgba(255, 255, 255, 0.5); height: 1px;">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="bg-white-circles" style=""> -->
-            <div class="bg-colorful" style="background: url(/img/bg--white-lines.svg) top center fixed no-repeat; background-size: auto 100vh;">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="d-none d-md-block" style="height: 200px;">
-                            </div>
-                            <div class="d-block d-md-none" style="height: 120px;">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row color-FFF">
-                        <!-- Logo -->
-                        <div class="col-6 offset-3 col-sm-6 offset-sm-3 col-md-3 offset-md-0 col-lg-3 offset-lg-0 col-xl-3 offset-xl-0 order-md-2 order-lg-2 order-xl-2 text-right">
-                            <img src="/img/maskbook-icon--book--white.png" alt="Maskbook Logo" style="width: 100%; max-width: 240px; margin: 0;">
-                            <div class="d-block d-md-none" style="height: 30px;">
-                            </div>
-                        </div>
-                        <!-- Title area -->
-                        <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-7 offset-xl-1 order-md-1 order-lg-1 order-xl-1">
-                            <h1 id="js-GrandTitle" class="text-center text-md-left ts--black-subtle"
-                                data-possible-contents="
-                                    The&nbsp;Natural&nbsp;Law&nbsp;of&nbsp;Privacy,=Now&nbsp;Being&nbsp;Enforced. | Surrender&nbsp;No&nbsp;Privacy=to&nbsp;You&#8209;Know&#8209;Who.
-                                "
-                            >
-                                Surrender&nbsp;No&nbsp;Privacy to&nbsp;You&#8209;Know&#8209;Who.
-                            </h1>
-                            <script type="text/javascript">
-                            var h1 = document.querySelector('#js-GrandTitle');
-                            h1.style.height = h1.offsetHeight + 'px';
-                            var currentContentIdInGrandTitle = 0;
-                            var possibleContentsInGrandTitle = h1.getAttribute('data-possible-contents').trim().split(' | ').map(function (x) {return x.trim()});
-                            var setContentInGrandTitle = function (text) {
-                                h1.innerHTML = (new Array(text.length)).fill('&nbsp;').join('');
-                                text.split('').map(function (char, charseq) {
-                                    setTimeout(function () {
-                                        h1.innerHTML = text.slice(0, charseq+1).replace('=', '<br>') + (new Array(text.length - charseq)).fill('<span style="opacity: 0;">&#8209;</span>').join('');
-                                    }, charseq*20);
-                                });
-                            };
-                            setInterval(function () {
-                                if (document.body.offsetWidth >= 992) {
-                                    setContentInGrandTitle(possibleContentsInGrandTitle[currentContentIdInGrandTitle % 2]);
-                                } else {
-                                    // h1.innerHTML = possibleContentsInGrandTitle[currentContentIdInGrandTitle]
-                                }
-                                currentContentIdInGrandTitle = currentContentIdInGrandTitle^1;
-                            }, 5000);
-                            </script>
-                            <div class="d-none d-lg-block" style="height: 20px;">
-                            </div>
-                            <div class="d-block d-lg-none" style="height: 0px;">
-                            </div>
-                            <p class="h3 text-center text-md-left ts--black-subtle" style="margin: 0 0;">
-                                <span style="display: inline-block;">Encrypt your posts & chats on You-Know-Where.</span>
-                                <span style="display: inline-block;">Allow only your friends to decrypt.</span>
-                            </p>
-                            <div class="d-none d-md-block" style="height: 70px;">
-                            </div>
-                            <div class="d-block d-md-none" style="height: 30px;">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container color-FFF">
-                    <div class="row">
-                        <div class="col-12 col-lg-10 offset-xl-1">
-                            <div class="text-center text-md-left" style="">
-                                <div class="d-inline-block float-none float-md-left">
-                                    <a class="btn hover-to-scale" style="
-                                        font-weight: 500;
-                                        color: #000000;
-                                        background: #FFFFFF;
-                                        box-shadow: rgba(0, 0, 0, 0.2) 0 3px 30px;
-                                        width: 260px;
-                                    " href="/install/">
-                                        Get Maskbook
-                                    </a>
-                                    <div class="d-none d-md-inline-block" style="width: 30px; height: 0px;">
-                                    </div>
-                                    <div class="d-block" style="height: 35px;">
-                                    </div>
-                                </div>
-                                <div class="d-inline-block float-none float-md-left">
-                                    <div class="d-none d-md-block" style="height: 5px;">
-                                    </div>
-                                    <aside class="text-center text-md-left" id="dc1853bc776e">
-                                        <style media="screen">
-                                        #dc1853bc776e span > * {
-                                            opacity: 0.7;
-                                        }
-                                        #a90d625515e8:hover {
-                                            opacity: 1;
-                                        }
-                                        </style>
-                                        <span class="d-block"><span>For Chrome, Edge, Firefox,</span></span>
-                                        <span class="d-block"><span>and all Chromium-based browsers.</span></span>
-                                        <!-- <span class="d-block"><span>You can also </span><a class="color-FFF td-underline" id="a90d625515e8" href="./">download CRX</a><span>.</span></span> -->
-                                    </aside>
-                                </div>
-                                <div style="clear: both;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="" style="height: 45px;">
-                </div>
-                <div class="d-md-block" style="height: 45px;">
-                </div>
-            </div>
-        </header>
-        <div class="section bg-whiteM" id="section-1" style="padding: 80px 0 50px;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <h2 class="text-center">Encrypted & Decrypted Automatically</h2>
-                        <h3 class="text-center">
-                            <span class="h3">Maskbook allows you to encrypt content when posting on You-Know-Where.</span>
-                            <span class="h3">Only you and your friends can decrypt them.</span>
-                            <span class="h3">Not even developers of Maskbook.</span>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-            <div style="height: 20px;">
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">
-                        <div class="notcard">
-                            <h4 class="color-blue">Step 1</h4>
-                            <p class="h4" style="font-weight: 300; margin: 0 10px;">Install Maskbook</p>
-                            <div class="d-none d-md-block" style="height: 10px;">
-                            </div>
-                            <aside class="" style="line-height: 30px; height: 30px;">
-                                <a class="color-blue color-hover-teal td-none" style="font-weight: 400;" href="/download-links/">Download Here</a>
-                            </aside>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">
-                        <div class="notcard">
-                            <h4 class="color-blue">Step 2</h4>
-                            <p class="h4" style="font-weight: 300; margin: 0 10px;">Verify account ownership</p>
-                            <div class="d-none d-md-block" style="height: 10px;">
-                            </div>
-                            <aside class="color-666" style="line-height: 30px; height: 30px;">
-                                You will be guided through it once installed.
-                            </aside>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">
-                        <div class="notcard">
-                            <h4 class="color-blue">Step 3</h4>
-                            <p class="h4" style="font-weight: 300; margin: 0 10px;">Start posting encrypted posts</p>
-                            <div class="d-none d-md-block" style="height: 10px;">
-                            </div>
-                            <aside class="color-666" style="line-height: 30px; height: 30px;">
-                                Relax and enjoy!
-                            </aside>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div style="height: 20px;">
-            </div>
-            <div class="text-center">
-                <div class="container">
-                    <div class="row">
-                        <!-- <div class="col-12 col-sm-6 col-md-4 offset-md-2">
-                            <p><a class="color-blue color-hover-teal td-none" href="./"><strong>Tutorial with screenshots →</strong></a></p>
-                            <div style="height: 30px;">
-                            </div>
-                        </div> -->
-                        <div class="col-12 col-sm-12 col-md-12">
-                            <p><a class="color-blue color-hover-teal td-none" target="_blank" href="https://github.com/dimensiondev/Maskbook"><strong>Audit our source code →</strong></a></p>
-                            <div style="height: 30px;">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section bg-whiteM" id="section-2" style="padding: 80px 0 60px;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <h2 class="text-center">Why We Should Encrypt</h2>
-                        <h3 class="text-center">
-                            <span class="h3">We might have&nbsp;nothing&nbsp;to&nbsp;hide.</span>
-                            <span class="h3">But we also have&nbsp;nothing&nbsp;to&nbsp;surrender.</span>
-                            <span class="h3">And they must have&nbsp;nothing&nbsp;to&nbsp;steal.</span>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-            <div style="height: 20px;">
-            </div>
-            <script type="text/javascript">
-            // var newsArticleLinkTmpl =
-            var renderNewsCard = function (rawdata) {
-                var data = rawdata.trim().split('\n').map(function(x) {return x.trim()});
-                return `<div class="col-10 col-sm-10 col-md-6 col-lg-4 col-xl-4 text-center d-inline-block" style="white-space: nowrap; vertical-align: top;">
-                    <div class="mycard text-left" style="margin-top: 30px;">
-                        <a target="_blank" class="color-000" href="${data[2]}">
-                            <aside class="color-666">
-                                ${data[0]}&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;${data[1]}
-                            </aside>
-                            <p style="white-space:normal;">
-                                ${data[3].replace(/--/gi, '<span class="">You-Know-Who</span>').replace(/\[(.+?)\]/g, '<span class="color-red">$1</span>').replace(/::(.+?);;/g, '<span class="color-blue color-hover-teal">$1</span>')}
-                            </p>
-                        </a>
-                    </div>
-                </div>`;
-            };
-            </script>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <h4>Reason 1: Privacy Stealth</h4>
-                        <!-- Search: "You-Know-Who privacy stealth" -->
-                    </div>
-                </div>
-                <div class="row" style="overflow-x: hidden; overflow-y: visible; vertical-align: top;">
-                    <div class="" style="font-size: 0px; white-space: nowrap; overflow-x: auto; overflow-y: hidden; height: 195px; vertical-align: top;">
-                        <script type="text/javascript">
-                        document.write(
-                            [
-                                `
-                                    Mar 14, 2019
-                                    The New American
-                                    https://www.thenewamerican.com/tech/computers/item/31748-facebook-under-criminal-investigation-allowed-big-tech-firms-to-steal-users-data
-                                    -- Under Criminal Investigation; Allowed Big Tech Firms to [Steal] Users’ Data
-                                `,
-                                `
-                                    Mar 12, 2019
-                                    Klew TV
-                                    https://klewtv.com/news/nation-world/some-facebook-quizzes-were-designed-to-steal-your-data-lawsuit-says
-                                    Some -- quizzes were designed to [steal] your data, lawsuit says
-                                `,
-                                `
-                                    Mar 4, 2019
-                                    TechCrunch
-                                    https://techcrunch.com/2019/03/03/facebook-phone-number-look-up/
-                                    -- won’t let you opt out of its phone number ‘look up’ setting
-                                `,
-                                `
-                                    Feb 25, 2019
-                                    iMore
-                                    https://www.imore.com/these-apps-are-stealing-your-most-private-data-and-it-should-be-crime
-                                    These apps are [stealing] your most private data and it should be a crime
-                                `,
-                                `
-                                    Dec 20, 2018
-                                    CBS News
-                                    https://www.cbsnews.com/news/facebook-messenger-cybersecurity-experts-warn-dont-send-sensitive-messages/
-                                    Don’t send sensitive info on -- Messenger, cybersecurity experts warn
-                                `,
-                                `
-                                    Sep 28, 2018
-                                    Recode
-                                    https://www.recode.net/2018/9/28/17915864/facebook-data-breach-mark-zuckerberg-hack-personal-data
-                                    Why should anybody trust -- with their personal data?
-                                `
-                            ].map(renderNewsCard).join('')
-                        );
-                        </script>
-                        <div class="col-10 col-sm-10 col-md-6 col-lg-4 col-xl-4 text-center d-inline-block" style="white-space: nowrap; vertical-align: top;">
-                            <div class="mycard text-left" style="margin-top: 30px; box-shadow: none !important;">
-                                <a target="_blank" class="color-blue color-hover-teal" href="https://duckduckgo.com/?q=facebook+steal+privacy&iar=news&ia=news">
-                                    <aside class="color-blue-">
-                                        <strong>See more evidences for</strong>
-                                    </aside>
-                                    <p class="color-blue-" style="white-space:normal;">
-                                        <span>You-Know-Who</span> Stealing Your Most Private Information from Your Daily Life
-                                    </p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="" style="height: 20px;">
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <h4>Reason 2: Mass Surveillance</h4>
-                        <!-- Search: "You-Know-Who mass surveillance" -->
-                    </div>
-                </div>
-                <div class="row" style="overflow-x: hidden; overflow-y: visible; vertical-align: top;">
-                    <div class="" style="font-size: 0px; white-space: nowrap; overflow-x: auto; overflow-y: hidden; height: 195px; vertical-align: top;">
-                        <script type="text/javascript">
-                        document.write(
-                            [
-                                `
-                                    Mar 21, 2019
-                                    The Irish Times
-                                    https://www.irishtimes.com/business/technology/state-websites-are-aiding-a-disgraceful-silent-surveillance-1.3832911
-                                    State websites are aiding a disgraceful silent [surveillance] through --
-                                `,
-                                `
-                                    Mar 11, 2019
-                                    Forbes
-                                    https://www.forbes.com/sites/kalevleetaru/2019/03/11/global-mass-surveillance-and-how-facebooks-private-army-is-militarizing-our-data/
-                                    Global [Mass Surveillance] And How --’s Private Army Is Militarizing Our Data
-                                `,
-                                `
-                                    Mar 11, 2019
-                                    HuffPost
-                                    https://www.huffpost.com/entry/trump-facebook-twitter-spying-disability_n_5c85eff8e4b0d9361629893a
-                                    Trump Administration Aims to Use -- to [Spy on People] Claiming Disability Benefits
-                                `,
-                                `
-                                    Mar 7, 2019
-                                    Fortune
-                                    http://fortune.com/2019/03/07/facebook-privacy-zuckerberg-whatsapp/
-                                    Why --’s 'Privacy-Focused' Vision for -- Is Not Entirely Pro-Privacy
-                                `,
-                                `
-                                    Feb 24, 2019
-                                    NY Magazine
-                                    http://nymag.com/intelligencer/2019/02/shoshana-zuboff-q-and-a-the-age-of-surveillance-capital.html
-                                    [Surveillance Capitalism]’s Threat to Democracy - Harvard Business School Professor Shoshana Zuboff discusses her new book
-                                `,
-                                `
-                                    Mar 6, 2019
-                                    Boing Boing
-                                    https://boingboing.net/2019/03/06/you-cannot-opt-out-of-facebook.html
-                                    You cannot opt out of --’s [surveillance network]
-                                `
-                            ].map(renderNewsCard).join('')
-                        );
-                        </script>
-                        <div class="col-10 col-sm-10 col-md-6 col-lg-4 col-xl-4 text-center d-inline-block" style="white-space: nowrap; vertical-align: top;">
-                            <div class="mycard text-left" style="margin-top: 30px; box-shadow: none !important;">
-                                <a target="_blank" class="color-blue color-hover-teal" href="https://duckduckgo.com/?q=facebook+mass+surveillance&iar=news&ia=news">
-                                    <aside class="color-blue-">
-                                        <strong>See more evidences for</strong>
-                                    </aside>
-                                    <p class="color-blue-" style="white-space:normal;">
-                                        <span>You-Know-Who</span> Deploying Mass Surveillance and Helping to Harm Civil Rights
-                                    </p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="" style="height: 20px;">
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <h4>Reason 3: Public&nbsp;Opinion&nbsp;Manipulation</h4>
-                        <!-- Search: "You-Know-Who cambridge analytica" -->
-                    </div>
-                </div>
-                <div class="row" style="overflow-x: hidden; overflow-y: visible; vertical-align: top;">
-                    <div class="" style="font-size: 0px; white-space: nowrap; overflow-x: auto; overflow-y: hidden; height: 195px; vertical-align: top;">
-                        <script type="text/javascript">
-                        document.write(
-                            [
-                                `
-                                    Mar 22, 2019
-                                    Gizmodo
-                                    https://gizmodo.com/facebook-cambridge-analytica-oh-you-mean-that-cambri-1833502332
-                                    --: [Cambridge Analytica]? Oh, You Mean <em>That</em> [Cambridge Analytica]
-                                `,
-                                `
-                                    Mar 16, 2019
-                                    Engadget
-                                    https://www.engadget.com/2019/03/16/facebook-andreessen-met-cambridge-analytica-whistleblower-2016/
-                                    -- board member may have met [Cambridge Analytica] whistleblower in 2016
-                                `,
-                                `
-                                    Jan 10, 2019
-                                    Japan Times
-                                    https://www.japantimes.co.jp/news/2019/01/10/business/trump-campaign-firm-cambridge-analytica-pleads-guilty-facebook-data-grab/#.XJZpuy2cagQ
-                                    Trump campaign firm [Cambridge Analytica] pleads guilty in -- data scandal
-                                `,
-                                `
-                                    Dec 19, 2018
-                                    The Guardian
-                                    https://www.theguardian.com/technology/2018/dec/19/facebook-cambridge-analytica-washington-dc-lawsuit-data
-                                    Washington DC sues -- over [Cambridge Analytica] data scandal
-                                `,
-                                `
-                                    Nov 29, 2018
-                                    Vox
-                                    https://www.vox.com/the-goods/2018/11/29/18118330/cambridge-analytica-facebook-data-scandal-fashion
-                                    [Cambridge Analytica] used fashion preferences to target people on --
-                                `
-                            ].map(renderNewsCard).join('')
-                        );
-                        </script>
-                        <div class="col-10 col-sm-10 col-md-6 col-lg-4 col-xl-4 text-center d-inline-block" style="white-space: nowrap; vertical-align: top;">
-                            <div class="mycard text-left" style="margin-top: 30px; box-shadow: none !important;">
-                                <a target="_blank" class="color-blue color-hover-teal" href="https://duckduckgo.com/?q=facebook+cambridge+analytica&iar=news&ia=news">
-                                    <aside class="color-blue-">
-                                        <strong>See more evidences for</strong>
-                                    </aside>
-                                    <p class="color-blue-" style="white-space:normal;">
-                                        <span>You-Know-Who</span> Manipulating Public Opinions to Manipulate 2016 Presidential Election
-                                    </p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section bg-colorful bg-paralex" id="section-3" style="background: #12263B url(/img/bg--warai-kamen.svg) fixed repeat; background-position: center 0px; background-size: 40%; padding: 80px 0 60px;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <h2 class="text-center color-FFF">M&nbsp;for&nbsp;Masquerade, V&nbsp;for&nbsp;Vanquish</h2>
-                        <h3 class="text-center color-FFF">
-                            <span class="h3">Only we can save&nbsp;ourselves from <span class="no-break d-inline-block">You-Know-Who</span>.</span>
-                            <span class="h3">This mass persecution shall&nbsp;not&nbsp;last&nbsp;forever.</span>
-                            <span class="h3">Rise and end it, once&nbsp;and&nbsp;for&nbsp;all.</span>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-            <div style="height: 20px;">
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center">
-                        <div class="mycard">
-                            <h4>Will you join our crusade?<br>Who will be strong and stand&nbsp;with&nbsp;me?</h4>
-                            <div class="text-center socialIconsList fs-0">
-                                <!-- <a class="hover-to-scale" href=""><img src="/img/icons/Twitter.svg" alt="Twitter"></a> -->
-                                <a class="hover-to-scale" href="https://www.facebook.com/realmaskbook/"><img src="/img/icons/Facebook.svg" alt="Facebook"></a>
-                                <a class="hover-to-scale" href="https://github.com/dimensiondev"><img src="/img/icons/GitHub.svg" alt="GitHub"></a>
-                                <a class="hover-to-scale" href="http://t.me/maskbook_group"><img src="/img/icons/Telegram.svg" alt="Telegram"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center">
-                        <div class="mycard">
-                            <h4>Do you hear the people sing?<br>Say, do you hear the distant&nbsp;drums?</h4>
-                            <div class="text-center forumsList fs-0">
-                                <a class="btn hover-to-scale" style="
-                                    font-weight: 400;
-                                    color: #FFF;
-                                    background: #4267B2;
-                                    box-shadow: rgba(0, 0, 0, 0.25) 0 2px 20px;
-                                    border-radius: 500px;
-                                    margin: 0 10px;
-                                " href="https://www.facebook.com/groups/324857694838456/">
-                                    Facebook Group
-                                </a>
-                                <div class="d-lg-none" style="height: 20px;">
-                                </div>
-                                <a class="btn hover-to-scale" style="
-                                    font-weight: 400;
-                                    color: #FFF;
-                                    background: #333;
-                                    box-shadow: rgba(0, 0, 0, 0.25) 0 2px 20px;
-                                    border-radius: 500px;
-                                    margin: 0 10px;
-                                " href="https://github.com/dimensiondev/maskbook-talks/issues/1">
-                                    GitHub Talks
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section bg-whiteM" id="section-971" style="background: #12263B url(/img/bg--warai-kamen.svg) fixed repeat; background-position: center 0px; background-size: 40%; padding: 80px 0 60px;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <h2 class="text-center color-FFF"></h2>
-                        <h3 class="text-center color-FFF">
-                            <span class="h3">Only we can save&nbsp;ourselves from <span class="no-break d-inline-block">You-Know-Who</span>.</span>
-                            <span class="h3">This mass persecution shall&nbsp;not&nbsp;last&nbsp;forever.</span>
-                            <span class="h3">Rise and end it, once&nbsp;and&nbsp;for&nbsp;all.</span>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section color-000 bg-colorful PV-80" style="background: #F5F5F5;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="">
-                            <h2 class="text-center">Maskbook Newsletters</h2>
-                            <h3 class="text-center color-000">
-                                <span class="h3">Get latest news. Keep updated.</span>
-                            </h3>
-                            <div class="">
-                                <div class="">
-                                    <a class="btn d-block hover-to-scale" target="_blank" href="/links/?mailchimp-signup-maskbook" style="
-                                        font-size: 20px;
-                                        font-weight: 400;
-                                        color: #FFF;
-                                        line-height: 50px;
-                                        background: #1C68F3;
-                                        box-shadow: rgba(0, 0, 0, 0.25) 0 2px 20px;
-                                        width: 280px;
-                                        height: 50px;
-                                        margin: 40px auto 0;
-                                    ">Subscribe</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section bg-colorful PV-80" id="section-memes" style="background: #232D36 url(/img/bg--warai-kamen.svg) fixed repeat; background-position: center 0px; background-size: 40%;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <h2 class="text-center color-FFF">All Our Meme Are Belong to You</h2>
-                        <h3 class="text-center color-FFF">
-                            <span class="h3">I thought what I’d do was, I’d pretend I was one of those deaf-mutes.</span>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-            <div style="height: 20px;">
-            </div>
-            <div class="container color-FFF text-left text-lg-center">
-                <div class="row">
-                    <div class="col-6 col-lg-3">
-                        <a href="/img/meme/meme-1.jpg">
-                            <img class="d-block w-100p bs-black-micro" src="/img/meme/meme-1.jpg" alt="" style="border-radius: 4px; margin: 0 0 30px;">
-                        </a>
-                    </div>
-                    <div class="col-6 col-lg-3">
-                        <a href="/img/meme/meme-2.jpg">
-                            <img class="d-block w-100p bs-black-micro" src="/img/meme/meme-2.jpg" alt="" style="border-radius: 4px; margin: 0 0 30px;">
-                        </a>
-                    </div>
-                    <div class="col-6 col-lg-3">
-                        <a href="/img/meme/meme-3.jpg">
-                            <img class="d-block w-100p bs-black-micro" src="/img/meme/meme-3.jpg" alt="" style="border-radius: 4px; margin: 0 0 30px;">
-                        </a>
-                    </div>
-                    <div class="col-6 col-lg-3">
-                        <a href="/img/meme/meme-4.jpg">
-                            <img class="d-block w-100p bs-black-micro" src="/img/meme/meme-4.jpg" alt="" style="border-radius: 4px; margin: 0 0 30px;">
-                        </a>
-                    </div>
-                    <div class="col-12 text-center">
-                        <div class="" style="height: 20px;">
-                        </div>
-                        <a class="btn d-block hover-to-scale" style="
-                            font-weight: 400;
-                            color: #FFF;
-                            background: #1C68F3;
-                            box-shadow: rgba(0, 0, 0, 0.25) 0 2px 20px;
-                            width: 260px;
-                            margin: 0 auto 10px;
-                        " href="/img/the-laughing-mask.png">
-                            Mask Your Own Meme
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section bg-colorful PV-80" id="section-805" style="background: #131D26">
-            <div class="container color-FFF text-left text-lg-center">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 offset-lg-1 offset-xl-1">
-                        <h2 class="text-center">Explain Like I Am Nerd</h2>
-                        <div class="" style="height: 20px;">
-                        </div>
-                        <p class="code aside">Alice installs Maskbook.</p>
-                        <p class="code aside">Upon initialization, a <a class="color-FFF color-hover-teal" target="_blank" href="https://en.wikipedia.org/wiki/ECC">SECP256K1</a> keypair is generated automatically.</p>
-                        <p class="code aside">Alice publishes her public key in a post or in her bio.</p>
-                        <p class="code aside">Bob, a friend of Alice, follows the same procedure.</p>
-                        <p class="code aside">When Alice posts, the content is encrypted with a randomly generated <a class="color-FFF color-hover-teal" target="_blank" href="https://en.wikipedia.org/wiki/AES">AES</a>-256 key.</p>
-                        <p class="code aside">Alice then chooses to whom (Bob in this case) the content should be readable (default: all friends).
-                        <p class="code aside">Alice’s Maskbook automatically encrypts the AES-256 key with Bob’s public key via <a class="color-FFF color-hover-teal" target="_blank" href="https://en.wikipedia.org/wiki/ECDH">ECDH</a>.</p>
-                        <p class="code aside">Alice then creates such a post containing the cipher text.</p>
-                        <p class="code aside">Alice's Maskbook sends the encrypted AES-256 key to Bob over <a class="color-FFF color-hover-teal" target="_blank" href="https://en.wikipedia.org/wiki/Peer-to-peer">peer to peer</a> data transfer over <a target="_blank" href="https://gun.eco/">GUN</a>.</p>
-                        <p class="code aside">Upon receiving the encrypted AES-256 key, Bob’s Maskbook decrypts the AES-256 key.</p>
-                        <p class="code aside">Bob’s Maskbook then uses it to decypted the cipher text.</p>
-                        <p class="code aside">Task Done. No president is elected during the process.</p>
-                        <!-- <p class="code aside">For specific details, see <a class="color-FFF color-hover-teal" target="_blank" href="/">Documentation on GitHub</a>.</p> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section bg-colorful PV-80 color-FFF" style="background: #12263B">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <h2>Partners</h2>
-                        <div class="d-block" style="height: 40px;">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <style media="screen">
-                    .partnerLogo-column div.parterLogoItem {
-                        height: 50px;
-                        background: rgba(0, 0, 0, 0) center no-repeat scroll;
-                        background-size: contain;
-                    }
-                    .partnerLogo-column div.parterLogoItem a {
-                        width: 100%;
-                        height: 100%;
-                    }
-                    </style>
-                    <div class="partnerLogo-column col-6 col-md-4 col-lg-2 offset-3 offset-md-4 offset-lg-4">
-                        <div class="parterLogoItem" style="background-image: url(//era.eco/assets/images/era-logo.svg);">
-                            <!-- <a class="d-block" target="_blank" href="//era.eco/" rel="nofollow"> -->
-                            <!-- </a> -->
-                        </div>
-                    </div>
-                    <div class="partnerLogo-column col-6 col-md-4 col-lg-2 offset-3 offset-md-0">
-                        <div class="parterLogoItem" style="background-image: url(/img/etc/chainide.png);">
-                            <!-- <a class="d-block" target="_blank" href="//chainide.com/" rel="nofollow"> -->
-                            <!-- </a> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section bg-colorful PV-80 color-FFF" style="background: #131D26">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <h2>On Media</h2>
-                        <div class="d-block" style="height: 40px;">
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="row">
-                    <div class="col-6 col-md-4 col-lg-2 offset-3 offset-md-4 offset-lg-5">
-                        <a class="d-block" target="_blank" href="//era.eco/" rel="nofollow">
-                            <img class="d-block w-100p" src="https://era.eco/assets/images/era-logo.svg" alt="">
-                        </a>
-                    </div>
-                </div> -->
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <a class="d-block color-blue-light color-hover-teal td-underline" href="mailto:joyneop@dimension.im">
-                            Be among the first to write about Maskbook!
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section bg-colorful color-000 PV-80" style="background: #FFF;">
-            <div class="container">
-                <div class="row">
-                    <h2>FAQ</h2>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-lg-8 offset-lg-2">
-                        <div class="faq-card">
-                            <h3>What is Maskbook?</h3>
-                            <div class="faq-card-content">
-                                <p>Maskbook helps you protect your privacy against whichever social network platform that earn money by stalking you. These social network giants make hundreds of millions of dollars every year by peeping into your daily activities on their platforms but never share you the revenues.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-8 offset-lg-2">
-                        <div class="faq-card">
-                            <h3>They are providing free services, aren’t they?</h3>
-                            <div class="faq-card-content">
-                                <p>You are right, but providing free services only costs a little — they earn much more money with your online (and even <em>offline</em>) behavior data, which can only be legitimately owned by you, and should only and solely be at your direction. We should stop them exploitating the value of our data.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-8 offset-lg-2">
-                        <div class="faq-card">
-                            <h3>So, what do you do with Maskbook specifically?</h3>
-                            <div class="faq-card-content">
-                                <p>We have made the browser extension and the mobile apps to enable you to post encrypted messages on various social networks that only your expected recipients are able to decrypt and see the original message. In short, you are turning these social networks into tubes!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-8 offset-lg-2">
-                        <div class="faq-card">
-                            <h3>Is it allowed? Will they ban me if I use Maskbook?</h3>
-                            <div class="faq-card-content">
-                                <p>There is no allow or disallow — they will have to accept it because the last enemy for them is the users. If they ban you, it means that they could ban all the other billions of users — smart users like you would soon panic and run for exodus and look for alternatives. Popular support from the users is the most valuable asset for them — that’s why they will never massarce users if there is another option.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-8 offset-lg-2">
-                        <div class="faq-card">
-                            <h3>Why are you so sure?</h3>
-                            <div class="faq-card-content">
-                                <p>We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Ownership of Computation, Liberty of Encryption, and the Pursuit of Privacy.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-8 offset-lg-2">
-                        <div class="faq-card">
-                            <h3>Can my friends read my posts if they don't have Maskbook?</h3>
-                            <div class="faq-card-content">
-                                <p>No. That is why we need you to broadcast such a (great) tool to your friends! We really appreciate. (MAKE PRIVACY PROTECTED AGAIN!!!)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-8 offset-lg-2">
-                        <div class="faq-card">
-                            <h3>Will you be able to see what I am posting?</h3>
-                            <div class="faq-card-content">
-                                <p>No. Absolutely not. Unless we are friends. PERIOD. We are providing such an end-to-end tool for you so that all the encryption/decryption processes are conducted on your own computers, and these social network platforms are nothing more than tubes for data transmission (read: "transport layer"). All the transmissions and synchronizations are powered by <a class="color-inherit td-underline" target="_blank" href="https://gun.eco/">GunDB</a>, a decentralized database that stores and synchronizes the public keys of Maskbook users. You may consider it a cloud vault (read: "Amazon S3") which helps you store publicly available data. In order to ensure service stability, we run a node in the GunDB network as a superpeer with no privileges than other superpeers.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-8 offset-lg-2">
-                        <div class="faq-card">
-                            <h3>I still don’t get it?</h3>
-                            <div class="faq-card-content">
-                                <p>In short, locally, Maskbook helps you encrypt and decrypt messages and GunDB simplifies the process of authorizing recipients to decrypt. Those social network platforms work as an infrastructure like ISPs (e.g. AT&T) that help you store and deliver the encrypted messages so you and your recipients can access them anywhere and anytime.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-8 offset-lg-2">
-                        <div class="faq-card">
-                            <h3>Nice. Is it free?</h3>
-                            <div class="faq-card-content">
-                                <p>YES!!! We will never charge you for this tool and will always release future versions of Maskbook under <a class="color-inherit td-underline" target="_blank" href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL 3.0</a>, the most-free license for free software as endorsed by <a class="color-inherit td-underline" target="_blank" href="https://fsf.org/">Free Software Foundation</a>, so that more developers or even non-developers can join the development and help improving the software.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-8 offset-lg-2">
-                        <div class="faq-card">
-                            <h3>Can I use it on mobile devices?</h3>
-                            <div class="faq-card-content">
-                                <p>Sure. You may <a href="/download-links/">get Maskbook mobile app</a> for iOS and Android.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-8 offset-lg-2">
-                        <div class="faq-card">
-                            <h3>What is your name again?</h3>
-                            <div class="faq-card-content">
-                                <p><strong>M45K600K</strong>.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <style media="screen">
-                .faq-card {
-                    border-bottom: 1px solid rgba(127, 127, 127, 0.3);
-                    padding: 0 0 0;
-                    transition: all 300ms ease;
-                    overflow: hidden;
-                }
-                .faq-card h3 {
-                    position: relative;
-                    padding: 15px 25px 15px 0;
-                    margin: 0;
-                    cursor: pointer;
-                }
-                .faq-card h3::after {
-                    content: "";
-                    font-family: 'FontAwesome';
-                    font-size: 14px;
-                    line-height: 14px;
-                    opacity: 0.1;
-                    position: absolute;
-                    /* top: 0px; */
-                    top: 50%;
-                    right: 0px;
-                    display: block;
-                    float: right;
-                    /* padding: 17px 0 0; */
-                    padding: 0;
-                    margin: -7px 0 0 0;
-                }
-                .faq-card h3[data-entry-expanded="true"]::after {
-                    content: "";
-                }
-                .faq-card h3 ~ .faq-card-content {
-                    transition: all 300ms ease 100ms;
-                }
-                .faq-card h3[data-entry-expanded="false"] ~ .faq-card-content {
-                    opacity: 0;
-                    /* height: 0px; */
-                }
-                .faq-card h3[data-entry-expanded="true"] ~ .faq-card-content {
-                    opacity: 1;
-                    /* height: auto; */
-                }
-                .faq-card h3 ~ .faq-card-content > :last-child {
-                    padding: 0 0 15px;
-                }
-                </style>
-                <script type="text/javascript">
-                document.querySelectorAll('.faq-card').forEach(function (elm) {
-                    elm.setAttribute('data-expanded-height', elm.offsetHeight);
-                    elm.setAttribute('data-collpased-height', document.querySelector('.faq-card h3').offsetHeight + 1);
-                });
-                document.querySelectorAll('.faq-card h3').forEach(function (elm) {
-                    elm.addEventListener('click', function (e) {
-                        if (e.target.getAttribute('data-entry-expanded') === 'true') {
-                            e.target.setAttribute('data-entry-expanded', 'false');
-                            e.target.parentNode.style.height = (document.querySelector('.faq-card h3').offsetHeight + 1) + 'px';
-                        } else {
-                            e.target.setAttribute('data-entry-expanded', 'true');
-                            e.target.parentNode.style.height = e.target.parentNode.getAttribute('data-expanded-height') + 'px';
-                        };
-                    });
-                    elm.setAttribute('data-entry-expanded', 'false');
-                    elm.parentNode.style.height = (document.querySelector('.faq-card h3').offsetHeight + 1) + 'px';
-                });
-                </script>
-            </div>
-        </div>
-        <div class="section color-000 bg-colorful PV-80" style="background: #F5F5F5;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="">
-                            <h2 class="text-center">Ready to Enforce the Natural&nbsp;Law of Privacy?</h2>
-                            <div class="">
-                                <div class="">
-                                    <a class="btn d-block hover-to-scale" target="_blank" href="/install/" style="
-                                        font-size: 20px;
-                                        font-weight: 400;
-                                        color: #FFF;
-                                        line-height: 60px;
-                                        background: #1C68F3;
-                                        box-shadow: rgba(0, 0, 0, 0.25) 0 2px 20px;
-                                        width: 280px;
-                                        height: 60px;
-                                        margin: 40px auto 0;
-                                    ">Get Maskbook</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer class="section bg-colorful PV-80" data-theme="basic">
-            <style media="screen">
-            footer[data-theme="basic"] {
-                color: #FFF;
-                background: #0B1117;
-            }
-            footer[data-theme="red"] {
-                color: #FFF000;
-                background: #EE0000;
-                background: #CC0000;
-            }
-            </style>
-            <div class="container text-left text-lg-center">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 offset-lg-1 offset-xl-1">
-                        <p class="code aside">Source code of Maskbook is available on <a class="color-inherit color-hover-teal" target="_blank" href="https://github.com/dimensiondev/Maskbook">GitHub</a>.</p>
-                        <p class="code aside">Maskbook is a Free Software per the definition of <a class="color-inherit color-hover-teal" target="_blank" href="https://fsf.org/">Free Software Foundation</a>.</p>
-                        <p class="code aside">
-                            <a class="color-inherit color-hover-teal" target="_blank" href="/brand-guide/">Brand Guide</a>
-                            |
-                            <a class="color-inherit color-hover-teal" target="_blank" href="mailto:info@dimension.im">Contact</a>
-                            |
-                            <a class="color-inherit color-hover-teal td-underline" href="/privacy-policy/">Privacy Policy</a>
-                        </p>
-                        <p class="code aside" style="opacity: 0.15;">I thought what I’d do was, I’d pretend I was one of those deaf-mutes.</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <script type="text/javascript">
-        // Paralex scroll
-        // document.querySelectorAll('.bg-paralex').forEach(function (elm) {
-            // window.addEventListener('scroll', function () {
-                // elm.style.backgroundPositionY = (0 - pageYOffset * 0.382) + 'px';
-            // });
-        // });
-        </script>
-        <script type="text/javascript">
-        window.addEventListener('scroll', function () {
-            if (pageYOffset >= document.querySelector('header').offsetHeight - 0) {
-                document.querySelector('.navbar-fixed').style.display = 'block';
-            } else {
-                document.querySelector('.navbar-fixed').style.display = 'none';
-            };
-        });
-        </script>
-        <script type="text/javascript">
-        // data-repeat
-        window.addEventListener('load', function () {
-            document.querySelectorAll('[data-repeat]').forEach(function (elm) {
-                var amplifier = Number(elm.getAttribute('data-repeat'));
-                var tmphtml = elm.innerHTML;
-                for (var i = 0; i < amplifier - 1; i++) {
-                    elm.innerHTML += tmphtml;
-                };
-            });
-        });
-        </script>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- For Google -->
+    <meta name="description" content="The Natural Law of Privacy, Now Being Enforced." />
+    <meta name="keywords" content="Privacy,Maskbook" />
+    <meta name="author" content="Project Maskbook" />
+    <meta name="application-name" content="Maskbook" />
+    <!-- For Facebook -->
+    <meta property="og:title" content="Maskbook — Make Privacy Protected Again" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://maskbook.com/img/fb-share-banner.png" />
+    <meta property="og:url" content="https://maskbook.com" />
+    <meta property="og:description" content="The Natural Law of Privacy, Now Being Enforced." />
+    <meta property="fb:app_id" content="321539018508290" />
+    <!-- For Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Maskbook — Make Privacy Protected Again" />
+    <meta name="twitter:description" content="The Natural Law of Privacy, Now Being Enforced." />
+    <meta name="twitter:image" content="https://maskbook.com/apple-touch-icon.png" />
+    <title>Maskbook</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <script src="/scripts/jquery-3.4.1.min.js"></script>
+    <script src="/scripts/main.js"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <section class="content">
+        <a class="navbar-brand">Maskbook</a>
+        <button class="navbar-toggler">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="navbar-nav">
+          <a href="https://github.com/DimensionDev/Maskbook">Source Code</a>
+          <a href="/news">News</a>
+          <a class="link-button" href="/install">Install</a>
+        </nav>
+      </section>
+    </header>
+    <section class="install">
+      <section class="content">
+        <section class="description">
+          <h1>
+            The Natural Law of Privacy,<br />
+            Now Being Enforced.
+          </h1>
+          <p>
+            Encrypt your posts &amp; chats on You-Know-Where. Allow only your friends to decrypt.
+          </p>
+          <section class="open-store">
+            <a class="link-button" href="/install">Get Maskbook</a>
+            <span>
+              for <span title="Google Chrome">Chrome</span>, <span title="Microsoft Edge">Edge</span>, <span title="Mozilla Firefox">Firefox</span>,<br />
+              and Chromium-based browsers.
+            </span>
+          </section>
+        </section>
+        <section class="logo">
+          <img src="/assets/icons/logo-cycle.svg" />
+        </section>
+      </section>
+    </section>
+    <section class="core-feature">
+      <section class="outline">
+        <section class="content">
+          <h2>Encrypted &amp; Decrypted Automatically</h2>
+          <p>
+            Maskbook allows you to encrypt content when posting on You-Know-Where.<br />
+            Only you and your friends can decrypt them.<br />
+            Not even developers of Maskbook.
+          </p>
+        </section>
+      </section>
+      <section class="content step-by-step">
+        <section>
+          <article>
+            <p>Install Maskbook<br /><a href="/download-links">Download Here</a></p>
+          </article>
+          <article>
+            <p>Verify account ownership</p>
+            <abbr>You will be guided through it once installed.</abbr>
+          </article>
+          <article>
+            <p>Start posting encrypted posts</p>
+            <abbr>Relax and enjoy!</abbr>
+          </article>
+        </section>
+      </section>
+      <section class="audit">
+        <section class="content">
+          <a href="https://github.com/DimensionDev/Maskbook">Audit our source code</a>
+        </section>
+      </section>
+    </section>
+    <section class="reasons">
+      <section class="content">
+        <aside>
+          <dl class="title">
+            <dt>Why We Should Encrypt</dt>
+            <dd>We probably have nothing to hide. But we certainly have nothing to surrender. And they must have nothing to steal.</dd>
+          </dl>
+          <section class="reason">
+            <dl>
+              <dt>Reason <span>N/A</span></dt>
+              <dd>[DUMMY]</dd>
+            </dl>
+            <section class="paging">
+              <button class="prev"></button>
+              <button class="next"></button>
+            </section>
+          </section>
+        </aside>
+        <article class="card-group">
+          <section>
+            <dl class="card">
+              <dt>
+                <i class="band-logo"></i>
+                <section>
+                  <h4>[DUMMY]</h4>
+                  <time>[DUMMY]</time>
+                </section>
+              </dt>
+              <dd>[DUMMY]</dd>
+            </dl>
+          </section>
+        </article>
+        <nav>
+          <button></button>
+          <button></button>
+          <button></button>
+        </nav>
+      </section>
+    </section>
+    <section class="subculture">
+      <section class="content">
+        <dl>
+          <dt>All Our Meme Belong To You</dt>
+          <dd>
+            <p>I thought what I’d do was, I’d pretend I was one of those deaf-mutes.</p>
+            <a class="mask-your-own-meme" href="/img/the-laughing-mask.png" target="_blank">Mask Your Own Meme</a>
+          </dd>
+        </dl>
+        <article class="card-group">
+          <section class="card meme-1"></section>
+          <section class="card meme-2"></section>
+          <section class="card meme-3"></section>
+          <section class="card meme-4"></section>
+        </article>
+      </section>
+    </section>
+    <section class="faq">
+      <section class="content">
+        <h2>Frequently Asked Questions</h2>
+        <article>
+          <section>
+            <details>
+              <summary>What is Maskbook?</summary>
+              <p>
+                Maskbook is a browser extension that enables you, all Internet users, to create encrypted posts on your favorite social network sites, including
+                Facebook and Twitter. Your can choose who is able to see them and who is not. We would like to bring your own data back to you. Such freedom is
+                not limited to your posts. On Maskbook, you can also play your favorite Blockchain DApps or even send or claim a red packet on these sites with
+                no limits from the site administrators.
+              </p>
+            </details>
+            <details>
+              <summary>Those companies are providing free services, right?</summary>
+              <p>
+                You are right, but providing free services only costs a little — at the same time they make much more money with your online (and even
+                <i>offline</i>) behavior data, which can only be legitimately owned by you, and should only and solely be at your direction. We should stop them
+                exploitating the value of our own data.
+              </p>
+            </details>
+            <details>
+              <summary>Will those companies ban me if I use Maskbook?</summary>
+              <p>
+                There is no allow or disallow — they will have to accept it because the last enemy for them is the users. If they ban you, it means that they
+                could ban all the other billions of users. Wise users like you would soon panic and run for exodus and look for alternatives. Supports from
+                users are the most valuable asset for them — that’s why they will never "massarce" users if there is another option.
+              </p>
+            </details>
+            <details>
+              <summary>Why are you so sure?</summary>
+              <p>
+                We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights,
+                that among these are Ownership of Computation, Liberty of Encryption, and the Pursuit of Privacy.
+              </p>
+            </details>
+            <details>
+              <summary>Can my friends read my posts without installing Maskbook?</summary>
+              <p>
+                No. That is why we need you to broadcast such a (great) tool to your friends! We really appreciate it! (Lets MAKE PRIVACY PROTECTED AGAIN!!!)
+              </p>
+            </details>
+          </section>
+          <section>
+            <details>
+              <summary>Will you be able to see what I am posting?</summary>
+              <p>
+                No. Absolutely not unless you are using the "unsafe mode". Unless we are friends. PERIOD. We are providing this end-to-end tool for you so that
+                all the encryption/decryption processes are conducted on your own computers, and these social network sites are nothing more than tubes for data
+                transmission (read: "transport layer"). All the transmissions and synchronizations are powered by <a href="https://gun.eco">GunDB</a>, a
+                decentralized database that stores and synchronizes the public keys of Maskbook users. You may consider it a cloud vault (read: "Amazon S3")
+                which helps you store publicly available data. In order to ensure service stability, we run a node in the GunDB network as a superpeer with no
+                privileges than other superpeers. However, we do provide an "unsafe mode" that you can choose to share with everyone (aka all Maskbook users).
+              </p>
+            </details>
+            <details>
+              <summary>I still don’t get it.</summary>
+              <p>
+                In short, locally, Maskbook helps you encrypt and decrypt messages and GunDB simplifies the process of authorizing recipients to decrypt. Those
+                social network sites work as an infrastructure like ISPs (e.g. AT&amp;T) that help you store and deliver the encrypted messages so you and your
+                recipients can access them anywhere and anytime.
+              </p>
+            </details>
+            <details>
+              <summary>Nice! Is it free?</summary>
+              <p>
+                YES!!! We will never charge you for this tool and will always release future versions of Maskbook under
+                <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL 3.0</a>, the freest license for free software as endorsed by
+                <a href="https://fsf.org">Free Software Foundation</a>, so that more developers or even non-developers can join the development and help
+                improving the software.
+              </p>
+            </details>
+            <details>
+              <summary>Can I use it on mobile devices?</summary>
+              <p>Yes!!!!! You can now get <a href="/download-links">Maskbook Mobile</a> on both iOS and Android.</p>
+            </details>
+            <details>
+              <summary>What is your name again?</summary>
+              <p><b>M45K600K</b>.</p>
+            </details>
+          </section>
+        </article>
+      </section>
+    </section>
+    <section class="principle">
+      <section class="content">
+        <h3>Explain like I am a nerd</h3>
+        <p>
+          Alice encrypts cleartext (M) with a random AES key (K) to get ciphertext (CT) and then securely shares <abbr title="AES key">K</abbr> via
+          <abbr title="Elliptic Curve Integrated Encryption Scheme">ECIES</abbr> over <a href="https://en.wikipedia.org/wiki/ECC">SECP256K1</a> with Bob using
+          Bob's public key (K.Bob).<br />
+          Alice publishes <abbr title="CipherText">CT</abbr> on Facebook and synchronizees <abbr title="public key of Bob">K.Bob</abbr> over GUN. Bob can then
+          retrieve <abbr title="AES key">K</abbr> to decrypt <abbr title="cleartext">M</abbr>.
+        </p>
+      </section>
+    </section>
+    <section class="recent-news" hidden>
+      <section class="content">
+        <h3>Recent News</h3>
+        <a href="#">Dimension in 6th Annual Hackers Congress Paralelní Poli</a>
+        <time>2019-10-04 (Fri) (UTC+1, Prague)</time>
+      </section>
+    </section>
+    <section class="partners">
+      <section class="content">
+        <h3>Partners</h3>
+        <nav>
+          <a title="ERA">ERA</a>
+          <a title="ChainIDE">ChinaIDE</a>
+        </nav>
+      </section>
+    </section>
+    <section class="footer">
+      <section class="content">
+        <p class="foundation">
+          Source code of Maskbook is available on <a href="https://github.com/DimensionDev/Maskbook">GitHub</a>. Maskbook is a Free Software per the definition
+          of <a href="https://fsf.org">Free Software Foundation</a>.
+        </p>
+        <nav class="about">
+          <h4>About</h4>
+          <a href="/brand-guide">Brand Guide</a>
+          <a href="mailto:info@dimension.im">Contact Us</a>
+          <a href="/privacy-policy">Privacy Policy</a>
+        </nav>
+        <section class="subscribe">
+          <h4>Get latest news, keep updated.</h4>
+          <form name="subscription">
+            <input type="email" placeholder="Subscribe" />
+            <button type="submit">Submit</button>
+          </form>
+          <nav>
+            <a href="https://www.facebook.com/groups/324857694838456" title="Facebook"></a>
+            <a href="https://twitter.com/realmaskbook" title="Twitter"></a>
+            <a href="https://github.com/DimensionDev" title="GitHub"></a>
+            <a href="https://t.me/maskbook_group#telegram" title="Telegram"></a>
+          </nav>
+        </section>
+      </section>
+    </section>
+    <footer>
+      <section class="content">
+        <span>I thought what I’d do was, I’d pretend I was one of those deaf-mutes.</span>
+        <nav class="locale" hidden>
+          <a>English</a>
+          <a>繁体中文</a>
+          <a>简体中文</a>
+        </nav>
+      </section>
+    </footer>
+  </body>
 </html>

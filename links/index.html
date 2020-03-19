@@ -1,44 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Redirecting...</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <style media="screen">
-        * {
-            font-family: -apple-system, sans-serif;
-            font-size: 22px;
-        }
-        </style>
-    </head>
-    <body>
-        <script type="text/javascript">
-        var notFoundPageUuid = '73fbaabc-f2a5-44aa-a9ab-0e6c4144d2e1';
-        var mylink = ({
-            'mailchimp-signup-maskbook': 'http://eepurl.com/gmNnlb',
-            'github-forum': 'https://github.com/DimensionDev/Maskbook-Talks',
-            'report-bug': 'https://github.com/DimensionDev/Maskbook/issues/new?template=bug.md&assignees=jack-works&projects=DimensionDev/Maskbook/3&title=%5BBug%5D%20&labels=Type%3A%20Bug',
-            'ios-app-store': 'https://apps.apple.com/us/app/maskbook/id1478382964',
-            'google-play': 'https://play.google.com/store/apps/details?id=com.dimension.maskbook',
-            'home': 'https://maskbook.com/'
-        })[location.search.slice(1)] || notFoundPageUuid;
-        </script>
-        <div class="">
-            <div class="text-center mt-3">
-                Nothing happened?
-            </div>
-            <div class="text-center mt-3">
-                <a class="btn d-inline-block" href="" id="anchor">Click here to jump</a>
-            </div>
-        </div>
-        <script type="text/javascript">
-        if (mylink === notFoundPageUuid) {
-            document.body.innerHTML = `${document.querySelector('style').outerHTML}<h1>404 Not Found.</h1><h2><a href="/">Go home</a>.</h2>`;
-        } else {
-            document.getElementById('anchor').href = mylink;
-            location.replace(mylink);
-            console.log(mylink);
-        };
-        </script>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <style>body,html{width:100%;height:100%}body,main{display:flex;align-items:center}body{font-family:Roboto,"Segoe UI",sans-serif;justify-content:center;margin:0}main{flex-direction:column}main>i{display:block;width:7.5rem;height:7.5rem;border-radius:50%;background:url(/links/redirecting.svg) no-repeat center}main>a,main>p{font-size:1.25rem;line-height:1.875rem}main>p{font-weight:300;margin-top:1.5rem;margin-bottom:.5rem;text-transform:uppercase;color:#939393}main>a{text-decoration:none;color:#3b3b3b}body.link-not-found p.found,body:not(.link-not-found) p.not-found{display:none}body.link-not-found i{background-image:url(/links/no-redirect.svg)}body.link-not-found a{visibility:hidden}</style>
+  </head>
+  <body>
+    <main>
+      <i></i>
+      <p class="found">Nothing happened?</p>
+      <p class="not-found">This is an invaild redirect link!</p>
+      <a name="click" href="#">Click here to jump</a>
+    </main>
+    <script>var links={"/links?home":"https://maskbook.com","/links?mailchimp-signup-maskbook":"http://eepurl.com/gmNnlb","/links?github-forum":"MASKBOOK-Talks","/links?report-bug":"MASKBOOK/issues/new?template=bug.md&assignees=jack-works&projects=DimensionDev/Maskbook/3&title=%5BBug%5D%20&labels=Type%3A%20Bug","/links?ios-app-store":"https://apps.apple.com/app/id1478382964","/links?google-play":"https://play.google.com/store/apps/details?id=com.dimension.maskbook","/links?chrome":"https://chrome.google.com/webstore/detail/jkoeaghipilijlahjplgbfiocjhldnap","/links?firefox":"https://addons.mozilla.org/firefox/addon/maskbook","/brand-guide":"https://dimensiondev.github.io/Maskbook-VI","/faq?1":"MASKBOOK/wiki/FAQ#why-is-there-a-strange-link-in-my-tweet","/faq?2":"MASKBOOK/wiki/FAQ#why-does-maskbook-recommend-users-to-publish-their-public-keys-in-their-bio","/faqcc?1":"MASKBOOK/wiki/FAQ:-Cryptocurrency-Features#why-is-the-total-collected-amount-slightly-less-than-the-total-spent-amount","/download-latest":"MASKBOOK/releases/latest/download/Maskbook.base.zip"};if(/^\/install/g.test(location.pathname)){var agent=navigator.userAgent;/Chrome/i.test(agent)?location.replace(links["/links?chrome"]):/Firefox/i.test(agent)?location.replace(links["/links?firefox"]):location.replace("/download-links")}else{var path=location.pathname.replace(/\/$/g,""),link=links[path+location.search];void 0!==link?(link=link.replace(/^MASKBOOK/,"https://github.com/DimensionDev/Maskbook"),document.links.namedItem("click").href=link,location.replace(link)):document.body.className="link-not-found"}</script>
+  </body>
 </html>
