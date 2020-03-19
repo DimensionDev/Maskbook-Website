@@ -12,7 +12,7 @@ var links = {
   "/faq?1": "MASKBOOK/wiki/FAQ#why-is-there-a-strange-link-in-my-tweet",
   "/faq?2": "MASKBOOK/wiki/FAQ#why-does-maskbook-recommend-users-to-publish-their-public-keys-in-their-bio",
   "/faqcc?1": "MASKBOOK/wiki/FAQ:-Cryptocurrency-Features#why-is-the-total-collected-amount-slightly-less-than-the-total-spent-amount",
-  "/download-latest": "https://github.com/DimensionDev/Maskbook/releases/latest/download/Maskbook.base.zip",
+  "/download-latest": "MASKBOOK/releases/latest/download/Maskbook.base.zip",
 };
 
 if (/^\/install/g.test(location.pathname)) {
