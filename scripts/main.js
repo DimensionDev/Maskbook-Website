@@ -18,20 +18,20 @@ jQuery(document).ready(function($) {
     event.preventDefault();
   });
 
-  $.getJSON("/assets/feedback.json", function(data) {
+  $.getJSON("/assets/reasons.json", function(data) {
     var keys = Object.keys(data);
 
-    var $feedback = $("section.feedback");
-    var $reason = $(".reason dl", $feedback);
-    var $prev = $(".reason .prev", $feedback);
-    var $next = $(".reason .next", $feedback);
-    var $group = $(".card-group > section", $feedback);
-    var $navbar = $("nav", $feedback);
-    var $dummy = $(".card", $feedback).clone();
+    var $reasons = $("section.reasons");
+    var $reason = $(".reason dl", $reasons);
+    var $prev = $(".reason .prev", $reasons);
+    var $next = $(".reason .next", $reasons);
+    var $group = $(".card-group > section", $reasons);
+    var $navbar = $("nav", $reasons);
+    var $dummy = $(".card", $reasons).clone();
 
     function setCardGroup(index) {
       $group.empty();
-      $feedback.data("index", index);
+      $reasons.data("index", index);
       $reason.find("dt span").text(index + 1);
       $reason.find("dd").text(keys[index]);
       $navbar
@@ -57,11 +57,11 @@ jQuery(document).ready(function($) {
     setCardGroup(0);
 
     $prev.click(function() {
-      var index = $feedback.data("index");
+      var index = $reasons.data("index");
       setCardGroup(index === 0 ? keys.length - 1 : index - 1);
     });
     $next.click(function() {
-      var index = $feedback.data("index");
+      var index = $reasons.data("index");
       setCardGroup(index >= keys.length - 1 ? 0 : index + 1);
     });
     $reason.click(function() {
