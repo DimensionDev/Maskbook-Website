@@ -1,0 +1,66 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Roboto, "Segoe UI", sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+main > i {
+  display: block;
+
+  width: 7.5rem;
+  height: 7.5rem;
+
+  border-radius: 50%;
+  background: url(/links/redirecting.svg) no-repeat center;
+}
+
+main > p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.875rem;
+
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+
+  text-transform: uppercase;
+
+  color: #939393;
+}
+
+main > a {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+
+  text-decoration: none;
+
+  color: #3b3b3b;
+}
+
+body.link-not-found p.found,
+body:not(.link-not-found) p.not-found {
+  display: none;
+}
+
+body.link-not-found i {
+  background-image: url(/links/no-redirect.svg);
+}
+
+body.link-not-found a {
+  visibility: hidden;
+}
