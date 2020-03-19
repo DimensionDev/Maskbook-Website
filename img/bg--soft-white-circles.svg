@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1200px" height="1200px" viewBox="0 0 1200 1200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
-    <title>bg--soft-white-circles</title>
-    <desc>Created with Sketch.</desc>
-    <g id="bg--soft-white-circles" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.0799999982">
-        <g transform="translate(354.000000, -948.000000)" id="Oval" stroke="#FFFFFF" stroke-width="2">
-            <circle cx="700" cy="700" r="700"></circle>
-            <circle cx="803" cy="1204" r="450"></circle>
-            <circle cx="739" cy="1362" r="250"></circle>
-            <circle cx="457" cy="1154" r="100"></circle>
-        </g>
-    </g>
-</svg>
+<svg height="1200" viewBox="0 0 1200 1200" width="1200" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" opacity=".08" stroke="#fff" stroke-width="2"><circle cx="1054" cy="-248" r="700"/><circle cx="1157" cy="256" r="450"/><circle cx="1093" cy="414" r="250"/><circle cx="811" cy="206" r="100"/></g></svg>
