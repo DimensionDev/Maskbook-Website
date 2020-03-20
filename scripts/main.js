@@ -42,7 +42,7 @@ jQuery(document).ready(function($) {
         .removeClass("active");
       $.each(data[keys[index]], function(index, item) {
         var $card = $dummy.clone();
-        $card.find("i.band-logo").addClass(item.title.replace(/ /g, "-").toLowerCase());
+        $card.find("i.brand-logo").addClass(item.title.replace(/ /g, "-").toLowerCase());
         $card.find("h4").text(item.title);
         $card.find("time").text(item.time);
         $card.find("dd").html(item.content.replace(/--/gi, "<b>You-Know-Who</b>").replace(/\[(.+?)\]/g, "<i>$1</i>"));
