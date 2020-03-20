@@ -28,12 +28,9 @@ if (/^\/install/g.test(location.pathname)) {
   var path = location.pathname.replace(/\/$/g, "");
   var link = links[path + location.search];
   if (link !== undefined) {
-    link = link.replace(
-      /^MASKBOOK/,
-      "https://github.com/DimensionDev/Maskbook"
-    );
+    link = link.replace(/^MASKBOOK/, "https://github.com/DimensionDev/Maskbook");
     document.links.namedItem("click").href = link;
-    location.replace(link);
+    location.replace(link + location.hash);
   } else {
     document.body.className = "link-not-found";
   }
