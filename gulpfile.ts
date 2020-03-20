@@ -33,12 +33,12 @@ gulp.task(
   gulp.parallel(
     () =>
       sprit.create({
-        src: "./img/sprite/band-logos/*.png",
+        src: "./img/sprite/brand-logos/*.png",
         output: {
-          fileName: "./assets/sprite-band-logos",
+          fileName: "./assets/sprite-brand-logos",
           processor: "css",
           options: {
-            prefix: ".band-logo.",
+            prefix: ".brand-logo.",
             omitFields: ["width", "height"],
             naming(tile) {
               const named = path.basename(tile.fileName, path.extname(tile.fileName));

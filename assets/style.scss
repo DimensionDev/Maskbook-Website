@@ -1,5 +1,5 @@
 @import "node_modules/normalize.css/normalize";
-@import "./sprite-band-logos";
+@import "./sprite-brand-logos";
 @import "./sprite-subculture";
 
 $max-width: 1110px + (30px * 2);
@@ -669,13 +669,13 @@ section.reasons {
         padding-bottom: 1rem;
 
         border-bottom: 0.0625rem solid #eaeaea;
-        i.band-logo {
+        i.brand-logo {
           width: 3.5rem;
           height: 3.5rem;
 
           border-radius: 50%;
           background-color: #eee;
-          background-image: url(./sprite-band-logos.jpg);
+          background-image: url(./sprite-brand-logos.jpg);
           background-repeat: no-repeat;
         }
         section {
