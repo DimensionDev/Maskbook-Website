@@ -13,9 +13,13 @@ var links = {
   "/faq?2": "MASKBOOK/wiki/FAQ#why-does-maskbook-recommend-users-to-publish-their-public-keys-in-their-bio",
   "/faqcc?1": "MASKBOOK/wiki/FAQ:-Cryptocurrency-Features#why-is-the-total-collected-amount-slightly-less-than-the-total-spent-amount",
   "/download-latest": "MASKBOOK/releases/latest/download/Maskbook.base.zip",
+  "/news": "https://news.maskbook.com",
+  "/install-dev": "MASKBOOK/wiki/Manual-Installation",
 };
 
-if (/^\/install/g.test(location.pathname)) {
+var path = location.pathname.replace(/\/$/g, "");
+
+if (path === "/install") {
   var agent = navigator.userAgent;
   if (/Chrome/i.test(agent)) {
     location.replace(links["/links?chrome"]);
@@ -25,15 +29,11 @@ if (/^\/install/g.test(location.pathname)) {
     location.replace("/download-links");
   }
 } else {
-  var path = location.pathname.replace(/\/$/g, "");
   var link = links[path + location.search];
   if (link !== undefined) {
-    link = link.replace(
-      /^MASKBOOK/,
-      "https://github.com/DimensionDev/Maskbook"
-    );
+    link = link.replace(/^MASKBOOK/, "https://github.com/DimensionDev/Maskbook");
     document.links.namedItem("click").href = link;
-    location.replace(link);
+    location.replace(link + location.hash);
   } else {
     document.body.className = "link-not-found";
   }
