@@ -1145,7 +1145,7 @@ section.footer .content {
   a {
     text-decoration: none;
   }
-  .foundation {
+  .description {
     font-size: 0.875rem;
     line-height: 1.5rem;
 
@@ -1153,6 +1153,9 @@ section.footer .content {
     margin: 0;
 
     color: #939393;
+    p {
+      margin-top: 0;
+    }
   }
   .about {
     margin-left: 1.875rem;
