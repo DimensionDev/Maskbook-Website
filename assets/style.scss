@@ -174,8 +174,9 @@ section.install .content {
     position: relative;
 
     display: flex;
-    align-items: center;
     flex: 1;
+
+    padding-top: 10rem;
     img {
       position: absolute;
       right: 0;
@@ -285,7 +286,8 @@ section.install .content {
     > .logo {
       order: 1;
 
-      width: 9.375rem;
+      width: 22.5rem;
+      padding-top: 3.75rem;
     }
     > .description {
       order: 2;
@@ -313,7 +315,7 @@ section.install .content {
 section.core-feature {
   position: relative;
 
-  $height-outline: 37.5rem;
+  $height-outline: 24.625rem;
   $height-step-by-step: 11.625rem;
   $height-audit: 16.75rem;
 
@@ -324,30 +326,34 @@ section.core-feature {
     text-align: center;
 
     color: #fff;
-    background: #1c68f3;
+    background: #f6f9ff;
     h2 {
-      font-size: 3.75rem;
+      font-size: 2.5rem;
       font-weight: 500;
-      line-height: 4.375rem;
+      line-height: 1;
 
       display: inline-block;
 
       width: 40rem;
       margin: 0;
       margin-top: 6rem;
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
 
       letter-spacing: -0.0437rem;
+
+      color: #5d6f88;
     }
     p {
-      font-size: 1.875rem;
+      font-size: 1.5rem;
       font-weight: 300;
-      line-height: 2.3125rem;
+      line-height: 1.45;
 
       margin: 0;
-      margin-bottom: 10.5rem;
+      margin-bottom: 7.75rem;
 
       letter-spacing: -0.0219rem;
+
+      color: #5d6f88;
     }
 
     @media (max-width: $mobile-width) {
@@ -472,7 +478,7 @@ section.core-feature {
 
         content: counter(step-by-step);
 
-        color: #1c68f3;
+        color: #5d6f88;
       }
       p {
         font-size: 1.5rem;
@@ -531,7 +537,7 @@ section.core-feature {
 }
 
 section.reasons {
-  background: #f5f5f5;
+  background: #fafafa;
 
   > .content {
     position: relative;
@@ -566,7 +572,7 @@ section.reasons {
 
         letter-spacing: -0.025rem;
 
-        color: #3b3b3b;
+        color: #5d6f88;
       }
       dd {
         font-size: 1.5rem;
@@ -789,13 +795,17 @@ section.reasons {
 }
 
 section.subculture {
-  background: #1756ca;
+  background: #f5f5f5;
   > .content {
     display: flex;
+    align-items: flex-end;
     justify-content: space-between;
 
     padding-top: 5.625rem;
     padding-bottom: 5.625rem;
+    @media (max-width: $tablet-width) {
+      align-items: unset;
+    }
     > dl {
       width: 21.875rem;
       padding-right: 1rem;
@@ -804,8 +814,12 @@ section.subculture {
       display: grid;
       flex: 1;
 
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 1.875rem;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1rem;
+      @media (max-width: $tablet-width) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.875rem;
+      }
     }
   }
   dl {
@@ -822,7 +836,7 @@ section.subculture {
 
       letter-spacing: -0.025rem;
 
-      color: #fff;
+      color: #5d6f88;
     }
     dd {
       margin-top: 2rem;
@@ -835,7 +849,7 @@ section.subculture {
 
       margin: 0;
 
-      color: #edf3fe;
+      color: #5d6f88;
     }
     a.mask-your-own-meme {
       font-family: $specific-font;
@@ -852,8 +866,8 @@ section.subculture {
 
       text-decoration: none;
 
-      color: #fff;
-      border: 0.0625rem solid #fff;
+      color: #1c68f3;
+      border: 0.0625rem solid #1c68f3;
       border-radius: 0.1875rem;
       &::before {
         width: 1.375rem;
@@ -910,7 +924,7 @@ section.subculture {
 }
 
 section.faq {
-  background: #f6f9ff;
+  background: #fff;
 
   $masker-width: 1.125rem;
   $masker: $masker-width + 1rem;
@@ -929,7 +943,7 @@ section.faq {
 
     letter-spacing: -0.025rem;
 
-    color: #3b3b3b;
+    color: #5d6f88;
   }
 
   a {
@@ -938,6 +952,8 @@ section.faq {
 
   p {
     margin: 0;
+
+    color: #5d6f88;
   }
 
   article {
@@ -1036,7 +1052,7 @@ section.principle {
 
     margin: 0;
 
-    color: #959393;
+    color: #5d6f88;
   }
 
   a {
@@ -1104,7 +1120,7 @@ section.partners .content {
     margin: 0;
     margin-bottom: 1.5rem;
 
-    color: #959393;
+    color: #5d6f88;
   }
   nav {
     a {
