@@ -15,6 +15,7 @@ var links = {
   "/download-latest": "MASKBOOK/releases/latest/download/Maskbook.base.zip",
   "/news": "https://news.maskbook.com",
   "/install-dev": "MASKBOOK/wiki/Manual-Installation",
+  "/privacy-policy": "https://legal.maskbook.com/maskbook/"
 };
 
 var path = location.pathname.replace(/\/$/g, "");
