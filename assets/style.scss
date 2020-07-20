@@ -71,6 +71,8 @@ a.link-button {
     width: 12rem;
     height: 2.5rem;
 
+    user-select: none;
+
     color: transparent;
     background: url(./icons/logo.svg) no-repeat center left;
     background-size: 100% 100%;
@@ -1130,6 +1132,8 @@ section.partners .content {
       display: inline-block;
 
       height: 2.5rem;
+
+      user-select: none;
 
       color: transparent;
       background: no-repeat center;
