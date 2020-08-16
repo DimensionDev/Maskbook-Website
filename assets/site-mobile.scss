@@ -1,0 +1,304 @@
+@media (max-width: $mobile-width) {
+  body {
+    width: 100%;
+  }
+
+  .site-section {
+    padding: 0 24px;
+    margin: 32px auto 80px;
+
+    &-title {
+      font-size: 24px;
+      line-height: 34px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &-description {
+      font-size: 16px;
+      line-height: 28px;
+      font-weight: 300;
+    }
+  }
+
+  .text-secondary {
+    font-size: 10px !important;
+    font-weight: 300 !important;
+    line-height: 16px !important;
+  }
+
+  .navbar {
+    &.open {
+      position: fixed;
+      z-index: 1000;
+
+      width: 100vw;
+      height: 100vh;
+
+      background: #fff;
+    }
+
+    &-nav {
+      display: none;
+      padding: 35px 32px 0 32px;
+
+      &.open {
+        position: fixed;
+        z-index: 100;
+        top: 88px;
+        left: 0;
+
+        display: block;
+
+        width: 100vw;
+        height: 100vh;
+
+        background-color: #fff;
+
+        .link-button {
+          display: none;
+        }
+
+        a {
+          font-size: 20px;
+          height: 40px;
+
+          display: block;
+          float: none;
+
+          margin: 0;
+          margin-bottom: 34px;
+
+          color: #3b3b3b;
+        }
+      }
+    }
+
+    &-toggler {
+      display: block;
+    }
+  }
+
+  .install {
+    .site-section-body {
+      padding: 128px 0 32px;
+    }
+
+    .headline {
+      font-size: 24px;
+      line-height: 34px;
+      margin-bottom: 36px;
+    }
+
+    .subline {
+      font-size: 16px;
+      line-height: 28px;
+      margin-bottom: 40px;
+    }
+
+    .open-store {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      .link-button {
+        font-size: 14px;
+        width: 160px;
+        line-height: 36px;
+        box-shadow: none;
+        border-radius: 3px;
+
+        margin-right: 0;
+
+        &::before {
+          display: none;
+        }
+      }
+
+      .link-description {
+        font-size: 16px;
+        line-height: 28px;
+        margin-top: 20px;
+      }
+    }
+
+    .logo {
+      display: none !important;
+    }
+  }
+
+  .core-feature {
+    .site-section-body {
+      margin-left: -24px;
+      margin-right: -24px;
+      overflow: auto;
+      padding-bottom: 24px;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    .site-section-footer {
+      padding: 16px 0;
+      a {
+        font-size: 16px;
+        line-height: 28px;
+
+        &::before {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+
+    .step-scroller {
+      width: 300%;
+
+      .step {
+        width: 310px;
+        margin-left: 12px;
+      }
+
+      .step:last-child {
+        margin-right: 12px;
+      }
+    }
+  }
+
+  .ability {
+    .aspect {
+      width: 100%;
+      height: 120px;
+      padding-left: 16px;
+
+      &-title {
+        width: 72px;
+        height: 72px;
+      }
+
+      &-description {
+        font-size: 20px;
+        line-height: 30px;
+        padding-left: 16px;
+      }
+    }
+  }
+
+  .subculture {
+    display: block;
+
+    .site-section-body {
+      flex-wrap: wrap;
+      margin: 34px 4px 4px 4px;
+    }
+
+    .link-button {
+      width: 172px;
+      height: 36px;
+      font-size: 12px;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .card {
+      width: 50%;
+      border-radius: 12px;
+      position: relative;
+      padding-bottom: 50%;
+    }
+
+    .card:nth-child(1),
+    .card:nth-child(2) {
+      top: -4px;
+    }
+
+    .card:nth-child(1),
+    .card:nth-child(3) {
+      left: -4px;
+    }
+
+    .card:nth-child(3),
+    .card:nth-child(4) {
+      bottom: -4px;
+    }
+
+    .card:nth-child(2),
+    .card:nth-child(4) {
+      right: -4px;
+    }
+  }
+
+  .faq {
+    .site-section-body {
+      padding: 0;
+
+      article > section {
+        width: 100%;
+      }
+
+      details {
+        margin-bottom: 16px;
+
+        p {
+          font-size: 14px;
+        }
+      }
+
+      summary {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 0;
+
+        &::before {
+          width: 14px;
+          height: 26px;
+        }
+      }
+    }
+  }
+
+  .partners {
+    .site-section-body {
+      display: block;
+      overflow: hidden;
+
+      a {
+        margin-left: 0 !important;
+        display: inline-block;
+        margin: 16px 0;
+        margin-right: 10000px;
+      }
+
+      a:first-child {
+        margin-top: 0;
+      }
+
+      a:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .misc {
+    .site-section-body {
+      padding: 16px 0;
+      flex-direction: column;
+    }
+
+    .about {
+      margin: 32px 0;
+    }
+
+    .subscribe {
+      align-items: flex-start;
+    }
+  }
+
+  footer {
+    width: 100%;
+    padding: 24px;
+  }
+}
