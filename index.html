@@ -1,316 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <!-- For Google -->
-    <meta name="description" content="The Natural Law of Privacy, Now Being Enforced." />
-    <meta name="keywords" content="Privacy,Maskbook" />
-    <meta name="author" content="Project Maskbook" />
-    <meta name="application-name" content="Maskbook" />
-    <!-- For Facebook -->
-    <meta property="og:title" content="Maskbook — Make Privacy Protected Again" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://maskbook.com/img/fb-share-banner.png" />
-    <meta property="og:url" content="https://maskbook.com" />
-    <meta property="og:description" content="The Natural Law of Privacy, Now Being Enforced." />
-    <meta property="fb:app_id" content="321539018508290" />
-    <!-- For Twitter -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Maskbook — Make Privacy Protected Again" />
-    <meta name="twitter:description" content="The Natural Law of Privacy, Now Being Enforced." />
-    <meta name="twitter:image" content="https://maskbook.com/apple-touch-icon.png" />
-    <!-- For Apple -->
-    <meta name="apple-itunes-app" content="app-id=1478382964" />
-    <title>Maskbook</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/assets/style.css" />
-    <script src="/scripts/jquery-3.4.1.min.js"></script>
-    <script src="/scripts/main.js"></script>
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-WWRTN8P");
-    </script>
-    <!-- End Google Tag Manager -->
-  </head>
-  <body>
-    <header class="navbar">
-      <section class="content">
-        <a class="navbar-brand">Maskbook</a>
-        <button class="navbar-toggler">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <nav class="navbar-nav">
-          <a href="https://github.com/DimensionDev/Maskbook">Source Code</a>
-          <a href="https://news.maskbook.com">News</a>
-          <a class="link-button" href="/install">Install</a>
-        </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!-- For Google -->
+  <meta name="description" content="The Natural Law of Privacy, Now Being Enforced." />
+  <meta name="keywords" content="Privacy,Maskbook" />
+  <meta name="author" content="Project Maskbook" />
+  <meta name="application-name" content="Maskbook" />
+
+  <!-- For Facebook -->
+  <meta property="og:title" content="Maskbook — Make Privacy Protected Again" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://maskbook.com/img/fb-share-banner.png" />
+  <meta property="og:url" content="https://maskbook.com" />
+  <meta property="og:description" content="The Natural Law of Privacy, Now Being Enforced." />
+  <meta property="fb:app_id" content="321539018508290" />
+
+  <!-- For Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Maskbook — Make Privacy Protected Again" />
+  <meta name="twitter:description" content="The Natural Law of Privacy, Now Being Enforced." />
+  <meta name="twitter:image" content="https://maskbook.com/apple-touch-icon.png" />
+
+  <!-- For Apple -->
+  <meta name="apple-itunes-app" content="app-id=1478382964" />
+  <title>Maskbook</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/site.css" />
+  <script src="/scripts/jquery-3.4.1.min.js"></script>
+  <script src="/scripts/main.js"></script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-WWRTN8P");
+  </script>
+</head>
+
+<body>
+  <section class="navbar site-section collapsed">
+    <section class="site-section-body">
+      <a class="navbar-brand">
+        <svg xmlns="http://www.w3.org/2000/svg" width="175" height="40" viewBox="0 0 175 40" fill="none">
+          <path
+            d="M67.6747 11.7065V28.9332H63.379V20.2945L59.5408 26.1972V26.2225H57.1515V26.1972L53.2879 20.2439L53.3133 28.9332H49.0175V11.7065H52.1949L58.3461 20.9025L64.472 11.7065H67.6747ZM83.6629 16.6465V28.9332H79.5452V28.2492C78.6301 28.8319 77.5117 29.1865 76.1645 29.1865C72.8347 29.1865 70.0386 26.4252 70.0386 22.7772C70.0386 19.1039 72.8347 16.3679 76.1645 16.3679C77.5117 16.3679 78.6301 16.7225 79.5452 17.3052V16.6465H83.6629ZM76.9779 25.8172C77.893 25.8172 78.7826 25.5639 79.5452 24.6772V20.8772C78.7826 19.9905 77.893 19.7119 76.9779 19.7119C75.3003 19.7119 74.0802 21.0799 74.0802 22.7772C74.0802 24.4745 75.3003 25.8172 76.9779 25.8172ZM85.6202 24.7025L89.2804 24.7279C89.4584 25.7919 90.348 26.2732 91.6444 26.2732C92.7374 26.2732 93.3982 25.9439 93.3982 25.4119C93.3982 25.0065 93.017 24.6772 92.2036 24.5505L89.7125 24.1199C87.5774 23.7652 86.1031 22.5745 86.1031 20.4212C86.1031 17.8372 88.3145 16.3172 91.5935 16.3172C94.2116 16.3172 97.1856 17.3305 97.3635 20.5732H93.7032C93.627 19.6359 92.7628 19.2052 91.6189 19.2052C90.5514 19.2052 90.0684 19.6105 90.0684 20.0919C90.0684 20.4972 90.3734 20.8772 91.3393 21.0545L93.6524 21.4345C95.9655 21.8652 97.4906 22.9799 97.4906 25.1585C97.4906 27.9959 94.9233 29.3132 91.7206 29.3132C88.4925 29.3132 85.8744 27.9705 85.6202 24.7025ZM105.548 24.6772L103.82 26.5265V28.9332H99.702V10.9465H103.82V21.2572L108.116 16.6465H113.021L108.344 21.6625L113.428 28.9332H108.497L105.548 24.6772ZM122.401 16.4185C125.731 16.4185 128.527 19.1545 128.527 22.8025C128.527 26.4759 125.731 29.2372 122.401 29.2372C121.054 29.2372 119.935 28.8825 119.02 28.2999V28.9332H114.902V10.9465H119.02V17.3559C119.935 16.7732 121.054 16.4185 122.401 16.4185ZM121.587 25.8679C123.265 25.8679 124.485 24.5252 124.485 22.8025C124.485 21.1305 123.265 19.7625 121.587 19.7625C120.672 19.7625 119.783 20.0412 119.02 20.9279V24.7279C119.783 25.6145 120.672 25.8679 121.587 25.8679ZM136.889 16.3679C140.778 16.3679 143.574 19.0785 143.574 22.7772C143.574 26.5265 140.778 29.3132 136.889 29.3132C133 29.3132 130.204 26.5265 130.204 22.7772C130.204 19.0785 133 16.3679 136.889 16.3679ZM136.915 25.7665C138.567 25.7665 139.685 24.4492 139.685 22.8025C139.685 21.2065 138.567 19.9145 136.915 19.9145C135.237 19.9145 134.119 21.2065 134.119 22.8025C134.119 24.4492 135.237 25.7665 136.915 25.7665ZM151.962 16.3679C155.851 16.3679 158.647 19.0785 158.647 22.7772C158.647 26.5265 155.851 29.3132 151.962 29.3132C148.073 29.3132 145.277 26.5265 145.277 22.7772C145.277 19.0785 148.073 16.3679 151.962 16.3679ZM151.988 25.7665C153.64 25.7665 154.758 24.4492 154.758 22.8025C154.758 21.2065 153.64 19.9145 151.988 19.9145C150.31 19.9145 149.192 21.2065 149.192 22.8025C149.192 24.4492 150.31 25.7665 151.988 25.7665ZM166.68 24.6772L164.951 26.5265V28.9332H160.833V10.9465H164.951V21.2572L169.247 16.6465H174.153L169.476 21.6625L174.559 28.9332H169.628L166.68 24.6772Z"
+            fill="#1C68F3" />
+          <path
+            d="M20.0672 40C31.15 40 40.1345 31.0457 40.1345 20C40.1345 8.95431 31.15 0 20.0672 0C8.9844 0 0 8.95431 0 20C0 31.0457 8.9844 40 20.0672 40Z"
+            fill="#1C68F3" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M32.1075 15.3333V22H12.0403V22.0001L11.1769 22.0001C12.0907 26.0451 15.7173 29.0667 20.052 29.0667C23.6356 29.0667 26.7352 27.0015 28.2181 24.0001L32.1075 24.0001V29.6C32.1075 30.9255 31.0294 32 29.6995 32H10.4349C9.10498 32 8.02686 30.9255 8.02686 29.6V15.3333H32.1075ZM25.9085 24.0001C24.6315 25.861 22.4848 27.0821 20.052 27.0821C17.6191 27.0821 15.4725 25.861 14.1954 24.0001H25.9085ZM14.9166 16.9333C13.0295 16.9333 11.4683 18.3241 11.2087 20.1334L13.2613 20.1334C13.487 19.437 14.1428 18.9333 14.9166 18.9333C15.6904 18.9333 16.3462 19.437 16.5719 20.1334L18.6246 20.1334C18.3649 18.3241 16.8037 16.9333 14.9166 16.9333ZM25.2178 16.9333C23.3307 16.9333 21.7695 18.3241 21.5098 20.1334L23.5625 20.1334C23.7882 19.437 24.444 18.9333 25.2178 18.9333C25.9916 18.9333 26.6474 19.437 26.8731 20.1334L28.9257 20.1334C28.6661 18.3241 27.1049 16.9333 25.2178 16.9333ZM29.6995 8C31.0294 8 32.1075 9.07452 32.1075 10.4V13.3333H8.02686V10.4C8.02686 9.07452 9.10498 8 10.4349 8H29.6995Z"
+            fill="white" />
+        </svg>
+      </a>
+      <button class="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="navbar-nav">
+        <a target="_blank" href="https://github.com/DimensionDev/Maskbook">Source Code</a>
+        <a target="_blank" href="https://news.maskbook.com">News</a>
+        <a class="link-button" href="/install">Install</a>
+      </nav>
+    </section>
+  </section>
+
+  <section class="install site-section collapsed">
+    <section class="site-section-body">
+      <section class="description">
+        <h1 class="headline">
+          The Natural Law of Privacy,<br />
+          Now Being Enforced.
+        </h1>
+        <p class="subline">
+          Encrypt your posts &amp; chats on You-Know-Where. <br />
+          Allow only your friends to decrypt.
+        </p>
+        <section class="open-store">
+          <a class="link-button" href="/install">
+            Get Maskbook
+          </a>
+          <span class="link-description">
+            For <span title="Google Chrome">Chrome</span>, <span title="Microsoft Edge">Edge</span>, <span
+              title="Mozilla Firefox">Firefox</span>,<br />
+            and Chromium-based browsers.
+          </span>
+        </section>
       </section>
-    </header>
-    <section class="install">
-      <section class="content">
-        <section class="description">
-          <h1>
-            The Natural Law of Privacy,<br />
-            Now Being Enforced.
-          </h1>
-          <p>
-            Encrypt your posts &amp; chats on You-Know-Where. Allow only your friends to decrypt.
-          </p>
-          <section class="open-store">
-            <a class="link-button" href="/install">Get Maskbook</a>
-            <span>
-              for <span title="Google Chrome">Chrome</span>, <span title="Microsoft Edge">Edge</span>, <span title="Mozilla Firefox">Firefox</span>,<br />
-              and Chromium-based browsers.
-            </span>
-          </section>
-        </section>
-        <section class="logo">
-          <img src="/assets/icons/concept.svg" />
-        </section>
+      <section class="logo">
+        <img src="/assets/icons/concept.svg" />
       </section>
     </section>
-    <section class="core-feature">
-      <section class="outline">
-        <section class="content">
-          <h2>Encrypted &amp; Decrypted Automatically</h2>
-          <p>
-            Maskbook allows you to encrypt content when posting on You-Know-Where.<br />
-            Only you and your friends can decrypt them.<br />
-            Not even developers of Maskbook.
-          </p>
-        </section>
-      </section>
-      <section class="content step-by-step">
-        <section>
-          <article>
-            <p>Install Maskbook<br /><a href="/download-links">Download Here</a></p>
-          </article>
-          <article>
-            <p>Verify account ownership</p>
-            <abbr>You will be guided through it once installed.</abbr>
-          </article>
-          <article>
-            <p>Start enjoying the new Web</p>
-            <abbr>Relax and enjoy!</abbr>
-          </article>
-        </section>
-      </section>
-      <section class="audit">
-        <section class="content">
-          <a href="https://github.com/DimensionDev/Maskbook">Audit our source code</a>
-        </section>
-      </section>
+  </section>
+
+  <section class="core-feature site-section">
+    <section class="site-section-header">
+      <h2 class="site-section-title">Encrypted &amp; Decrypted Automatically</h2>
+      <p class="site-section-description">
+        Maskbook allows you to encrypt content when posting on You-Know-Where.<br />
+        Only you and your friends can decrypt them.<br />
+        Not even developers of Maskbook.
+      </p>
     </section>
-    <section class="reasons">
-      <section class="content">
-        <aside>
-          <dl class="title">
-            <dt>Why We Should Encrypt</dt>
-            <dd>We probably have nothing to hide. But we certainly have nothing to surrender. And they must have nothing to steal.</dd>
-          </dl>
-          <section class="reason">
-            <dl>
-              <dt>Reason <span>N/A</span></dt>
-              <dd>[DUMMY]</dd>
-            </dl>
-            <section class="paging">
-              <button class="prev"></button>
-              <button class="next"></button>
-            </section>
-          </section>
-        </aside>
-        <article class="card-group">
-          <section>
-            <dl class="card">
-              <dt>
-                <i class="brand-logo"></i>
-                <section>
-                  <h4>[DUMMY]</h4>
-                  <time>[DUMMY]</time>
-                </section>
-              </dt>
-              <dd>[DUMMY]</dd>
-            </dl>
-          </section>
+    <section class="site-section-body">
+      <div class="step-scroller">
+        <article class="step">
+          <h3 class="step-title">Install Maskbook <a href="/download-links">Download Here</a></h3>
         </article>
-        <nav>
-          <button></button>
-          <button></button>
-          <button></button>
-        </nav>
-      </section>
+        <article class="step">
+          <h3 class="step-title">Verify account ownership</h3>
+          <p class="step-tip">You will be guided through it once installed.</p>
+        </article>
+        <article class="step">
+          <h3 class="step-title">Let's start a new Web</h3>
+          <p class="step-tip">Relax and enjoy!</p>
+        </article>
     </section>
-    <section class="subculture">
-      <section class="content">
-        <dl>
-          <dt>All Our Meme Are Belong To You</dt>
-          <dd>
-            <a class="mask-your-own-meme" href="/brand-guide/#5-meme-usage" target="_blank">Mask Your Own Meme</a>
-          </dd>
+    </div>
+    <section class="site-section-footer">
+      <a href="https://github.com/DimensionDev/Maskbook">Audit our source code</a>
+    </section>
+  </section>
+
+  <section class="ability site-section">
+    <section class="site-section-header">
+      <h2 class="site-section-title">What can Maskbook do?</h2>
+    </section>
+    <div class="site-section-body">
+      <section class="aspect">
+        <div class="aspect-title"></div>
+        <div class="aspect-description">
+          Publish and read encrypted posts
+        </div>
+      </section>
+      <section class="aspect">
+        <div class="aspect-title"></div>
+        <div class="aspect-description">Send and receive cryptocurrencies on social networks</div>
+      </section>
+      <section class="aspect">
+        <div class="aspect-title"></div>
+        <div class="aspect-description">
+          Support Gitcoin fundings on Twitter
+        </div>
+      </section>
+      <section class="aspect">
+        <div class="aspect-title"></div>
+        <div class="aspect-description">Decentralized file storage and sharing</div>
+      </section>
+    </div>
+  </section>
+
+  <section class="reasons site-section" hidden>
+    <section class="content">
+      <aside>
+        <dl class="title">
+          <dt>Why We Should Encrypt</dt>
+          <dd>We probably have nothing to hide. But we certainly have nothing to surrender. And they must have nothing
+            to steal.</dd>
         </dl>
-        <article class="card-group">
-          <section class="card meme-1"></section>
-          <section class="card meme-2"></section>
-          <section class="card meme-3"></section>
-          <section class="card meme-4"></section>
-        </article>
-      </section>
-    </section>
-    <section class="faq">
-      <section class="content">
-        <h2>Frequently Asked Questions</h2>
-        <article>
-          <section>
-            <details>
-              <summary>What is Maskbook?</summary>
-              <p>
-                Maskbook is a portal to the new, open internet. With the Maskbook browser extension and App, you, all Internet users, can create encrypted 
-                posts, play your favorite Blockchain DApps, share encrypted files or send/claim red packet on your favorite social networks, such as Facebook and Twitter. 
-                
-              </p>
-            </details>
-            <details>
-              <summary>Those companies are providing free services, right?</summary>
-              <p>
-                You are right, but providing free services only costs a little — at the same time they make much more money with your online (and even
-                <i>offline</i>) behavior data, which can only be legitimately owned by you, and should only and solely be at your direction. We should stop them
-                exploitating the value of our own data.
-              </p>
-            </details>
-            <details>
-              <summary>Will those companies ban me if I use Maskbook?</summary>
-              <p>
-                There is no allow or disallow — they will have to accept it because the last enemy for them is the users. If they ban you, it means that they
-                could ban all the other billions of users. Wise users like you would soon panic and run for exodus and look for alternatives. Supports from
-                users are the most valuable asset for them — that’s why they will never "massarce" users if there is another option.
-              </p>
-            </details>
-            <details>
-              <summary>Why are you so sure?</summary>
-              <p>
-                We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights,
-                that among these are Ownership of Computation, Liberty of Encryption, and the Pursuit of Privacy.
-              </p>
-            </details>
-            <details>
-              <summary>Can my friends read my encrypted posts or red packet without installing Maskbook?</summary>
-              <p>
-                No. That is why we need you to broadcast such a (great) tool to your friends! We really appreciate it!
-              </p>
-            </details>
+        <section class="reason">
+          <dl>
+            <dt>Reason <span>N/A</span></dt>
+            <dd>[DUMMY]</dd>
+          </dl>
+          <section class="paging">
+            <button class="prev"></button>
+            <button class="next"></button>
           </section>
-          <section>
-            <details>
-              <summary>Will you be able to see what I am posting?</summary>
-              <p>
-                No. Unless we are friends. PERIOD. We are providing this end-to-end tool for you so that
-                all the encryption/decryption processes are conducted on your own computers, and these social network sites are nothing more than tubes for data
-                transmission (read: "transport layer"). All the transmissions and synchronizations are powered by <a href="https://gun.eco">GunDB</a>, a
-                decentralized database that stores and synchronizes the public keys of Maskbook users. You may consider it a cloud vault (read: "Amazon S3")
-                which helps you store publicly available data. In order to ensure service stability, we run a node in the GunDB network as a superpeer with no
-                privileges than other superpeers. However, we do provide an "Everyone mode" that you can choose to share with everyone (aka all Maskbook users).
-              </p>
-            </details>
-            <details>
-              <summary>I still don’t get it.</summary>
-              <p>
-                In short, locally, Maskbook helps you encrypt and decrypt messages and GunDB simplifies the process of authorizing recipients to decrypt. Those
-                social network sites work as an infrastructure like ISPs (e.g. AT&amp;T) that help you store and deliver the encrypted messages so you and your
-                recipients can access them anywhere and anytime.
-              </p>
-            </details>
-            <details>
-              <summary>Nice! Is it free?</summary>
-              <p>
-                YES!!! We will never charge you for this tool and will always release future versions of Maskbook under
-                <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL 3.0</a>, the freest license for free software, so that more developers or even non-developers can join the development and help
-                improving the software.
-              </p>
-            </details>
-            <details>
-              <summary>Can I use it on mobile devices?</summary>
-              <p>Yes!!!!! You can now get <a href="/download-links">Maskbook Mobile</a> on both iOS and Android.</p>
-            </details>
-          </section>
-        </article>
-      </section>
+        </section>
+      </aside>
+      <article class="card-group">
+        <section>
+          <dl class="card">
+            <dt>
+              <i class="brand-logo"></i>
+              <section>
+                <h4>[DUMMY]</h4>
+                <time>[DUMMY]</time>
+              </section>
+            </dt>
+            <dd>[DUMMY]</dd>
+          </dl>
+        </section>
+      </article>
+      <nav>
+        <button></button>
+        <button></button>
+        <button></button>
+      </nav>
     </section>
-    <section class="principle">
-      <section class="content">
-        <h3>Explain like I am a nerd</h3>
-        <p>
-          Alice encrypts cleartext (M) with a random AES key (K) to get ciphertext (CT) and then securely shares <abbr title="AES key">K</abbr> via
-          <abbr title="Elliptic Curve Integrated Encryption Scheme">ECIES</abbr> over <a href="https://en.wikipedia.org/wiki/ECC">SECP256K1</a> with Bob using
-          Bob's public key (K.Bob).<br />
-          Alice publishes <abbr title="CipherText">CT</abbr> on Facebook and synchronizees <abbr title="public key of Bob">K.Bob</abbr> over GUN. Bob can then
-          retrieve <abbr title="AES key">K</abbr> to decrypt <abbr title="cleartext">M</abbr>.
+  </section>
+
+  <section class="subculture site-section">
+    <div class="site-section-header">
+      <h2 class="site-section-title">All Our Meme Are Belong To You</h2>
+      <p class="site-section-description">I thought what I’d do was, I’d pretend I was one of those deaf-mutes.</p>
+      <a class="link-button link-button-outlined" href="/brand-guide/#5-meme-usage" target="_blank">Mask Your Own
+        Meme</a>
+    </div>
+    <section class="site-section-body">
+      <section class="card"></section>
+      <section class="card"></section>
+      <section class="card"></section>
+      <section class="card"></section>
+    </section>
+  </section>
+  <section class="faq site-section">
+    <section class="site-section-header">
+      <h2 class="site-section-title">Frequently Asked Questions</h2>
+    </section>
+    <section class="site-section-body">
+      <article>
+        <section>
+          <details>
+            <summary>What is Maskbook?</summary>
+            <p>
+              Maskbook is a portal to the new, open internet. With the Maskbook browser extension and App, you, all
+              Internet users, can create encrypted
+              posts, play your favorite Blockchain DApps, share encrypted files or send/claim red packet on your
+              favorite social networks, such as Facebook and Twitter.
+
+            </p>
+          </details>
+          <details>
+            <summary>Those companies are providing free services, right?</summary>
+            <p>
+              You are right, but providing free services only costs a little — at the same time they make much more
+              money with your online (and even
+              <i>offline</i>) behavior data, which can only be legitimately owned by you, and should only and solely be
+              at your direction. We should stop them
+              exploitating the value of our own data.
+            </p>
+          </details>
+          <details>
+            <summary>Will those companies ban me if I use Maskbook?</summary>
+            <p>
+              There is no allow or disallow — they will have to accept it because the last enemy for them is the users.
+              If they ban you, it means that they
+              could ban all the other billions of users. Wise users like you would soon panic and run for exodus and
+              look for alternatives. Supports from
+              users are the most valuable asset for them — that’s why they will never "massarce" users if there is
+              another option.
+            </p>
+          </details>
+          <details>
+            <summary>Why are you so sure?</summary>
+            <p>
+              We hold these truths to be self-evident, that all men are created equal, that they are endowed by their
+              Creator with certain unalienable Rights,
+              that among these are Ownership of Computation, Liberty of Encryption, and the Pursuit of Privacy.
+            </p>
+          </details>
+          <details>
+            <summary>Can my friends read my encrypted posts or red packet without installing Maskbook?</summary>
+            <p>
+              No. That is why we need you to broadcast such a (great) tool to your friends! We really appreciate it!
+            </p>
+          </details>
+        </section>
+        <section>
+          <details>
+            <summary>Will you be able to see what I am posting?</summary>
+            <p>
+              No. Unless we are friends. PERIOD. We are providing this end-to-end tool for you so that
+              all the encryption/decryption processes are conducted on your own computers, and these social network
+              sites are nothing more than tubes for data
+              transmission (read: "transport layer"). All the transmissions and synchronizations are powered by <a
+                href="https://gun.eco">GunDB</a>, a
+              decentralized database that stores and synchronizes the public keys of Maskbook users. You may consider it
+              a cloud vault (read: "Amazon S3")
+              which helps you store publicly available data. In order to ensure service stability, we run a node in the
+              GunDB network as a superpeer with no
+              privileges than other superpeers. However, we do provide an "Everyone mode" that you can choose to share
+              with everyone (aka all Maskbook users).
+            </p>
+          </details>
+          <details>
+            <summary>I still don’t get it.</summary>
+            <p>
+              In short, locally, Maskbook helps you encrypt and decrypt messages and GunDB simplifies the process of
+              authorizing recipients to decrypt. Those
+              social network sites work as an infrastructure like ISPs (e.g. AT&amp;T) that help you store and deliver
+              the encrypted messages so you and your
+              recipients can access them anywhere and anytime.
+            </p>
+          </details>
+          <details>
+            <summary>Nice! Is it free?</summary>
+            <p>
+              YES!!! We will never charge you for this tool and will always release future versions of Maskbook under
+              <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL 3.0</a>, the freest license for free software,
+              so that more developers or even non-developers can join the development and help
+              improving the software.
+            </p>
+          </details>
+          <details>
+            <summary>Can I use it on mobile devices?</summary>
+            <p>Yes!!!!! You can now get <a href="/download-links">Maskbook Mobile</a> on both iOS and Android.</p>
+          </details>
+        </section>
+      </article>
+    </section>
+  </section>
+
+  <section class="principle site-section collapsed small">
+    <section class="site-section-header">
+      <h2 class="site-section-title small">Explain like I am a nerd</h2>
+      <p class="site-section-description text-secondary">
+        Alice encrypts cleartext (M) with a random AES key (K) to get ciphertext (CT) and then securely shares <abbr
+          title="AES key">K</abbr> via
+        <abbr title="Elliptic Curve Integrated Encryption Scheme">ECIES</abbr> over <a
+          href="https://en.wikipedia.org/wiki/ECC">SECP256K1</a> with Bob using
+        Bob's public key (K.Bob). Alice publishes <abbr title="CipherText">CT</abbr> on Facebook and synchronizees <abbr
+          title="public key of Bob">K.Bob</abbr> over GUN. Bob can then
+        retrieve <abbr title="AES key">K</abbr> to decrypt <abbr title="cleartext">M</abbr>.
+      </p>
+    </section>
+  </section>
+
+  <section class="recent-news site-section" hidden>
+    <section class="site-section-body">
+      <h2 class="site-section-title">Recent News</h2>
+      <a href="#">Dimension in 6th Annual Hackers Congress Paralelní Poli</a>
+      <time>2019-10-04 (Fri) (UTC+1, Prague)</time>
+    </section>
+  </section>
+
+  <section class="partners site-section collapsed">
+    <section class="site-section-header">
+      <h2 class="site-section-title small">Partners</h2>
+    </section>
+    <section class="site-section-body">
+      <a title="arweave">arweave</a>
+      <a title="ChainIDE">ChinaIDE</a>
+      <a title="gun">gun</a>
+      <a title="okex">OKEX</a>
+    </section>
+  </section>
+
+  <section class="misc site-section collapsed">
+    <section class="site-section-body">
+      <section class="description">
+        <p class="text-secondary">
+          The source code of Maskbook is available on <a href="https://github.com/DimensionDev/Maskbook">GitHub</a>.
+          Maskbook is a Free Software per the
+          definition of <a href="https://fsf.org">Free Software Foundation</a>.
+        </p>
+        <p class="text-secondary">Maskbook is developed and maintained by <a href="https://dimension.im/">Dimension</a>.
         </p>
       </section>
-    </section>
-    <section class="recent-news" hidden>
-      <section class="content">
-        <h3>Recent News</h3>
-        <a href="#">Dimension in 6th Annual Hackers Congress Paralelní Poli</a>
-        <time>2019-10-04 (Fri) (UTC+1, Prague)</time>
-      </section>
-    </section>
-    <section class="partners">
-      <section class="content">
-        <h3>Partners</h3>
+      <nav class="about">
+        <h4>About</h4>
+        <a href="/brand-guide">Brand Guide</a>
+        <a href="mailto:info@dimension.im">Contact Us</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+      </nav>
+      <section class="subscribe">
+        <h4>Get latest news, keep updated.</h4>
+        <form name="subscription">
+          <input type="email" placeholder="Subscribe" />
+          <button type="submit">Submit</button>
+        </form>
         <nav>
-          <a title="ERA">ERA</a>
-          <a title="ChainIDE">ChinaIDE</a>
+          <a href="https://www.facebook.com/groups/324857694838456" title="Facebook"></a>
+          <a href="https://twitter.com/realmaskbook" title="Twitter"></a>
+          <a href="https://github.com/DimensionDev" title="GitHub"></a>
+          <a href="https://t.me/maskbook_group#telegram" title="Telegram"></a>
         </nav>
       </section>
     </section>
-    <section class="footer">
-      <section class="content">
-        <section class="description">
-          <p>
-            The source code of Maskbook is available on <a href="https://github.com/DimensionDev/Maskbook">GitHub</a>. Maskbook is a Free Software per the
-            definition of <a href="https://fsf.org">Free Software Foundation</a>.
-          </p>
-          <p>Maskbook is developed and maintained by <a href="https://dimension.im/">Dimension</a>.</p>
-        </section>
-        <nav class="about">
-          <h4>About</h4>
-          <a href="/brand-guide">Brand Guide</a>
-          <a href="mailto:info@dimension.im">Contact Us</a>
-          <a href="/privacy-policy">Privacy Policy</a>
-        </nav>
-        <section class="subscribe">
-          <h4>Get latest news, keep updated.</h4>
-          <form name="subscription">
-            <input type="email" placeholder="Subscribe" />
-            <button type="submit">Submit</button>
-          </form>
-          <nav>
-            <a href="https://www.facebook.com/groups/324857694838456" title="Facebook"></a>
-            <a href="https://twitter.com/realmaskbook" title="Twitter"></a>
-            <a href="https://github.com/DimensionDev" title="GitHub"></a>
-            <a href="https://t.me/maskbook_group#telegram" title="Telegram"></a>
-          </nav>
-        </section>
-      </section>
+  </section>
+
+  <footer>
+    <p class="description text-secondary">I thought what I’d do was, I’d pretend I was one of those deaf-mutes.</p>
+    <section class="content">
+      <nav class="locale" hidden>
+        <a>English</a>
+        <a>繁体中文</a>
+        <a>简体中文</a>
+      </nav>
     </section>
-    <footer>
-      <section class="content">
-        <nav class="locale" hidden>
-          <a>English</a>
-          <a>繁体中文</a>
-          <a>简体中文</a>
-        </nav>
-      </section>
-    </footer>
-  </body>
+  </footer>
+</body>
+
 </html>
