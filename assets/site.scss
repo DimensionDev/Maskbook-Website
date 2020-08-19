@@ -839,13 +839,14 @@ a {
       background-image: url(./icons/arweave.svg);
     }
     a[title="ChainIDE"] {
-      background-image: url(./icons/partner-chain-ide.png) !important;
+      background-image: url(./icons/chain-ide.png) !important;
     }
     a[title="gun"] {
       background-image: url(./icons/gun.svg);
     }
-    a[title="okex"] {
-      background-image: url(./icons/okex.svg);
+    a[title="marker"] {
+      width: 180px;
+      background-image: url(./icons/marker.svg);
     }
   }
 }
