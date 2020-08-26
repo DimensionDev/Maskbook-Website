@@ -848,6 +848,11 @@ a {
       width: 180px;
       background-image: url(./icons/marker.svg);
     }
+    a[title="web3bootcamp"] {
+      width: 110px;
+      height: 40px;
+      background-image: url(./icons/web30-bootcamp.svg);
+    }
   }
 }
 
