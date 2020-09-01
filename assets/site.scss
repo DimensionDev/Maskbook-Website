@@ -802,9 +802,7 @@ a {
       font-size: 14px;
       font-weight: 300;
       line-height: 1.75;
-
       display: block;
-
       color: #3b3b3b;
     }
   }
@@ -813,7 +811,9 @@ a {
 .partners {
   .site-section-body {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     margin: 32px 0;
 
     a {
@@ -852,6 +852,12 @@ a {
       width: 110px;
       height: 40px;
       background-image: url(./icons/web30-bootcamp.svg);
+    }
+    a[title="okb"] {
+      opacity: 0.5;
+      width: 45px;
+      height: 47px;
+      background-image: url(./icons/okb.svg);
     }
   }
 }
