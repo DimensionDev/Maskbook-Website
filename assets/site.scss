@@ -859,6 +859,11 @@ a {
       height: 46px;
       background-image: url(./icons/okb.svg);
     }
+    a[title="HashKey"] {
+      opacity: 0.4;
+      width: 120px;
+      background-image: url(./icons/hash-key.jpg);
+    }
   }
 }
 
