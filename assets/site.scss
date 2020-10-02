@@ -963,19 +963,11 @@ a {
         width: 24px;
         height: 24px;
 
-        &.discord {
-          color: white;
-          background: #3b3b3b;
-          border-radius: 9999px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
         &:not(:first-child) {
           margin-left: 32px;
         }
-        @each $name in "facebook", "twitter", "github", "telegram" {
+
+        @each $name in "facebook", "twitter", "github", "telegram", "discord" {
           &[href*="#{$name}"] {
             background-image: url("./icons/media-#{$name}.svg");
             background-size: 100% 100%;
