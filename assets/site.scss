@@ -1012,5 +1012,14 @@ footer {
   }
 }
 
+@media screen and (max-width: 580px) {
+  .news a {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
 @import "./site-tablet";
 @import "./site-mobile";
