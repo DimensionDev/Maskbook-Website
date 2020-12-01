@@ -328,6 +328,21 @@ Click “ Compose encrypted post” -> Choose the “ Red Packet” -> Split the
     </section>
   </section>
 
+  <section class="principle site-section collapsed small">
+    <section class="site-section-header">
+      <h2 class="site-section-title small">Explain like I am a nerd</h2>
+      <p class="site-section-description text-secondary">
+        Alice encrypts cleartext (M) with a random AES key (K) to get ciphertext (CT) and then securely shares <abbr
+          title="AES key">K</abbr> via
+        <abbr title="Elliptic Curve Integrated Encryption Scheme">ECIES</abbr> over <a
+          href="https://en.wikipedia.org/wiki/ECC">SECP256K1</a> with Bob using
+        Bob's public key (K.Bob). Alice publishes <abbr title="CipherText">CT</abbr> on Facebook and synchronizees <abbr
+          title="public key of Bob">K.Bob</abbr> over GUN. Bob can then
+        retrieve <abbr title="AES key">K</abbr> to decrypt <abbr title="cleartext">M</abbr>.
+      </p>
+    </section>
+  </section>  
+
   <section class="ability site-section" style="margin-bottom: 4rem;">
     <section class="site-section-header">
       <h2 class="site-section-title">News about us</h2>
@@ -348,21 +363,6 @@ Click “ Compose encrypted post” -> Choose the “ Red Packet” -> Split the
       </a>              
     </section>
   </section>    
-
-  <section class="principle site-section collapsed small">
-    <section class="site-section-header">
-      <h2 class="site-section-title small">Explain like I am a nerd</h2>
-      <p class="site-section-description text-secondary">
-        Alice encrypts cleartext (M) with a random AES key (K) to get ciphertext (CT) and then securely shares <abbr
-          title="AES key">K</abbr> via
-        <abbr title="Elliptic Curve Integrated Encryption Scheme">ECIES</abbr> over <a
-          href="https://en.wikipedia.org/wiki/ECC">SECP256K1</a> with Bob using
-        Bob's public key (K.Bob). Alice publishes <abbr title="CipherText">CT</abbr> on Facebook and synchronizees <abbr
-          title="public key of Bob">K.Bob</abbr> over GUN. Bob can then
-        retrieve <abbr title="AES key">K</abbr> to decrypt <abbr title="cleartext">M</abbr>.
-      </p>
-    </section>
-  </section>
 
   <section class="recent-news site-section" hidden>
     <section class="site-section-body">
