@@ -869,6 +869,11 @@ a {
       width: 40px;
       background-image: url(./icons/gitcoin.png);
     }
+    a[title="cypherhunter"] {
+      opacity: 0.4;
+      width: 140px;
+      background-image: url(./icons/cypherhunter-logo.svg);
+    }
   }
 }
 
