@@ -14,10 +14,6 @@ jQuery(document).ready(function($) {
     $(document.body).toggleClass("no-scroll");
   });
 
-  $("form[name=subscription]").on("submit", function(event) {
-    event.preventDefault();
-  });
-
   $.getJSON("/assets/reasons.json", function(data) {
     var keys = Object.keys(data);
 
