@@ -873,6 +873,13 @@ a {
       width: 180px;
       background-image: url(./icons/alameda.png);
     }
+    a[title="platon"] {
+      width: 160px;
+      opacity: 0.6;      
+      background-image: url(./icons/platon.jpg);
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);      
+    }    
   }
 }
 
