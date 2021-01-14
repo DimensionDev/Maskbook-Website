@@ -1,6 +1,6 @@
 // prettier-ignore
 var links = {
-  "/links?home": "https://maskbook.com",
+  "/links?home": "https://mask.io",
   "/links?mailchimp-signup-maskbook": "http://eepurl.com/gmNnlb",
   "/links?github-forum": "MASKBOOK/discussions",
   "/links?report-bug": "MASKBOOK/issues/new?template=bug.md&assignees=jack-works&projects=DimensionDev/Maskbook/3&title=%5BBug%5D%20&labels=Type%3A%20Bug",
@@ -13,9 +13,9 @@ var links = {
   "/faq?2": "MASKBOOK/wiki/FAQ#why-does-maskbook-recommend-users-to-publish-their-public-keys-in-their-bio",
   "/faqcc?1": "MASKBOOK/wiki/FAQ:-Cryptocurrency-Features#why-is-the-total-collected-amount-slightly-less-than-the-total-spent-amount",
   "/download-latest": "MASKBOOK/releases/latest/download/Maskbook.base.zip",
-  "/news": "https://news.maskbook.com",
+  "/news": "https://news.mask.io",
   "/install-dev": "MASKBOOK/wiki/Manual-Installation",
-  "/privacy-policy": "https://legal.maskbook.com/maskbook/"
+  "/privacy-policy": "https://legal.mask.io/maskbook/"
 };
 
 var path = location.pathname.replace(/\/$/g, "");
