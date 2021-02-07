@@ -1,3 +1,4 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M22 3.76101L20.239 2L12 10.2075L3.76101 2L2 3.76101L10.2075 12L2 20.239L3.76101 22L12 13.7925L20.239 22L22 20.239L13.7925 12L22 3.76101Z" fill="#3B3B3B"/>
+<line x1="4.41364" y1="4.04039" x2="20.0404" y2="20.5864" stroke="#3333FF" stroke-width="2" stroke-linecap="round"/>
+<line x1="1" y1="-1" x2="23.7588" y2="-1" transform="matrix(-0.686624 0.727013 0.727013 0.686624 21 4)" stroke="#3333FF" stroke-width="2" stroke-linecap="round"/>
 </svg>

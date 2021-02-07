@@ -17,7 +17,9 @@ gulp.task("build:css", () =>
     .src("./assets/site.scss")
     .pipe(sass())
     .pipe(base64())
-    .pipe(cssnano())
+    .pipe(cssnano({
+      zindex: false
+    }))
     .pipe(
       px2rem({
         rootValue: 16,

@@ -2,7 +2,7 @@
 var links = {
   "/links?home": "https://maskbook.com",
   "/links?mailchimp-signup-maskbook": "http://eepurl.com/gmNnlb",
-  "/links?github-forum": "MASKBOOK/discussions",
+  "/links?github-forum": "MASKBOOK-Talks",
   "/links?report-bug": "MASKBOOK/issues/new?template=bug.md&assignees=jack-works&projects=DimensionDev/Maskbook/3&title=%5BBug%5D%20&labels=Type%3A%20Bug",
   "/links?ios-app-store": "https://apps.apple.com/app/id1478382964",
   "/links?google-play": "https://play.google.com/store/apps/details?id=com.dimension.maskbook",

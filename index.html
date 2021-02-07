@@ -29,9 +29,30 @@
   <meta name="apple-itunes-app" content="app-id=1478382964" />
   <title>Mask Network (Maskbook)</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/assets/site.css" />
-  <script src="/scripts/jquery-3.4.1.min.js"></script>
-  <script src="/scripts/main.js"></script>
+  <link rel="stylesheet" href="assets/site.css" />
+  <script src="scripts/jquery-3.4.1.min.js"></script>
+  <script src="scripts/main.js"></script>
+
+  <script>
+    window.onload = () => {
+      let navOpen = false;
+      const navToggle = document.getElementById('navToggle');
+      const navDrawer = document.getElementById('navDrawer');
+      const navBg = document.getElementById('navBg');
+      function toggle() {
+        navOpen = !navOpen;
+        if (navOpen) {
+          navToggle.classList.add('open');
+          navDrawer.classList.add('show');
+        } else {
+          navToggle.classList.remove('open');
+          navDrawer.classList.remove('show');
+        }
+      }
+      navToggle.addEventListener('click', toggle);
+      navBg.addEventListener('click', toggle);
+    }
+  </script>
 
   <!-- Google Tag Manager -->
   <script>
@@ -46,98 +67,92 @@
       f.parentNode.insertBefore(j, f);
     })(window, document, "script", "dataLayer", "GTM-WWRTN8P");
   </script>
-  <script type="application/ld+json">
-  {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "url": "https://mask.io",
-      "logo": "https://mask.io/assets/icons/logo.svg"
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Mask Network (Maskbook)",
-    "operatingSystem": "Android, iOS",
-    "applicationCategory": "SecurityApplication",
-    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.1", "reviewCount": 9 },
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
-  }
-  </script>
 </head>
 
 <body>
-  <section class="navbar site-section collapsed">
-    <section class="site-section-body">
+  <section class="navbar wide">
+    <section class="body">
       <a class="navbar-brand">
-        <img src="/assets/icons/logo.svg" width="140px" />
+        <img src="assets/icons/logo.svg" width="200px" />
       </a>
-      <button class="navbar-toggler">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <nav class="navbar-nav">
         <a target="_blank" href="https://github.com/DimensionDev/Maskbook">Source Code</a>
-        <a target="_blank" href="https://news.maskbook.com">Blog</a>
-        <a class="link-button" href="/install">Install</a>
+        <a target="_blank" href="https://news.maskbook.com">News</a>
+        <a class="install" href="/install">Install</a>
       </nav>
     </section>
   </section>
-
-  <section class="install site-section collapsed">
-    <section class="site-section-body">
-      <section class="description">
-        <h1 class="headline">
-          The Portal to the New,<br />
-          Open Internet.
-        </h1>
-        <p class="subline">
-          Encrypt your posts &amp; chats on social networks <br />
-          Allow only your friends to decrypt.
-        </p>
-        <section class="open-store">
-          <a class="link-button" href="/install">
-            Get Mask
-          </a>
-          <span class="link-description">
-            For <span title="Google Chrome">Chrome</span>, <span title="Microsoft Edge">Edge</span>, <span
-              title="Mozilla Firefox">Firefox</span>,<br />
-            and Chromium-based browsers.
-          </span>
-        </section>
-      </section>
-      <section class="logo">
-        <img src="/assets/icons/concept.svg" />
-      </section>
+  <section class="navbar narrow">
+    <section class="body">
+      <a class="logo">
+        <img src="assets/icons/logo.svg" width="140px" />
+      </a>
+      <button class="toggler" id="navToggle"></button>
     </section>
   </section>
+  <section class="navDrawer" id="navDrawer">
+    <div class="bg" id="navBg"></div>
+    <div class="body">
+      <nav class="nav">
+        <a target="_blank" href="https://github.com/DimensionDev/Maskbook">Source Code</a>
+        <a target="_blank" href="https://news.maskbook.com">News</a>
+        <a class="install" href="/install">Install</a>
+      </nav>
+      <div class="social">
+        <a href="https://www.facebook.com/groups/324857694838456" title="Facebook"></a>
+        <a href="https://twitter.com/realmaskbook" title="Twitter"></a>
+        <a href="https://github.com/DimensionDev" title="GitHub"></a>
+        <a href="https://t.me/maskbook_group#telegram" title="Telegram"></a>
+        <a href="https://discord.gg/4SVXvj7" title="Discord"></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="install site-section collapsed">
+    <h1 class="headline">The Portal to the New & Open Internet</h1>
+    <p class="subline">
+      Encrypt your posts &amp; chats on social networks <br />
+      Allow only your friends to decrypt.
+    </p>
+  </section>
+
+  <div class="_line"></div>
 
   <section class="core-feature site-section">
     <section class="site-section-header">
-      <h2 class="site-section-title">Encrypted &amp; Decrypted Automatically</h2>
+      <h2 class="site-section-title">
+        <div>Encrypted</div>
+        <div>+</div>
+        <div>Decrypted</div>
+        <div>Automatically</div>
+      </h2>
       <p class="site-section-description">
-        Mask Network allows you to encrypt content when posting on You-Know-Where.<br />
+        <b>Mask Network</b> allows you to encrypt content when posting on <i>You-Know-Where.</i><br />
         Only you and your friends can decrypt them.<br />
+        <br />
         Not even developers of Mask Network.
       </p>
     </section>
+    <img src="assets/icons/Group 457.svg" class="illust"/>
+    <div class="_line"></div>
     <section class="site-section-body">
-      <div class="step-scroller">
+      <div class="steps">
         <article class="step">
-          <h3 class="step-title">Install Mask Network <a href="/download-links">Download Here</a></h3>
+          <h3 class="title">Install</h3>
+          <img src="assets/icons/Group 418.svg"/>
+          <p class="tip">Install Mask Network extension on your favourite browsers to get started!<br /><br />We support Chrome, Firefox, iOS and Android.</p>
         </article>
         <article class="step">
-          <h3 class="step-title">Verify account ownership</h3>
-          <p class="step-tip">You will be guided through it once installed.</p>
+          <h3 class="title">Verify</h3>
+          <img src="assets/icons/Group 419.svg"/>
+          <p class="tip">You will be guided through a few steps to verify your identity after Mask Network extension is installed. EZ.<br /><br />Piece of cake, anyone?</p>
         </article>
         <article class="step">
-          <h3 class="step-title">Let's enjoy the new Web</h3>
-          <p class="step-tip">Relax and enjoy!</p>
+          <h3 class="title">Enjoy</h3>
+          <img src="assets/icons/Group 420.svg"/>
+          <p class="tip">Whoa that was fast!<br />Now is the time we enjoy and embrace a more secure & private Internet through the social network of your choice.</p>
         </article>
-    </section>
-    </div>
-    <section class="site-section-footer">
-      <a href="https://github.com/DimensionDev/Maskbook">Audit our source code</a>
+      </div>
     </section>
   </section>
 
@@ -146,317 +161,339 @@
       <h2 class="site-section-title">What can Mask Network do?</h2>
     </section>
     <div class="site-section-body">
-      <section class="aspect">
-        <div class="aspect-title"></div>
-        <div class="aspect-description">
-          Send encrypted posts to friends
+      <div>
+        <div>
+          <div>
+            <img src="assets/icons/Group 425.svg"/>
+            <p>
+              <b>Send encrypted posts</b>
+              to friends
+            </p>
+          </div>
         </div>
-      </section>
-      <section class="aspect">
-        <div class="aspect-title"></div>
-        <div class="aspect-description">Send and receive cryptocurrencies on social networks</div>
-      </section>
-      <section class="aspect">
-        <div class="aspect-title"></div>
-        <div class="aspect-description">
-          Support Gitcoin fundings on Twitter
+        <div>
+          <div>
+            <img src="assets/icons/Group 458.svg"/>
+            <h3>Demo 1: Send an encrypted message</h3>
+            <p>Cool people sends stuff to cool people living in cool places</p>
+          </div>
         </div>
+      </div>
+      <div>
+        <div>
+          <div>
+            <img src="assets/icons/Group 414.svg"/>
+            <p>
+              <b>Send & receive crypto currency</b>
+              on social network
+            </p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="assets/icons/Group 458.svg"/>
+            <h3>Demo 2: Send & receive crypto</h3>
+            <p>Cool people sends stuff to cool people living in cool places</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div>
+            <img src="assets/icons/Group 424.svg"/>
+            <p>
+              <b>Support Gitcoin funding directly</b>
+              on Twitter
+            </p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="assets/icons/Group 458.svg"/>
+            <h3>Demo 3: Support Gitcoin grants directly on Twitter</h3>
+            <p>Cool people sends stuff to cool people living in cool places</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div>
+            <img src="assets/icons/Group 426.svg"/>
+            <p>
+              <b>Decentralized file storage</b>
+              and sharing
+            </p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="assets/icons/Group 458.svg"/>
+            <h3>Demo 4: Decentralized file storage and sharing</h3>
+            <p>Cool people sends stuff to cool people living in cool places</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="site-section-footer">
+      <h2 class="site-section-title">Convinced? Curious? Let’s try out!</h2>
+      <section class="open-store">
+        <a class="link-button" href="/install">
+          Get Mask
+        </a>
+        <span class="link-description">
+          For <span title="Google Chrome">Chrome</span>, <span title="Microsoft Edge">Edge</span>, <span
+            title="Mozilla Firefox">Firefox</span>,<br />
+          and Chromium-based browsers.
+        </span>
       </section>
-      <section class="aspect">
-        <div class="aspect-title"></div>
-        <div class="aspect-description">Decentralized file storage and sharing</div>
-      </section>
+    </section>
+  </section>
+
+  <section class="meme-away site-section">
+    <div class="body">
+      <h2>Meme away!</h2>
+      <p>
+        Digital life wouldn’t be completed without memes.<br/>
+        <b>Mask Network</b>‘s meme is a statement. We stand for better privacy and security for all.<br/>
+        <br/>
+        Let’s meme it until we make it.<br/>
+        <b>Mask</b> your idols, <b>Mask</b> your avatar, <b>Mask</b> your president. 
+      </p>
+    </div>
+    <div class="images">
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
     </div>
   </section>
 
-  <section class="reasons site-section" hidden>
-    <section class="content">
-      <aside>
-        <dl class="title">
-          <dt>Why We Should Encrypt</dt>
-          <dd>We probably have nothing to hide. But we certainly have nothing to surrender. And they must have nothing
-            to steal.</dd>
-        </dl>
-        <section class="reason">
-          <dl>
-            <dt>Reason <span>N/A</span></dt>
-            <dd>[DUMMY]</dd>
-          </dl>
-          <section class="paging">
-            <button class="prev"></button>
-            <button class="next"></button>
+  <section class="faq site-section">
+    <div class="body">
+      <h2>Frequently Asked Questions</h2>
+      <section class="site-section-body">
+        <article>
+          <section>
+            <h2>Getting Started</h2>
+            <details>
+              <summary>Where can I use Mask Network?</summary>
+              <p>
+                Mask Network is now available on Facebook and Twitter. We will support more platforms in the future.
+              </p>
+            </details>
+            <details>
+              <summary>How to install Mask Network?</summary>
+              <p>
+                Go to https://mask.io/install to install Mask Network directly. You can also install through the Chrome Webstore, Google Play Store(beta), or the Apple App Store(beta).
+              </p>
+            </details>
+            <details>
+              <summary>How to create a persona?</summary>
+              <p>
+                Mask Network will automatically remind your own peronas since you use for the first time.Just follow the steps!
+  Click “Enter the Dashboard” -> “Personas” -> “Create persona” -> Enter Name -> Click “ Create” -> Choose to connect Twitter or Facebook account -> Mask Network will automatically find your username, confirm and click “Connect” -> Done, remember to “Say Hello to everyone”
+              </p>
+            </details>
+            <details>
+              <summary>Explain like I am a nerd</summary>
+              <p>
+                Alice encrypts cleartext (M) with a random AES key (K) to get ciphertext (CT) and then securely shares <abbr
+                title="AES key">K</abbr> via
+              <abbr title="Elliptic Curve Integrated Encryption Scheme">ECIES</abbr> over <a
+                href="https://en.wikipedia.org/wiki/ECC">SECP256K1</a> with Bob using
+              Bob's public key (K.Bob). Alice publishes <abbr title="CipherText">CT</abbr> on Facebook and synchronizees <abbr
+                title="public key of Bob">K.Bob</abbr> over GUN. Bob can then
+              retrieve <abbr title="AES key">K</abbr> to decrypt <abbr title="cleartext">M</abbr>.
+              </p>
+            </details>          
+            <h2>Trade and Swaps</h2>
+            <details>
+              <summary>View crypto price charts</summary>
+              <p>Mask Network support price chart by both CoinMarketCap and CoinGecko. Hover your mouse to “$+ticker” like $ETH or $UNI, our widget will automatically detect and pop up with the latest price chart of the token.</p>
+            </details>    
+            <details>
+              <summary>Fetch trending data from different platforms</summary>
+              <p>Mask Network support price chart by both CoinMarketCap and CoinGecko. You can change the data source on settings.</p>
+            </details>  
+            <details>
+              <summary>What is swap and where can I find?</summary>
+              <p>Mask Network will auto-detect trading pairs on Uniswap🦄️ and the “Swap🔥” will be lit. Click “Swap🔥”and you will be able to purchase the token.</p>
+            </details>  
+            <details>
+              <summary>Does Mask Network charge a fee on swap?</summary>
+              <p>No, the swap on Mask Network is provided by Uniswap, we don’t charge any fee.</p>
+            </details>  
+            <h2>File Service</h2>
+            <details>
+              <summary>How to use the file service on Mask Network?</summary>
+              <p>Click “ Compose encrypted post” -> Choose the “File Service” -> Add the files you want, we support various file types -> Click “ Use the file” -> Also you can add the encrypted text -> Finish</p>
+            </details>    
+            <details>
+              <summary>Can my friends see the uploaded file?</summary>
+              <p>Only our users with the proper permission can see this file. </p>
+            </details>               
+          </section> 
+  
+          <section>
+            <h2>Compose encrypted posts</h2>
+            <details>
+              <summary>How to send encrypted posts to your friend?</summary>
+              <p>
+                Mask Network allows the users to send encrypted posts on the decentralized social media.
+  Click “ Compose encrypted post” -> Write down the encrypted post -> Select Recipients, you can choose whoever you want to share the post with -> Click “Finish” -> Mask Network will automatically generate some text. -> “Tweet” or “Post” it as usual
+              </p>
+            </details>
+            <details>
+              <summary>Can I modify the encrypted post?</summary>
+              <p>
+                Leave the pasted url unchanged and you can feel free to modify the rest.
+              </p>
+            </details>
+            <h2>Red Packet and wallet</h2>
+            <details>
+              <summary>How to create a wallet?</summary>
+              <p>
+                Mask Network will automatically create an Ethereum wallet for you since you create a persona. Or you can create a wallet on the dashboard.
+  Click “Enter the Dashboard” -> “Wallets” -> “Create Wallet” -> Enter Wallet Name -> Choose “ I confirm that i need to create a wallet” -> Click “Import” -> Done!
+              </p>
+            </details>
+            <details>
+              <summary>How to connect my original wallets?</summary>
+              <p>
+                Since you have you own Ethereum wallet, Mask Network also supports importing Metamask wallets. And we will support other wallets soon.
+  Click “Enter the Dashboard” -> “Wallets” -> Click “Connect” -> Choose MetaMask and connect
+              </p>
+            </details>
+            <details>
+              <summary>How to send a red packet?</summary>
+              <p>
+                It’s easy to send a red packet on social media. 
+  Click “ Compose encrypted post” -> Choose the “ Red Packet” -> Split the “Average” or “Random” mode -> Enter the share amounts -> Enter the Attached Message -> Click “Send”
+              </p>
+            </details>
+            <details>
+              <summary>How to receive a red packet?</summary>
+              <p>That’s easy! Just find a red packet and click it!</p>
+            </details>
+            <details>
+              <summary>Can my friends read my encrypted posts or red packet without installing Mask Network?</summary>
+              <p>No. That is why we need you to broadcast such a great new world to your friends! We really appreciate it!</p>
+            </details>
+            <details>
+              <summary>How to view the history and detail information of sended Red Packet?</summary>
+              <p>Click the blue smiley face on the top right corner. -&gt;Click “Enter the Dashboard” -
+                &gt; “Wallets” -&gt; Choose &quot;Activity&quot; -&gt; ”OutBound“, You can see an OutBound
+                list, Select the record you need to view.</p>
+            </details>
+            <details>
+              <summary>How to view the history and detail information of received Red Packet?</summary>
+              <p>Click the blue smiley face on the top right corner. -&gt;Click “Enter the Dashboard” -
+                &gt; “Wallets” -&gt; Choose &quot;Activity&quot; -&gt; InBound, You can see an OutBound list, Select
+                the record you need to view.</p>
+            </details>
+            <details>
+              <summary>How long is the Red Packet validity period? What happens when the red packet is expired?</summary>
+              <p>The current Red Packet is valid for 24 hours. After 24 hours, if the Red Packet has
+                a remaining quantity, the remaining cryptocurrency will be refunded. You can
+                find that record in “Dashboard” -&gt; “Wallets” -&gt; Choose &quot;Activity&quot; -&gt; OutBound and click the record to refund.</p>
+            </details>
           </section>
-        </section>
-      </aside>
-      <article class="card-group">
-        <section>
-          <dl class="card">
-            <dt>
-              <i class="brand-logo"></i>
-              <section>
-                <h4>[DUMMY]</h4>
-                <time>[DUMMY]</time>
-              </section>
-            </dt>
-            <dd>[DUMMY]</dd>
-          </dl>
-        </section>
-      </article>
-      <nav>
-        <button></button>
-        <button></button>
-        <button></button>
-      </nav>
-    </section>
-  </section>
-
-  <section class="subculture site-section">
-    <div class="site-section-header">
-      <h2 class="site-section-title">All Our Meme Are Belong To You</h2>
-      <p class="site-section-description">I thought what I’d do was, I’d pretend I was one of those deaf-mutes.</p>
-      <a class="link-button link-button-outlined" href="/brand-guide/#5-meme-usage" target="_blank">Mask Your Own
-        Meme</a>
+        </article>
+      </section>
     </div>
-    <section class="site-section-body">
-      <section class="card"></section>
-      <section class="card"></section>
-      <section class="card"></section>
-      <section class="card"></section>
-    </section>
   </section>
-  <section class="faq site-section" style="margin-bottom: 0">
-    <section class="site-section-header">
-      <h2 class="site-section-title">Frequently Asked Questions</h2>
-    </section>
-    <section class="site-section-body">
-      <article>
-        <section>          
-          <h2>Getting Started</h2>
-          <details>
-            <summary>Where can I use Mask Network?</summary>
-            <p>
-              Mask Network is now available on Facebook and Twitter. We will support more platforms in the future.
-            </p>
-          </details>
-          <details>
-            <summary>How to install Mask Network?</summary>
-            <p>
-              Go to https://mask.io/install to install Mask Network directly. You can also install through the Chrome Webstore, Google Play Store(beta), or the Apple App Store(beta).
-            </p>
-          </details>
-          <details>
-            <summary>How to create a persona?</summary>
-            <p>
-              Mask Network will automatically remind your own peronas since you use for the first time.Just follow the steps!
-Click “Enter the Dashboard” -> “Personas” -> “Create persona” -> Enter Name -> Click “ Create” -> Choose to connect Twitter or Facebook account -> Mask Network will automatically find your username, confirm and click “Connect” -> Done, remember to “Say Hello to everyone”
-            </p>
-          </details>
-          <details>
-            <summary>Explain like I am a nerd</summary>
-            <p>
-              Alice encrypts cleartext (M) with a random AES key (K) to get ciphertext (CT) and then securely shares <abbr
-              title="AES key">K</abbr> via
-            <abbr title="Elliptic Curve Integrated Encryption Scheme">ECIES</abbr> over <a
-              href="https://en.wikipedia.org/wiki/ECC">SECP256K1</a> with Bob using
-            Bob's public key (K.Bob). Alice publishes <abbr title="CipherText">CT</abbr> on Facebook and synchronizees <abbr
-              title="public key of Bob">K.Bob</abbr> over GUN. Bob can then
-            retrieve <abbr title="AES key">K</abbr> to decrypt <abbr title="cleartext">M</abbr>.
-            </p>
-          </details>          
-          <h2>Trade and Swaps</h2>
-          <details>
-            <summary>View crypto price charts</summary>
-            <p>Mask Network support price chart by both CoinMarketCap and CoinGecko. Hover your mouse to “$+ticker” like $ETH or $UNI, our widget will automatically detect and pop up with the latest price chart of the token.</p>
-          </details>    
-          <details>
-            <summary>Fetch trending data from different platforms</summary>
-            <p>Mask Network support price chart by both CoinMarketCap and CoinGecko. You can change the data source on settings.</p>
-          </details>  
-          <details>
-            <summary>What is swap and where can I find?</summary>
-            <p>Mask Network will auto-detect trading pairs on Uniswap🦄️ and the “Swap🔥” will be lit. Click “Swap🔥”and you will be able to purchase the token.</p>
-          </details>  
-          <details>
-            <summary>Does Mask Network charge a fee on swap?</summary>
-            <p>No, the swap on Mask Network is provided by Uniswap, we don’t charge any fee.</p>
-          </details>  
-          <h2>File Service</h2>
-          <details>
-            <summary>How to use the file service on Mask Network?</summary>
-            <p>Click “ Compose encrypted post” -> Choose the “File Service” -> Add the files you want, we support various file types -> Click “ Use the file” -> Also you can add the encrypted text -> Finish</p>
-          </details>    
-          <details>
-            <summary>Can my friends see the uploaded file?</summary>
-            <p>Only our users with the proper permission can see this file. </p>
-          </details>               
-        </section> 
 
+  <section class="news site-section">
+    <div class="body">
+      <h2>News about us</h2>
+      <div class="logos">
+        <a href="https://www.coindesk.com/mask-network-twitter-encrypted-messages-hashkey-funding-round" style="margin-right: 20px;">
+          <img src="img/news/coindesk.png" height="45px"/>
+        </a>
+        <a href="https://decrypt.co/32298/maskbook-a-chinese-dev-builds-a-web3-trojan-horse-on-twitter-and-facebook" style="display: flex; align-items: center; margin-right: 20px;">
+          <img src="img/news/decrypt-mark-100.png" height="50px" />
+          <img src="img/news/decrypt-word-300.png" height="30px" style="margin-left: 15px; transform: translateY(2px);" />
+        </a>      
+        <a href="https://www.theblockcrypto.com/genesis/79395/defi-digest-mask-network-and-marqet">
+          <img src="img/news/block.png" height="50px" />
+        </a>        
+        <a href="https://cointelegraph.com/news/you-can-now-trade-on-uniswap-without-leaving-twitter">
+          <img src="img/news/cointelegraph.png" height="50px" />
+        </a>      
+      </div>
+    </div>
+  </section>  
+
+  <section class="partners site-section">
+    <div class="body">
+      <h2>Partners and supporters</h2>
+      <div class="logos">
+        <a title="arweave" href="https://www.arweave.org/" target="_blank" rel="noopener noreferrer">arweave</a>
+        <a title="ChainIDE" href="https://chainide.com/" target="_blank" rel="noopener noreferrer">ChinaIDE</a>
+        <a title="gun">gun</a>
+        <a title="maker" href="https://makerdao.com/" target="_blank" rel="noopener noreferrer">Maker</a>
+        <a title="web3bootcamp">web3.0 bootcamp</a>
+      </div>
+      <div class="logos">
+        <a title="okb">OKB</a>
+        <a title="HashKey" href="https://www.hashkey.com/" target="_blank" rel="noopener noreferrer">HashKey</a>
+        <a title="Gitcoin" href="http://gitcoin.co/" target="_blank" rel="noopener noreferrer">Gitcoin</a>
+        <a title="alameda" href="https://www.alameda-research.com/" target="_blank" rel="noopener noreferrer">alameda</a>
+        <a title="platon">platon</a>        
+      </div>
+    </div>
+  </section>
+
+  <section class="alicebob site-section">
+    <div class="body">
+      <div class="top">
+        <div class="line"></div>
+      </div>
+      <i class="text">
+        Alice encrypts cleartext (M) with a random AES key (K) to get ciphertext (CT) and then securely shares K via ECIES over SECP256K1 with Bob using Bob's public key (K.Bob). Alice publishes CT on Facebook and synchronizees K.Bob over GUN. Bob can then retrieve K to decrypt M.
+      </i>
+      <div class="bottom">
+        <div class="line"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer site-section">
+    <div class="body">
+      <div class="main">
+        <p>Mask Network is a Free Software developed and maintained by Dimension.<br/>The source code of Mask Network is available on GitHub. </p>
         <section>
-          <h2>Compose encrypted posts</h2>
-          <details>
-            <summary>How to send encrypted posts to your friend?</summary>
-            <p>
-              Mask Network allows the users to send encrypted posts on the decentralized social media.
-Click “ Compose encrypted post” -> Write down the encrypted post -> Select Recipients, you can choose whoever you want to share the post with -> Click “Finish” -> Mask Network will automatically generate some text. -> “Tweet” or “Post” it as usual
-            </p>
-          </details>
-          <details>
-            <summary>Can I modify the encrypted post?</summary>
-            <p>
-              Leave the pasted url unchanged and you can feel free to modify the rest.
-            </p>
-          </details>
-          <h2>Red Packet and wallet</h2>
-          <details>
-            <summary>How to create a wallet?</summary>
-            <p>
-              Mask Network will automatically create an Ethereum wallet for you since you create a persona. Or you can create a wallet on the dashboard.
-Click “Enter the Dashboard” -> “Wallets” -> “Create Wallet” -> Enter Wallet Name -> Choose “ I confirm that i need to create a wallet” -> Click “Import” -> Done!
-            </p>
-          </details>
-          <details>
-            <summary>How to connect my original wallets?</summary>
-            <p>
-              Since you have you own Ethereum wallet, Mask Network also supports importing Metamask wallets. And we will support other wallets soon.
-Click “Enter the Dashboard” -> “Wallets” -> Click “Connect” -> Choose MetaMask and connect
-            </p>
-          </details>
-          <details>
-            <summary>How to send a red packet?</summary>
-            <p>
-              It’s easy to send a red packet on social media. 
-Click “ Compose encrypted post” -> Choose the “ Red Packet” -> Split the “Average” or “Random” mode -> Enter the share amounts -> Enter the Attached Message -> Click “Send”
-            </p>
-          </details>
-          <details>
-            <summary>How to receive a red packet?</summary>
-            <p>That’s easy! Just find a red packet and click it!</p>
-          </details>
-          <details>
-            <summary>Can my friends read my encrypted posts or red packet without installing Mask Network?</summary>
-            <p>No. That is why we need you to broadcast such a great new world to your friends! We really appreciate it!</p>
-          </details>
-          <details>
-            <summary>How to view the history and detail information of sended Red Packet?</summary>
-            <p>Click the blue smiley face on the top right corner. -&gt;Click “Enter the Dashboard” -
-              &gt; “Wallets” -&gt; Choose &quot;Activity&quot; -&gt; ”OutBound“, You can see an OutBound
-              list, Select the record you need to view.</p>
-          </details>
-          <details>
-            <summary>How to view the history and detail information of received Red Packet?</summary>
-            <p>Click the blue smiley face on the top right corner. -&gt;Click “Enter the Dashboard” -
-              &gt; “Wallets” -&gt; Choose &quot;Activity&quot; -&gt; InBound, You can see an OutBound list, Select
-              the record you need to view.</p>
-          </details>
-          <details>
-            <summary>How long is the Red Packet validity period? What happens when the red packet is expired?</summary>
-            <p>The current Red Packet is valid for 24 hours. After 24 hours, if the Red Packet has
-              a remaining quantity, the remaining cryptocurrency will be refunded. You can
-              find that record in “Dashboard” -&gt; “Wallets” -&gt; Choose &quot;Activity&quot; -&gt; OutBound and click the record to refund.</p>
-          </details>
+          <h3>Get latest news and updates</h3>
+          <form
+            name="subscription" 
+            method="post"
+            target="_blank" 
+            novalidate
+            action="https://dimension.us20.list-manage.com/subscribe/post?u=bd44f8df98ab3d8daf8bbe020&amp;id=d23c8870f6">          
+            <input type="email" name="EMAIL" placeholder="Subscribe" />
+            <button type="submit" style="cursor: pointer;"></button>
+          </form>
+          <nav>
+            <a href="https://www.facebook.com/groups/324857694838456" title="Facebook" target="_blank"></a>
+            <a href="https://twitter.com/realmaskbook" title="Twitter" target="_blank"></a>
+            <a href="https://github.com/DimensionDev" title="GitHub" target="_blank"></a>
+            <a href="https://t.me/maskbook_group#telegram" title="Telegram" target="_blank"></a>
+            <a href="https://discord.gg/4SVXvj7" title="Discord" target="_blank"></a>
+          </nav>
         </section>
-      </article>
-    </section>
-  </section>
-
-  <section class="ability site-section" style="margin-bottom: 4rem;">
-    <section class="site-section-header">
-      <h2 class="site-section-title">News about us</h2>
-    </section>
-    <section class="site-section-body news" style="display: flex; justify-content: space-between;">
-      <a href="https://www.coindesk.com/mask-network-twitter-encrypted-messages-hashkey-funding-round" style="margin-right: 20px;">
-        <img src="img/news/coindesk.png" height="45px"/>
-      </a>
-      <a href="https://decrypt.co/32298/maskbook-a-chinese-dev-builds-a-web3-trojan-horse-on-twitter-and-facebook" style="display: flex; align-items: center; margin-right: 20px;">
-        <img src="img/news/decrypt-mark-100.png" height="50px" />
-        <img src="img/news/decrypt-word-300.png" height="30px" style="margin-left: 15px; transform: translateY(2px);" />
-      </a>      
-      <a href="https://www.theblockcrypto.com/genesis/79395/defi-digest-mask-network-and-marqet">
-        <img src="img/news/block.png" height="50px" />
-      </a>        
-      <a href="https://cointelegraph.com/news/you-can-now-trade-on-uniswap-without-leaving-twitter">
-        <img src="img/news/cointelegraph.png" height="50px" />
-      </a>              
-    </section>
-  </section>    
-
-  <section class="recent-news site-section" hidden>
-    <section class="site-section-body">
-      <h2 class="site-section-title">Recent News</h2>
-      <a href="#">Dimension in 6th Annual Hackers Congress Paralelní Poli</a>
-      <time>2019-10-04 (Fri) (UTC+1, Prague)</time>
-    </section>
-  </section>
-
-  <section class="partners site-section collapsed">
-    <section class="site-section-header">
-      <h2 class="site-section-title">Partner & Supporter</h2>
-    </section>
-    <section class="site-section-body">
-      <a title="arweave" href="https://www.arweave.org/" target="_blank" rel="noopener noreferrer">arweave</a>
-      <a title="ChainIDE" href="https://chainide.com/" target="_blank" rel="noopener noreferrer">ChinaIDE</a>
-      <a title="gun">gun</a>
-      <a title="maker" href="https://makerdao.com/" target="_blank" rel="noopener noreferrer">Maker</a>
-      <a title="web3bootcamp">web3.0 bootcamp</a>
-    </section>
-    <section class="site-section-body">
-      <a title="okb">OKB</a>
-      <a title="HashKey" href="https://www.hashkey.com/" target="_blank" rel="noopener noreferrer">HashKey</a>
-      <a title="Gitcoin">Gitcoin</a>
-      <a title="alameda" href="https://www.alameda-research.com/" target="_blank" rel="noopener noreferrer">alameda</a>
-      <a title="platon">platon</a>
-    </section>    
-  </section>
-
-  <section class="misc site-section collapsed">
-    <section class="site-section-body">
-      <section class="description">
-        <p class="text-secondary">
-          The source code of Mask Network is available on <a href="https://github.com/DimensionDev/Maskbook">GitHub</a>.
-          Mask Network is a <a href="https://www.gnu.org/philosophy/free-sw.html">Free Software</a>.
-        </p>
-        <p class="text-secondary">Mask Network is developed and maintained by <a
-            href="https://dimension.im/">Dimension</a>.
-        </p>
-      </section>
-      <nav class="about">
-        <h4>About</h4>
-        <a href="/brand-guide">Brand Guide</a>
-        <a href="mailto:info@dimension.im">Contact Us</a>
-        <a href="/privacy-policy">Privacy Policy</a>
-      </nav>
-      <section class="subscribe">
-        <h4>Get latest news, keep updated.</h4>
-        <form 
-          name="subscription" 
-          method="post"
-          target="_blank" 
-          novalidate
-          action="https://dimension.us20.list-manage.com/subscribe/post?u=bd44f8df98ab3d8daf8bbe020&amp;id=d23c8870f6">
-          <input type="email" name="EMAIL" placeholder="Subscribe" />
-          <button type="submit" style="cursor: pointer;">Submit</button>
-        </form>               
-        <nav>
-          <a href="https://www.facebook.com/masknetwork" title="Facebook"></a>
-          <a href="https://twitter.com/realmaskbook" title="Twitter"></a>
-          <a href="https://github.com/DimensionDev" title="GitHub"></a>
-          <a href="https://t.me/maskbook_group#telegram" title="Telegram"></a>
-          <a href="https://discord.gg/4SVXvj7" title="Discord"></a>
+      </div>
+      <div class="sub">
+        <nav class="about">
+          <h4>About</h4>
+          <a href="/brand-guide" target="_blank">Brand Guide</a>
+          <a href="mailto:info@dimension.im" target="_blank">Contact Us</a>
+          <a href="/privacy-policy" target="_blank">Privacy Policy</a>
         </nav>
-      </section>
-    </section>
+      </div>
+    </div>
+    <div class="body2">
+      <p>I thought what I’d do was, I’d pretend I was one of those deaf-mutes.</p>
+    </div>
   </section>
-
-  <footer>
-    <p class="description text-secondary">I thought what I’d do was, I’d pretend I was one of those deaf-mutes.</p>
-    <section class="content">
-      <nav class="locale" hidden>
-        <a>English</a>
-        <a>繁体中文</a>
-        <a>简体中文</a>
-      </nav>
-    </section>
-  </footer>
 </body>
-
 </html>

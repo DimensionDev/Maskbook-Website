@@ -2,12 +2,14 @@
   "name": "maskbook-website",
   "private": true,
   "scripts": {
+    "build": "gulp build",
     "build:css": "gulp build:css",
     "build:links": "gulp build:links",
     "sprite": "gulp sprite",
     "start": "serve",
     "watch": "gulp"
   },
+  "homepage": "https://zhouhanseng.github.io/temtemtem/",
   "devDependencies": {
     "@types/gulp": "^4.0.6",
     "@types/gulp-rename": "^0.0.33",
