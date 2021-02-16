@@ -829,57 +829,180 @@ a {
       color: transparent;
       background: no-repeat center;
       background-size: 100%;
+
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+
       &:not(:first-child) {
         margin-left: 32px;
       }
     }
-
     a[title="arweave"] {
       width: 180px;
-      background-image: url(./icons/arweave.svg);
+      background-image: url(./icons/partner/arweave.png);
+      opacity: 0.6;      
     }
     a[title="ChainIDE"] {
-      background-image: url(./icons/chain-ide.png) !important;
+      background-image: url(./icons/partner/chain-ide.png) !important;
     }
     a[title="gun"] {
-      background-image: url(./icons/gun.svg);
+      background-image: url(./icons/partner/gunDB.png);
+      opacity: 0.6;
     }
     a[title="maker"] {
       width: 160px;
-      background-image: url(./icons/maker.svg);
+      background-image: url(./icons/partner/Makerdao.png);
     }
     a[title="web3bootcamp"] {
       width: 100px;
       height: 40px;
-      background-image: url(./icons/web30-bootcamp.svg);
+      background-image: url(./icons/partner/web30-bootcamp.svg);
     }
     a[title="okb"] {
       opacity: 0.5;
       width: 45px;
       height: 46px;
-      background-image: url(./icons/okb.svg);
-    }
-    a[title="HashKey"] {
-      opacity: 0.4;
-      width: 110px;
-      background-image: url(./icons/hash-key.jpg);
-    }
-    a[title="Gitcoin"] {
-      opacity: 0.4;
-      width: 40px;
-      background-image: url(./icons/gitcoin.png);
-    }
-    a[title="alameda"] {
-      width: 180px;
-      background-image: url(./icons/alameda.png);
+      background-image: url(./icons/partner/okb.svg);
     }
     a[title="platon"] {
       width: 160px;
       opacity: 0.6;      
-      background-image: url(./icons/platon.jpg);
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);      
+      background-image: url(./icons/partner/platon.jpg);  
+    }       
+    a[title="Gitcoin"] {
+      opacity: 0.4;
+      width: 140px;
+      background-image: url(./icons/partner/gitcoin.png);
+    }
+    a[title="0X"] {
+      width: 160px;
+      opacity: 0.6;      
+      background-image: url(./icons/partner/0X.png);  
+    }        
+    a[title="ArDrive"] {
+      width: 160px;
+      opacity: 0.6;      
+      background-image: url(./icons/partner/ArDrive.png);  
+    }          
+    a[title="uniswap"] {
+      width: 160px;
+      opacity: 0.6;      
+      background-image: url(./icons/partner/uniswap.png);  
+    }        
+    a[title="coinmarketcap"] {
+      width: 160px;
+      opacity: 0.6;      
+      background-image: url(./icons/partner/coinmarketcap.png);  
+    }      
+    a[title="injective-protocol"] {
+      width: 160px;
+      opacity: 0.6;      
+      background-image: url(./icons/partner/injective-protocol.png);  
+    }        
+    a[title="loopring"] {
+      width: 120px;
+      opacity: 0.6;      
+      background-image: url(./icons/partner/loopring.svg);  
+    }     
+    a[title="metamask"] {
+      width: 160px;
+      opacity: 0.6;      
+      background-image: url(./icons/partner/metamask.svg);  
+    }
+    a[title="mirror"] {
+      width: 160px;
+      opacity: 0.6;      
+      background-image: url(./icons/partner/mirror.png);  
+    } 
+    a[title="serum"] {
+      width: 140px;
+      opacity: 0.6;      
+      background-image: url(./icons/partner/serum.png);  
+    }     
+    a[title="SIA"] {
+      width: 40px;
+      opacity: 0.6;      
+      background-image: url(./icons/partner/SIA.png);  
+    }       
+    a[title="solana"] {
+      width: 160px;
+      opacity: 0.6;      
+      background-image: url(./icons/partner/solana.png);  
+    }           
+    a[title="sushiswap"] {
+      width: 160px;
+      opacity: 0.6;      
+      background-image: url(./icons/partner/sushiswap.png);  
+    }     
+    a[title="Transak"] {
+      width: 140px;
+      opacity: 0.6;      
+      background-image: url(./icons/partner/Transak.png);  
+    }         
+
+    
+    a[title="alameda"] {
+      width: 180px;
+      background-image: url(./icons/supporter/Alameda.png);
     }    
+    a[title="HashKey"] {
+      opacity: 0.6;
+      width: 160px;
+      background-image: url(./icons/supporter/hashkey.png);
+    }    
+    a[title="Animoca"] {
+      opacity: 0.6;
+      width: 60px;
+      background-image: url(./icons/supporter/Animoca.png);
+    }
+    a[title="DCG"] {
+      opacity: 0.6;
+      width: 80px;
+      background-image: url(./icons/supporter/DCG.png);
+    }    
+    a[title="evernew"] {
+      opacity: 0.6;
+      width: 100px;
+      height: 100px;
+      background-image: url(./icons/supporter/evernew.png);
+    }     
+    a[title="fundamental"] {
+      opacity: 0.6;
+      width: 140px;
+      background-image: url(./icons/supporter/fundamental.png);
+    }    
+    a[title="hashglobal"] {
+      opacity: 0.6;
+      width: 120px;
+      height: 120px;
+      background-image: url(./icons/supporter/hashglobal.png);
+    }    
+    a[title="IOSG"] {
+      opacity: 0.6;
+      width: 100px;
+      background-image: url(./icons/supporter/IOSG.png);
+    }     
+    a[title="sevenx"] {
+      opacity: 0.6;
+      width: 100px;
+      background-image: url(./icons/supporter/sevenx.png);
+    }  
+    a[title="sino"] {
+      opacity: 0.6;
+      width: 100px;
+      background-image: url(./icons/supporter/sino.png);
+    }      
+    a[title="snz"] {
+      opacity: 0.6;
+      width: 100px;
+      background-image: url(./icons/supporter/snz.png);
+    }          
+    a[title="youbi"] {
+      opacity: 0.6;
+      height: 60px;
+      width: 120px;
+      background-image: url(./icons/supporter/youbi.png);
+    }        
   }
 }
 
@@ -1029,6 +1152,12 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 10px;
+  }
+
+  .partners a {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
