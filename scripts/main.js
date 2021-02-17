@@ -1,4 +1,15 @@
 jQuery(document).ready(function($) {
+  var i18n = $.i18n()
+  i18n.load({
+    en: 'i18n/en.json',
+    zh: 'i18n/zh.json'
+  })  
+  var localStorageLang = window.localStorage.getItem('mask_language')
+  var lang = localStorageLang ? 
+    localStorageLang : ['zh', 'en'].includes(navigator.language) ? 
+    navigator.language : 'en'
+  setLocale(lang)
+
   $('a[href$="/install"]').attr("href", function() {
     const agent = navigator.userAgent;
     if (/Chrome/i.test(agent)) {
@@ -67,4 +78,20 @@ jQuery(document).ready(function($) {
       setCardGroup($(this).index());
     });
   });
+
+  $('#i18n-en').on("click", function() {
+    setLocale('en', true)
+  })
+
+  $('#i18n-zh').on("click", function() {
+    setLocale('zh', true)
+  })  
+
+  function setLocale (lang, cache = false) {
+    setTimeout(() => {
+      i18n.locale = lang
+      if (cache) window.localStorage.setItem('mask_language', lang)
+      $('body').i18n()
+    }, 1000)
+  }  
 });
