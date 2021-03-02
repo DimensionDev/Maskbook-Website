@@ -212,14 +212,6 @@ a {
   }
 }
 
-.site-section {
-	 width: var(--width);
-	margin: 0 auto;
-       @media(max-width: 1280px) {
-        width: 100%;
-     
-      }
-}
 
 .install {
   max-width: var(--width);
@@ -454,6 +446,11 @@ a {
   }
 
   .site-section-body {
+    width: var(--width);
+    margin: 0 auto;
+    @media(max-width: $desktop-width) {
+     width: 100%;
+    }
     > div {
       display: flex;
 
