@@ -209,6 +209,15 @@ a {
   }
 }
 
+.site-section {
+	 width: var(--width);
+	margin: 0 auto;
+       @media(max-width: 1280px) {
+        width: 100%;
+     
+      }
+}
+
 .install {
   max-width: var(--width);
   margin: 0 auto;
@@ -724,6 +733,7 @@ a {
       color: #5d6f88;
   
       summary {
+        word-break: break-word;
         font-size: 20px;
         line-height: 30px;
   
