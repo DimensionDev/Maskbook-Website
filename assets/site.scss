@@ -156,8 +156,11 @@ a {
     position: fixed;
     z-index: 1002;
     top: 0;
-    left: -350px;
+    left: -100%; 
     width: 350px;
+    @media(max-width: 600px) {
+        width: calc(100% - 60px);
+    }
     height: 100vh;
     text-align: center;
     background: $theme-color;
