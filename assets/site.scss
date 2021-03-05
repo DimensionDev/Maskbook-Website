@@ -47,8 +47,8 @@ a {
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 1000;  
-  background: #fff;  
+  z-index: 1000;
+  background: #fff;
 
   font-size: 1.25em;
   font-weight: bold;
@@ -156,10 +156,10 @@ a {
     position: fixed;
     z-index: 1002;
     top: 0;
-    left: -100%; 
+    left: -100%;
     width: 350px;
-    @media(max-width: 600px) {
-        width: calc(100% - 60px);
+    @media (max-width: 600px) {
+      width: calc(100% - 60px);
     }
     height: 100vh;
     text-align: center;
@@ -211,7 +211,6 @@ a {
     }
   }
 }
-
 
 .install {
   max-width: var(--width);
@@ -448,8 +447,8 @@ a {
   .site-section-body {
     width: var(--width);
     margin: 0 auto;
-    @media(max-width: $desktop-width) {
-     width: 100%;
+    @media (max-width: $desktop-width) {
+      width: 100%;
     }
     > div {
       display: flex;
@@ -684,7 +683,6 @@ a {
           background-image: url("./images/meme-#{$index}.jpg");
         }
       }
-
     }
   }
 }
@@ -715,58 +713,61 @@ a {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-  
+
       > section {
         width: 48%;
+        @media (max-width: 600px) {
+          width: 100%;
+        }
       }
     }
-  
+
     details {
       font-size: 16px;
       line-height: 28px;
-  
+
       position: relative;
-  
+
       margin-bottom: 32px;
       padding-left: 34px;
-  
+
       color: #5d6f88;
-  
+
       summary {
         word-break: break-word;
         font-size: 20px;
         line-height: 30px;
-  
+
         position: relative;
-  
+
         margin-bottom: 16px;
-  
+
         cursor: pointer;
         user-select: none;
-  
+
         color: #3b3b3b;
         outline: none;
         &::-webkit-details-marker {
           display: none;
         }
       }
-  
+
       & > summary::before {
         position: absolute;
         left: -34px;
-  
+
         display: inline-block;
-  
+
         width: 18px;
         height: 30px;
-  
+
         content: "";
         vertical-align: baseline;
-  
+
         background: url(./icons/details-closed.svg) no-repeat center;
         background-size: 100% 100%;
       }
-  
+
       &[open] > summary::before {
         background-image: url(./icons/details-open.svg);
       }
@@ -774,7 +775,8 @@ a {
   }
 }
 
-.news, .partners {
+.news,
+.partners {
   > .body {
     max-width: 54rem;
     margin: 0 auto;
@@ -859,17 +861,17 @@ a {
       }
 
       a[title="alameda"] {
-        opacity: 0.8;  
+        opacity: 0.8;
         width: 180px;
         background-image: url(./icons/alameda.png);
       }
       a[title="platon"] {
         width: 160px;
-        opacity: 0.6;      
+        opacity: 0.6;
         background-image: url(./icons/platon.jpg);
         -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);      
-      }         
+        filter: grayscale(100%);
+      }
 
       @media (max-width: 600px) {
         a {
@@ -905,19 +907,19 @@ a {
         }
         a[title="Gitcoin"] {
           width: 20px;
-        }    
+        }
         a[title="alameda"] {
           width: 120px;
         }
         a[title="platon"] {
-          width: 100px; 
-        }               
+          width: 100px;
+        }
       }
     }
   }
 }
 
-.news{
+.news {
   > .body {
     max-width: 72rem;
     margin: 0 auto;
@@ -925,13 +927,13 @@ a {
 
     @media (max-width: 600px) {
       padding: 24px 32px;
-    }    
+    }
 
     > .logos {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      align-items: center;      
+      align-items: center;
 
       > a {
         margin-top: 20px;
@@ -1204,5 +1206,38 @@ a {
         font-size: 0.9em;
       }
     }
+  }
+}
+
+.video-bg {
+  &.open {
+    display: flex;
+  }
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  .video-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 9999;
+  }
+}
+
+#Video {
+  width: 100%;
+  height: 100%;
+  @media (min-width: 1280px) {
+    width: 1280px;
+    height: 720px;
   }
 }

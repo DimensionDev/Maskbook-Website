@@ -67,6 +67,26 @@
       f.parentNode.insertBefore(j, f);
     })(window, document, "script", "dataLayer", "GTM-WWRTN8P");
   </script>
+
+<script>
+  jQuery(document).ready(function($) {
+        $(".video").click(function(e) {
+                $("#Video")[0].src = $(this).attr('src');
+                $("#Video")[0].load();
+                $(".video-bg").addClass('open');
+        });
+    $(".video-bg").click(function() {
+      $(".video-bg").removeClass('open');
+      $("#Video")[0].pause();
+    });
+    $(".video-close").click(function() {
+      $(".video-bg").removeClass('open');
+      $("#Video")[0].pause();
+    
+    });
+  })
+ </script>
+
 </head>
 
 <body>
@@ -172,7 +192,7 @@
           </div>
         </div>
         <div>
-          <div>
+          <div class='video' src="assets/video/1. message_batch.mp4">
             <img src="assets/icons/Group 458.svg"/>
             <h3>Demo 1: Send an encrypted message</h3>
             <p>Cool people sends stuff to cool people living in cool places</p>
@@ -190,7 +210,7 @@
           </div>
         </div>
         <div>
-          <div>
+          <div class="video" src='assets/video/2. file_batch.mp4'>
             <img src="assets/icons/Group 458.svg"/>
             <h3>Demo 2: Send & receive crypto</h3>
             <p>Cool people sends stuff to cool people living in cool places</p>
@@ -208,7 +228,7 @@
           </div>
         </div>
         <div>
-          <div>
+          <div class='video' src='assets/video/3. red packet_batch.mp4'>
             <img src="assets/icons/Group 458.svg"/>
             <h3>Demo 3: Support Gitcoin grants directly on Twitter</h3>
             <p>Cool people sends stuff to cool people living in cool places</p>
@@ -226,7 +246,7 @@
           </div>
         </div>
         <div>
-          <div>
+          <div class='video' src='assets/video/4. trade_batch.mp4'>
             <img src="assets/icons/Group 458.svg"/>
             <h3>Demo 4: Decentralized file storage and sharing</h3>
             <p>Cool people sends stuff to cool people living in cool places</p>
@@ -495,5 +515,18 @@
       <p>I thought what I’d do was, I’d pretend I was one of those deaf-mutes.</p>
     </div>
   </section>
+  <div class="video-bg">
+    <a class='video-close'><img src="assets/icons/navbar-toggle-close.svg" /></a>
+    <video autoplay preload='auto' id='Video'  controls  webkit-playsinline='true' playsinline='true' x-webkit-airplay='true' x5-video-player-type='h5' x5-video-player-fullscreen='true'x5-video-ignore-metadata='true'  >
+      <p> 不支持video</p> 
+    </video>
+
+<!--
+    <video id="Video" width='100%' height='100%' controls  title="video element">
+    </video>
+-->
+
+</div>
+
 </body>
 </html>
