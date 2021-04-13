@@ -939,7 +939,11 @@ a {
       opacity: 0.6;      
       background-image: url(./icons/partner/Transak.png);  
     }         
-
+    a[title='binance'] {
+      opacity: 1;
+      width: 162px;
+      background-image: url(./icons/partner/binance.svg);
+    }
     
     a[title="alameda"] {
       width: 180px;
