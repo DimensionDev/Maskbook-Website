@@ -950,6 +950,12 @@ a {
       background-image: url(./icons/partner/cryptocom.svg);
     }
 
+    a[title="filecoin"] {
+        opacity: 1;
+        width: 162px;
+        background-image: url(./icons/partner/filecoin.svg);
+    }
+
     a[title="alameda"] {
       width: 180px;
       background-image: url(./icons/supporter/Alameda.png);
