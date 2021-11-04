@@ -8,7 +8,7 @@ var links = {
   "/links?google-play": "https://play.google.com/store/apps/details?id=com.dimension.maskbook",
   "/links?chrome": "https://chrome.google.com/webstore/detail/jkoeaghipilijlahjplgbfiocjhldnap",
   "/links?firefox": "https://addons.mozilla.org/firefox/addon/maskbook",
-  "/brand-guide": "https://dimensiondev.github.io/Maskbook-VI",
+  "/brand-guide": "https://dimensiondev.github.io/Mask-VI",
   "/faq?1": "MASKBOOK/wiki/FAQ#why-is-there-a-strange-link-in-my-tweet",
   "/faq?2": "MASKBOOK/wiki/FAQ#why-does-maskbook-recommend-users-to-publish-their-public-keys-in-their-bio",
   "/faqcc?1": "MASKBOOK/wiki/FAQ:-Cryptocurrency-Features#why-is-the-total-collected-amount-slightly-less-than-the-total-spent-amount",
